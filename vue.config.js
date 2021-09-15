@@ -85,7 +85,7 @@ module.exports = {
         https: false,
         hotOnly: false,
         proxy: null,
-        before: (app) => {},
+        before: () => {},
     },
     // 构建时开启多进程处理 babel 编译
     parallel: require("os").cpus().length > 1,
