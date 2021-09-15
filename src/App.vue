@@ -7,11 +7,12 @@
                 router
             >
                 <el-menu-item disabled class="nav-logo">
-                    <span
-                        ><img src="./assets/logo.jpg" alt="logo" /><b
-                            >Red_lnn</b
-                        ></span
-                    >
+                    <span>
+                        <img
+                            src="https://sdn.geekzu.org/avatar/ca8a920ae3afca0139b116c033b00138?s=800"
+                            alt="logo"
+                        /><b>Red_lnn</b>
+                    </span>
                 </el-menu-item>
                 <el-menu-item
                     v-for="(item, key) in leftNavItems"
