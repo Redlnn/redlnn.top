@@ -187,6 +187,22 @@ footer {
     text-decoration: none;
 }
 
+.el-popper {
+    --el-popper-border-radius: var(--el-border-radius-round, 20px) !important;
+    border-radius: var(--el-popper-border-radius) !important;
+}
+
+.el-menu--popup {
+    min-width: 150px !important;
+    padding: 10px 0 !important;
+    border-radius: var(--el-popper-border-radius) !important;
+}
+
+.el-menu--horizontal .el-menu .el-menu-item,
+.el-menu--horizontal .el-menu .el-sub-menu__title {
+    background-color: inherit !important;
+}
+
 .noselect {
     -webkit-user-select: none;
     -moz-user-select: none;
