@@ -2,7 +2,7 @@
     <div>
         <el-image
             src="https://sdn.geekzu.org/avatar/ca8a920ae3afca0139b116c033b00138?s=800"
-            style="width:480px;height:auto;max-width:80%;border-radius:var(--el-border-radius-circle);margin:24px 0;"
+            style="width:480px;height:auto;max-width:80%;margin:24px 0;border-radius:var(--el-border-radius-circle);"
             title="Logo"
             alt="Logo"
             class="noselect"
@@ -85,11 +85,11 @@ a {
 }
 
 .svg {
-    vertical-align: middle;
-    line-height: 40px;
-    font-size: 40px;
     height: 40px;
     margin: 0 10px;
     margin-top: 20px;
+    vertical-align: middle;
+    line-height: 40px;
+    font-size: 40px;
 }
 </style>

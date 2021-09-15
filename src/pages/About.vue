@@ -28,7 +28,7 @@
                         正版用户名。什么？来一个正常一点的名字？不存在的，没有的，笑死，根本就想不出来
                     </p>
                     <p>
-                        1.4. 是<span title="你知道的太多了" class="heimu"
+                        1.4. 是<span title="你知道的太多了" class="curtain"
                             ><del>可爱的</del></span
                         >男孩纸
                     </p>
@@ -43,7 +43,7 @@
                     <p>
                         1.7. 不容易生气，但生起气来会坏（<span
                             title="你知道的太多了"
-                            class="heimu"
+                            class="curtain"
                             >纠正：气急败坏</span
                         >）
                     </p>
@@ -58,7 +58,7 @@
                         2.2.1. 二次元浓度低，AGCN
                         里面也就对游戏敢兴趣（但其实也玩得不多，<span
                             title="你知道的太多了"
-                            class="heimu"
+                            class="curtain"
                             >所以我的青春都干嘛去了啊喂(#`O′)</span
                         >）
                     </p>
@@ -181,7 +181,7 @@
                         4.1. 目前主要玩《原神（Genshin
                         Impact）》，偶尔也玩玩《我的世界（Minecraft）》，再多的就不玩了（<span
                             title="你知道的太多了"
-                            class="heimu"
+                            class="curtain"
                             >主要还是玩不懂，而且肝不够</span
                         >）
                     </p>
@@ -274,9 +274,9 @@ export default {
     name: "About",
     data() {
         return {
-            closable: false,
+            closable: false
         };
-    },
+    }
 };
 </script>
 
@@ -285,9 +285,11 @@ a {
     color: var(--el-color-primary);
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
 }
+
 .background {
     z-index: -10;
     position: absolute;
@@ -308,41 +310,49 @@ a:hover {
     -ms-filter: blur(5px);
     filter: blur(5px);
 }
+
 .container {
     text-align: left;
 }
+
 .container p {
     line-height: 28px;
 }
+
 h2:before {
     content: "#";
-    color: var(--el-color-primary);
     padding-right: 8px;
+    color: var(--el-color-primary);
     font-weight: 700;
 }
+
 h3 {
+    vertical-align: middle;
     border-left: 5px solid var(--el-color-primary);
     padding-left: 8px;
     margin-bottom: 5px;
     margin-top: 5px;
-    vertical-align: middle;
 }
+
 .list {
     font-size: 95%;
     line-height: 30px;
 }
+
+pre,
 code {
-    font-size: 85%;
-    color: #f0615c;
     margin: 0 0.2em;
     padding: 0.2em 0.4em;
-    background-color: rgba(175, 184, 193, 0.2);
-    border-radius: var(--el-border-radius-base);
+    font-size: 85%;
     font-family: "Cascadia Mono PL", "Source Code Pro", "Source Han Mono",
         "Noto Mono", ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
         "Liberation Mono", monospace;
+    color: #f0615c;
+    background-color: rgba(175, 184, 193, 0.2);
+    border-radius: var(--el-border-radius-base);
 }
-@keyframes heimuFadeOut {
+
+@keyframes curtainFadeOut {
     0% {
         background: var(--el-text-color-primary);
     }
@@ -350,7 +360,8 @@ code {
         background: none;
     }
 }
-@keyframes heimuFadeIn {
+
+@keyframes curtainFadeIn {
     0% {
         background: none;
     }
@@ -358,34 +369,39 @@ code {
         background: var(--el-text-color-primary);
     }
 }
-.heimu {
+
+.curtain {
     margin-left: 0;
     margin-right: 0;
     background: var(--el-text-color-primary);
-    animation: heimuFadeIn 0.1s ease-in-out;
     border-radius: var(--el-border-radius-base);
+    animation: curtainFadeIn 0.1s ease-in-out;
 }
-.heimu:hover {
+
+.curtain:hover {
     background: none;
-    animation: heimuFadeOut 0.1s ease-in-out;
+    animation: curtainFadeOut 0.1s ease-in-out;
 }
-.heimu,
-.heimu a,
-a .heimu {
+
+.curtain,
+.curtain a,
+a .curtain {
     color: var(--el-text-color-primary);
     text-shadow: none;
 }
-.heimu code,
-code .heimu {
-    color: var(--el-text-color-primary);
+
+.curtain code,
+code .curtain {
     padding: 0em 0.4em;
+    color: var(--el-text-color-primary);
     background-color: var(--el-text-color-primary);
     border-radius: var(--el-border-radius-base);
 }
-.heimu code:hover,
-code .heimu:hover {
-    color: #f0615c;
+
+.curtain code:hover,
+code .curtain:hover {
     padding: 0.2em 0.4em;
+    color: #f0615c;
     background-color: rgba(175, 184, 193, 0.2);
 }
 </style>

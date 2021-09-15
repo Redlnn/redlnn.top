@@ -21,7 +21,7 @@
                     >{{ item.name }}</el-menu-item
                 >
                 <el-submenu
-                    style="float: right"
+                    style="float:right;"
                     class="right-item"
                     v-if="
                         Object.keys(rightNavItems).length === 0 ? false : true
@@ -46,7 +46,7 @@
         </el-header>
         <div
             :style="{ height: screenHeight - 61 + 'px' }"
-            style="overflow: hidden"
+            style="overflow:hidden;"
         >
             <el-scrollbar>
                 <el-backtop
@@ -83,11 +83,11 @@ export default {
         return {
             navItems: [
                 { name: "首页", indexPath: "/", index: "1" },
-                { name: "关于我", indexPath: "/about", index: "2" },
+                { name: "关于我", indexPath: "/about", index: "2" }
             ],
             screenWidth: document.body.clientWidth,
             screenHeight: document.documentElement.clientHeight,
-            transitionName: "",
+            transitionName: ""
         };
     },
     mounted() {
@@ -121,7 +121,7 @@ export default {
                     this.timer = false;
                 }, 500);
             }
-        },
+        }
     },
     computed: {
         leftNavItems: function() {
@@ -129,8 +129,8 @@ export default {
         },
         rightNavItems: function() {
             return this.screenWidth < 600 ? this.navItems : {};
-        },
-    },
+        }
+    }
 };
 </script>
 
@@ -162,23 +162,23 @@ html,
 }
 
 .nav-logo {
-    opacity: 1 !important;
     color: var(--el-menu-item-font-color) !important;
     font-size: var(--el-font-size-medium) !important;
+    opacity: 1 !important;
 }
 
 .nav-logo img {
     height: 60%;
-    border-radius: 100%;
     margin-right: 8px;
+    border-radius: 100%;
 }
 
 .el-footer,
 footer {
-    text-align: center;
     vertical-align: middle;
-    color: var(--el-text-color-secondary);
     font-size: var(--el-font-size-base);
+    text-align: center;
+    color: var(--el-text-color-secondary);
 }
 
 .footer > a {
@@ -196,9 +196,11 @@ footer {
 .slide-fade-enter-active {
     transition: all 0.1s ease-out;
 }
+
 .slide-fade-leave-active {
     transition: all 0.2s cubic-bezier(1, 0.5, 0.8, 1);
 }
+
 .slide-fade-enter-from,
 .slide-fade-leave-to {
     transform: translateY(10px);
