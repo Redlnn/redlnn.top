@@ -1,77 +1,73 @@
 <template>
-    <div id="nav">
-        <el-header class="noselect">
-            <el-menu
-                :default-active="this.$route.path"
-                mode="horizontal"
-                router
+    <el-header id="nav">
+        <el-menu
+            class="noselect"
+            :default-active="this.$route.path"
+            mode="horizontal"
+            router
+        >
+            <el-menu-item
+                disabled
+                class="nav-logo"
+                index="1000"
+                :route="this.$route.path"
             >
-                <el-menu-item disabled class="nav-logo">
-                    <span>
-                        <img
-                            src="https://sdn.geekzu.org/avatar/ca8a920ae3afca0139b116c033b00138?s=800"
-                            alt="logo"
-                        /><b>Red_lnn</b>
-                    </span>
-                </el-menu-item>
+                <span>
+                    <img
+                        src="https://sdn.geekzu.org/avatar/ca8a920ae3afca0139b116c033b00138?s=800"
+                        alt="logo"
+                    /><b>Red_lnn</b>
+                </span>
+            </el-menu-item>
+            <el-menu-item
+                v-for="(item, key) in leftNavItems"
+                :key="key"
+                :index="item.indexPath"
+                :route="item.activeIndex"
+                >{{ item.name }}</el-menu-item
+            >
+            <el-sub-menu
+                style="float:right;"
+                v-if="Object.keys(rightNavItems).length === 0 ? false : true"
+                index="999"
+                title="menu"
+            >
+                <template #title>
+                    <img
+                        src="./assets/more.svg"
+                        style="height: 24px; width: 24px"
+                    />
+                </template>
                 <el-menu-item
-                    v-for="(item, key) in leftNavItems"
                     :key="key"
+                    v-for="(item, key) in rightNavItems"
                     :index="item.indexPath"
                     :route="item.activeIndex"
+                    class="noselect"
                     >{{ item.name }}</el-menu-item
                 >
-                <el-submenu
-                    style="float:right;"
-                    class="right-item"
-                    v-if="
-                        Object.keys(rightNavItems).length === 0 ? false : true
-                    "
-                    index="10"
-                >
-                    <template #title>
-                        <img
-                            src="./assets/more.svg"
-                            style="height: 24px; width: 24px"
-                        />
-                    </template>
-                    <el-menu-item
-                        :key="key"
-                        v-for="(item, key) in rightNavItems"
-                        :index="item.index"
-                        :route="item.activeIndex"
-                        >{{ item.name }}</el-menu-item
+            </el-sub-menu>
+        </el-menu>
+    </el-header>
+    <div :style="{ height: screenHeight - 61 + 'px' }" style="overflow:hidden;">
+        <el-scrollbar>
+            <el-backtop target=".el-scrollbar__wrap"></el-backtop>
+            <el-main>
+                <router-view v-slot="{ Component }">
+                    <transition name="slide-fade" mode="out-in">
+                        <component :is="Component" />
+                    </transition>
+                </router-view>
+            </el-main>
+            <el-footer>
+                <div class="footer noselect">
+                    © 2021 Red_lnn&nbsp;&nbsp;<a
+                        href="http://beian.miit.gov.cn/"
+                        >粤ICP备19155362号</a
                     >
-                </el-submenu>
-            </el-menu>
-        </el-header>
-        <div
-            :style="{ height: screenHeight - 61 + 'px' }"
-            style="overflow:hidden;"
+                </div>
+            </el-footer></el-scrollbar
         >
-            <el-scrollbar>
-                <el-backtop
-                    target=".el-scrollbar__wrap"
-                    right="50"
-                    bottom="50"
-                ></el-backtop>
-                <el-main>
-                    <router-view v-slot="{ Component }">
-                        <transition name="slide-fade" mode="out-in">
-                            <component :is="Component" />
-                        </transition>
-                    </router-view>
-                </el-main>
-                <el-footer>
-                    <div class="footer noselect">
-                        © 2021 Red_lnn&nbsp;&nbsp;<a
-                            href="http://beian.miit.gov.cn/"
-                            >粤ICP备19155362号</a
-                        >
-                    </div>
-                </el-footer></el-scrollbar
-            >
-        </div>
     </div>
 </template>
 
@@ -160,6 +156,10 @@ html,
 .el-menu--horizontal > .el-menu-item:not(.is-disabled):hover,
 .el-menu--horizontal > .el-menu-item:not(.is-disabled):focus {
     background-color: inherit !important;
+}
+
+.el-menu.el-menu--horizontal {
+    display: inherit !important;
 }
 
 .nav-logo {
