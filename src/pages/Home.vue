@@ -32,7 +32,7 @@
             >
                 小水管服务器，各位大佬下手轻点可好
             </p>
-            <span class="noselect">
+            <div>
                 <a href="https://github.com/Redlnn"
                     ><img
                         src="@/assets/github.svg"
@@ -59,7 +59,7 @@
                         alt="更多"
                         style="height: 43px;"
                 /></a>
-            </span>
+            </div>
         </div>
     </div>
 </template>
