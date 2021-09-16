@@ -2,10 +2,9 @@
     <div>
         <el-image
             src="https://sdn.geekzu.org/avatar/ca8a920ae3afca0139b116c033b00138?s=800"
-            style="width:480px;height:auto;max-width:80%;margin:24px 0;border-radius:var(--el-border-radius-circle);"
+            class="logo noselect"
             title="Logo"
             alt="Logo"
-            class="noselect"
         >
             <template #placeholder>
                 <div class="image-slot">
@@ -74,14 +73,38 @@ export default {
     name: "Home",
     components: {
         Loading,
-        PictureRounded,
-    },
+        PictureRounded
+    }
 };
 </script>
 
 <style lang="scss" scoped>
 a {
     color: var(--el-color-primary);
+}
+
+.logo {
+    height: auto;
+    margin: 24px 0;
+    border-radius: var(--el-border-radius-circle);
+}
+
+@media screen and (max-width: 260px) {
+    .logo {
+        width: 100%;
+    }
+}
+
+@media screen and (max-height: 1000px) and (min-width: 260px) {
+    .logo {
+        width: 260px;
+    }
+}
+
+@media screen and (min-height: 1000px) and (min-width: 450px) {
+    .logo {
+        width: 450px;
+    }
 }
 
 .svg {
