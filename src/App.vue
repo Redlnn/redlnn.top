@@ -9,7 +9,7 @@
             <el-menu-item
                 disabled
                 class="nav-logo"
-                index="1000"
+                index=""
                 :route="this.$route.path"
             >
                 <span>
@@ -20,33 +20,17 @@
                 </span>
             </el-menu-item>
             <el-menu-item
-                v-for="(item, key) in leftNavItems"
+                v-for="(item, key) in navItems"
                 :key="key"
                 :index="item.indexPath"
                 :route="item.activeIndex"
                 >{{ item.name }}</el-menu-item
             >
-            <el-sub-menu
-                style="float:right;"
-                v-if="Object.keys(rightNavItems).length === 0 ? false : true"
-                index="999"
-                title="menu"
+            <el-menu-item index=""
+                ><a href="https://blog.redlnn.top" target="_self"
+                    >Blog</a
+                ></el-menu-item
             >
-                <template #title>
-                    <img
-                        src="./assets/more.svg"
-                        style="height: 24px; width: 24px"
-                    />
-                </template>
-                <el-menu-item
-                    :key="key"
-                    v-for="(item, key) in rightNavItems"
-                    :index="item.indexPath"
-                    :route="item.activeIndex"
-                    class="noselect"
-                    >{{ item.name }}</el-menu-item
-                >
-            </el-sub-menu>
         </el-menu>
     </el-header>
     <div :style="{ height: screenHeight - 61 + 'px' }" style="overflow:hidden;">
@@ -82,31 +66,17 @@ export default {
                 { name: "首页", indexPath: "/", index: "1" },
                 { name: "关于我", indexPath: "/about", index: "2" }
             ],
-            screenWidth: document.body.clientWidth,
+            // screenWidth: document.body.clientWidth,
             screenHeight: document.documentElement.clientHeight,
             transitionName: ""
         };
     },
     mounted() {
         window.onresize = () => {
-            this.screenWidth = document.body.clientWidth;
             this.screenHeight = document.documentElement.clientHeight;
         };
     },
     watch: {
-        // $route() {},
-        screenWidth(newValue) {
-            // 为了避免频繁触发resize函数导致页面卡顿，使用定时器
-            if (!this.timer) {
-                // 一旦监听到的screenWidth值改变，就将其重新赋给data里的screenWidth
-                this.screenWidth = newValue;
-                this.timer = true;
-                setTimeout(() => {
-                    //console.log(this.screenWidth);
-                    this.timer = false;
-                }, 500);
-            }
-        },
         screenHeight(newValue) {
             // 为了避免频繁触发resize函数导致页面卡顿，使用定时器
             if (!this.timer) {
@@ -120,14 +90,7 @@ export default {
             }
         }
     },
-    computed: {
-        leftNavItems: function() {
-            return this.screenWidth >= 600 ? this.navItems : {};
-        },
-        rightNavItems: function() {
-            return this.screenWidth < 600 ? this.navItems : {};
-        }
-    }
+    computed: {}
 };
 </script>
 
@@ -160,6 +123,12 @@ html,
 
 .el-menu.el-menu--horizontal {
     display: inherit !important;
+}
+
+.el-menu-item a,
+.el-menu-item a:hover {
+    vertical-align: inherit;
+    text-decoration: none;
 }
 
 .nav-logo {
