@@ -1,58 +1,51 @@
 User-agent: Baiduspider
-Disallow: /?
+Allow: /
 Disallow: /js/
 Disallow: /css/
 Disallow: /fonts/
 Disallow: /img/
-Allow: /
 
 User-agent: Bingbot
-Disallow: /?
+Allow: /
 Disallow: /js/
 Disallow: /css/
 Disallow: /fonts/
 Disallow: /img/
-Allow: /
 
 User-agent: DuckDuckBot
-Disallow: /?
+Allow: /
 Disallow: /js/
 Disallow: /css/
 Disallow: /fonts/
 Disallow: /img/
-Allow: /
 
 User-agent: Googlebot
-Disallow: /?
+Allow: /
 Disallow: /js/
 Disallow: /css/
 Disallow: /fonts/
 Disallow: /img/
-Allow: /
 
 User-agent: googlebot-mobile
-Disallow: /?
+Allow: /
 Disallow: /js/
 Disallow: /css/
 Disallow: /fonts/
 Disallow: /img/
-Allow: /
 
 User-agent: Yandex
-Disallow: /?
+Allow: /
 Disallow: /js/
 Disallow: /css/
 Disallow: /fonts/
 Disallow: /img/
-Allow: /
 
 User-agent: 360Spider
-Disallow: /?
+Allow: /
 Disallow: /js/
 Disallow: /css/
 Disallow: /fonts/
 Disallow: /img/
-Allow: /
 
 Crawl-delay: 120
 
