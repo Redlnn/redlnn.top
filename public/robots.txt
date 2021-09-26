@@ -1,0 +1,60 @@
+User-agent: Baiduspider
+Disallow: /?
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /img/
+Allow: /
+
+User-agent: Bingbot
+Disallow: /?
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /img/
+Allow: /
+
+User-agent: DuckDuckBot
+Disallow: /?
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /img/
+Allow: /
+
+User-agent: Googlebot
+Disallow: /?
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /img/
+Allow: /
+
+User-agent: googlebot-mobile
+Disallow: /?
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /img/
+Allow: /
+
+User-agent: Yandex
+Disallow: /?
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /img/
+Allow: /
+
+User-agent: 360Spider
+Disallow: /?
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /img/
+Allow: /
+
+Crawl-delay: 120
+
+User-agent: *
+Disallow: /
