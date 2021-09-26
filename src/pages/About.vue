@@ -3,8 +3,8 @@
         <div class="background"></div>
         <div class="container">
             <el-row>
-                <el-col :xs="0" :sm="2" :md="4" :xl="6"></el-col>
-                <el-col :xs="24" :sm="20" :md="16" :xl="12">
+                <el-col :xs="0" :sm="2" :lg="4" :xl="6"></el-col>
+                <el-col :xs="24" :sm="20" :lg="16" :xl="12">
                     <h1><del>食用手册</del></h1>
                     <el-alert
                         title="前排提示"
@@ -244,7 +244,7 @@
                         6.3.2. 母胎 solo 至今，老惨了
                     </p></el-col
                 >
-                <el-col :xs="0" :sm="2" :md="4" :xl="6"></el-col>
+                <el-col :xs="0" :sm="2" :lg="4" :xl="6"></el-col>
             </el-row>
         </div>
         <div style="padding-bottom:20px">

@@ -7,9 +7,9 @@
             router
         >
             <el-menu-item
+                index="#"
                 disabled
                 class="nav-logo"
-                index=""
                 :route="this.$route.path"
             >
                 <span>
@@ -26,7 +26,7 @@
                 :route="item.activeIndex"
                 >{{ item.name }}</el-menu-item
             >
-            <el-menu-item index=""
+            <el-menu-item index="#"
                 ><a href="https://blog.redlnn.top" target="_self"
                     >Blog</a
                 ></el-menu-item
@@ -56,8 +56,6 @@
 </template>
 
 <script>
-// import { defineComponent, ref } from 'vue';
-
 export default {
     name: "App",
     data() {
@@ -67,8 +65,7 @@ export default {
                 { name: "关于我", indexPath: "/about", index: "2" }
             ],
             // screenWidth: document.body.clientWidth,
-            screenHeight: document.documentElement.clientHeight,
-            transitionName: ""
+            screenHeight: document.documentElement.clientHeight
         };
     },
     mounted() {
@@ -84,7 +81,7 @@ export default {
                 this.screenHeight = newValue;
                 this.timer = true;
                 setTimeout(() => {
-                    //   console.log(this.screenHeight);
+                    // console.log(this.screenHeight);
                     this.timer = false;
                 }, 500);
             }
@@ -112,7 +109,7 @@ html,
     height: 100%;
 }
 
-.el-popper .el-menu--popup{
+.el-popper .el-menu--popup {
     padding: 10px !important;
 }
 
@@ -148,19 +145,18 @@ footer {
 }
 
 .el-popper {
-    --el-popper-border-radius: var(--el-border-radius-round, 20px) !important;
-    border-radius: var(--el-popper-border-radius) !important;
+    border-radius: 10px !important;
 }
 
 .el-menu--popup {
     min-width: 150px !important;
     padding: 10px 0 !important;
-    border-radius: var(--el-popper-border-radius) !important;
+    border-radius: 10px !important;
 }
 
 .el-menu--horizontal .el-menu .el-menu-item,
 .el-menu--horizontal .el-menu .el-sub-menu__title {
-    background-color: inherit !important;
+    border-radius: 5px;
 }
 
 .noselect {
