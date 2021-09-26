@@ -19,25 +19,25 @@ git clone git@github.com:Redlnn/redlnn.top.git
 #### 进入本仓库跟目录后执行如下命令
 
 ```bash
-npm install
+yarn install
 ```
 
 ### 编译并允许热重载以进行开发
 
 ```bash
-npm run serve
+yarn serve
 ```
 
 ### 编译并最小化文件以发布到生产环境
 
 ```bash
-npm run build
+yarn build
 ```
 
 ### 检查代码错误以修复
 
 ```bash
-npm run lint
+yarn lint
 ```
 
 ### 自定义设置

@@ -112,23 +112,13 @@ html,
     height: 100%;
 }
 
-.el-menu {
-    background-color: inherit !important;
+.el-popper .el-menu--popup{
+    padding: 10px !important;
 }
 
-.el-menu--horizontal > .el-menu-item:not(.is-disabled):hover,
-.el-menu--horizontal > .el-menu-item:not(.is-disabled):focus {
-    background-color: inherit !important;
-}
-
-.el-menu.el-menu--horizontal {
-    display: inherit !important;
-}
-
-.el-menu-item a,
-.el-menu-item a:hover {
-    vertical-align: inherit;
+.el-menu-item a {
     text-decoration: none;
+    color: inherit;
 }
 
 .nav-logo {
@@ -138,7 +128,8 @@ html,
 }
 
 .nav-logo img {
-    height: 60%;
+    height: 35px;
+    width: auto;
     margin-right: 8px;
     border-radius: 100%;
 }
