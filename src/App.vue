@@ -31,6 +31,10 @@
                     >Blog</a
                 ></el-menu-item
             >
+            <el-sub-menu :index="this.$route.path">
+                <template #title>一些东西</template>
+                <el-menu-item index="/mcmod">Minecraft 常用模组列表</el-menu-item>
+            </el-sub-menu>
         </el-menu>
     </el-header>
     <div :style="{ height: screenHeight - 61 + 'px' }" style="overflow:hidden;">

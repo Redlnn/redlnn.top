@@ -21,6 +21,15 @@ const routes = [
         },
     },
     {
+        path: "/mcmod",
+        name: "MinecraftMod",
+        component: () => import("@/pages/MinecraftMod.vue"),
+        meta: {
+            title: "Minecraft 模组列表 | Red_lnn",
+            index: 1,
+        },
+    },
+    {
         path: "/404",
         name: "404",
         component: () => import("@/pages/error/404.vue"),
@@ -60,10 +69,10 @@ router.beforeEach((to, from, next) => {
     var $iframe = document.createElement("iframe");
     $iframe.style.display = "none";
     $body[0].appendChild($iframe);
+    document.title = to.meta.title ? to.meta.title : defaultTitle;
     setTimeout(() => {
-        document.title = to.meta.title ? to.meta.title : defaultTitle;
         $body[0].removeChild($iframe);
-    }, 300);
+    }, 10);
     next();
 });
 
