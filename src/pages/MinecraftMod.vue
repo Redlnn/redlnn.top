@@ -124,6 +124,8 @@
                                 class="button modrinth"
                                 ><img
                                     src="@/assets/modrinth.svg"
+                                    title="从 modrinth 下载"
+                                    alt="从 modrinth 下载"
                                     style="height: 1.1rem;"
                             /></a>
                             <a
@@ -132,8 +134,11 @@
                                 class="button curseforge"
                                 ><img
                                     src="@/assets/anvil.svg"
+                                    alt="curseforge logo"
                                     style="width: 1.3rem; margin-right: .3rem;"/><img
                                     src="@/assets/cf-logo.svg"
+                                    title="从 CurseForge 下载"
+                                    alt="从 CurseForge 下载"
                                     style="height: .6rem;"
                             /></a>
                             <a
@@ -143,6 +148,8 @@
                                 style="font-weight: 600;letter-spacing: .03rem;"
                                 ><img
                                     src="@/assets/github1.svg"
+                                    title="GitHub 仓库"
+                                    alt="GitHub 仓库"
                                     style="height: 1.1rem; margin-right: .3rem;"
                                 />GitHub</a
                             >
@@ -158,7 +165,9 @@
                                 v-if="scope.row.mcmod"
                                 class="button mcmod"
                                 ><img
-                                    src="@/assets/mcmod.png"
+                                    src="@/assets/mcmod.webp"
+                                    title="mc百科"
+                                    alt="mc百科"
                                     style="height: 1.1rem;"
                             /></a>
                         </template>
@@ -174,7 +183,8 @@
 import { useMeta } from "vue-meta";
 
 const tags = "Red_lnn,我的世界,Minecraft,mod,模组";
-const description = "Red_lnn 的 Minecraft 模组列表 | 这里是 Red_lnn 的小空间，感谢你的来访"
+const description =
+    "Red_lnn 的 Minecraft 模组列表 | 这里是 Red_lnn 的小空间，感谢你的来访";
 
 export default {
     name: "MinecraftMod",
@@ -186,11 +196,11 @@ export default {
                 { name: "keywords", content: tags }
             ],
             og: {
-                description: description,
+                description: description
             },
             twitter: {
-                description: description,
-            },
+                description: description
+            }
         });
     },
     data() {

@@ -3,7 +3,6 @@
         <el-image
             src="https://sdn.geekzu.org/avatar/ca8a920ae3afca0139b116c033b00138?s=800"
             class="logo noselect"
-            title="Logo"
             alt="Logo"
         >
             <template #placeholder>
