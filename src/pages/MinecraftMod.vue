@@ -9,7 +9,7 @@
                     center
                     show-icon
                     :closable="closable"
-                    style="margin: 10px;"
+                    style="margin: 10px 0;"
                 ></el-alert>
                 <el-alert
                     title="Optifine替代品列表：https://gist.github.com/LambdAurora/1f6a4a99af374ce500f250c6b42e8754"
@@ -17,7 +17,7 @@
                     center
                     show-icon
                     :closable="closable"
-                    style="margin: 10px;"
+                    style="margin: 10px 0;"
                 ></el-alert>
                 <el-alert
                     title="列表内部分模组存在互相冲突的情况，请勿盲目添加"
@@ -25,7 +25,7 @@
                     center
                     show-icon
                     :closable="closable"
-                    style="margin: 10px;"
+                    style="margin: 10px 0;"
                 ></el-alert>
                 <el-alert
                     title="本页面正在测试与完善，部分简介、分类、适用范围存在问题"
@@ -33,7 +33,7 @@
                     center
                     show-icon
                     :closable="closable"
-                    style="margin: 10px;"
+                    style="margin: 10px 0;"
                 ></el-alert
             ></el-col>
             <el-col :xs="0" :sm="2" :md="3" :lg="5" :xl="6"></el-col>
