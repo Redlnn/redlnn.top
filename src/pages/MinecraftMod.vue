@@ -56,7 +56,7 @@
                     stripe
                     :data="tableData"
                     :cell-class-name="desc"
-                    :height="screenHeight - 161"
+                    :height="screenHeight - 91"
                 >
                     <el-table-column
                         prop="name"
