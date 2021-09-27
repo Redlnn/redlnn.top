@@ -123,7 +123,7 @@
                                 v-if="scope.row.modrinth"
                                 class="button modrinth"
                                 ><img
-                                    src="@/assets/modrinth.svg"
+                                    src="@/assets/img/modrinth.svg"
                                     title="从 modrinth 下载"
                                     alt="从 modrinth 下载"
                                     style="height: 1.1rem;"
@@ -133,10 +133,10 @@
                                 v-if="scope.row.curseforge"
                                 class="button curseforge"
                                 ><img
-                                    src="@/assets/anvil.svg"
+                                    src="@/assets/img/anvil.svg"
                                     alt="curseforge logo"
                                     style="width: 1.3rem; margin-right: .3rem;"/><img
-                                    src="@/assets/cf-logo.svg"
+                                    src="@/assets/img/cf-logo.svg"
                                     title="从 CurseForge 下载"
                                     alt="从 CurseForge 下载"
                                     style="height: .6rem;"
@@ -147,7 +147,7 @@
                                 class="button github"
                                 style="font-weight: 600;letter-spacing: .03rem;"
                                 ><img
-                                    src="@/assets/github1.svg"
+                                    src="@/assets/img/github1.svg"
                                     title="GitHub 仓库"
                                     alt="GitHub 仓库"
                                     style="height: 1.1rem; margin-right: .3rem;"
@@ -165,7 +165,7 @@
                                 v-if="scope.row.mcmod"
                                 class="button mcmod"
                                 ><img
-                                    src="@/assets/mcmod.webp"
+                                    src="@/assets/img/mcmod.webp"
                                     title="mc百科"
                                     alt="mc百科"
                                     style="height: 1.1rem;"

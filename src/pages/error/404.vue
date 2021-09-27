@@ -1,7 +1,7 @@
 <template>
     <div>
         <el-image
-            :src="require('@/assets/arere.webp')"
+            :src="require('@/assets/img/arere.webp')"
             class="logo noselect"
             alt="啊咧咧.jpg"
         >

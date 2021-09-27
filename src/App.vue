@@ -15,7 +15,7 @@
             >
                 <span>
                     <img
-                        src="https://sdn.geekzu.org/avatar/ca8a920ae3afca0139b116c033b00138?s=800"
+                        src="@/assets/img/avatar.webp"
                         alt="logo"
                     /><b>Red_lnn</b>
                 </span>

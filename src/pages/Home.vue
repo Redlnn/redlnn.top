@@ -1,7 +1,7 @@
 <template>
     <div>
         <el-image
-            src="https://sdn.geekzu.org/avatar/ca8a920ae3afca0139b116c033b00138?s=800"
+            :src="require('@/assets/img/avatar.webp')"
             class="logo noselect"
             alt="Logo"
         >
@@ -34,25 +34,25 @@
             <div>
                 <a href="https://github.com/Redlnn"
                     ><img
-                        src="@/assets/github.svg"
+                        src="@/assets/img/github.svg"
                         class="svg"
                         title="Github"
                         alt="Github"/></a
                 ><a href="https://space.bilibili.com/20858581"
                     ><img
-                        src="@/assets/bilibili.svg"
+                        src="@/assets/img/bilibili.svg"
                         class="svg"
                         title="哔哩哔哩"
                         alt="哔哩哔哩"/></a
                 ><a href="https://music.163.com/#/user/home?id=333710186"
                     ><img
-                        src="@/assets/netease-cloud-music.svg"
+                        src="@/assets/img/netease-cloud-music.svg"
                         class="svg"
                         title="网易云音乐"
                         alt="网易云音乐"/></a
                 ><a href="/about"
                     ><img
-                        src="@/assets/share.svg"
+                        src="@/assets/img/share.svg"
                         class="svg"
                         title="更多"
                         alt="更多"
