@@ -7,7 +7,7 @@
             router
         >
             <el-menu-item
-                index="#"
+                index=""
                 disabled
                 class="nav-logo"
                 :route="this.$route.path"
@@ -26,14 +26,16 @@
                 :route="item.activeIndex"
                 >{{ item.name }}</el-menu-item
             >
-            <el-menu-item index="#"
-                ><a href="https://blog.redlnn.top" target="_self"
+            <el-menu-item index="" key="https://blog.redlnn.top/"
+                ><a href="https://blog.redlnn.top/" target="_self"
                     >Blog</a
                 ></el-menu-item
             >
             <el-sub-menu :index="this.$route.path">
                 <template #title>一些东西</template>
-                <el-menu-item index="/mcmod">Minecraft 常用模组列表</el-menu-item>
+                <el-menu-item index="/mcmod/"
+                    >Minecraft 常用模组列表</el-menu-item
+                >
             </el-sub-menu>
         </el-menu>
     </el-header>
@@ -66,7 +68,7 @@ export default {
         return {
             navItems: [
                 { name: "首页", indexPath: "/", index: "1" },
-                { name: "关于我", indexPath: "/about", index: "2" }
+                { name: "关于我", indexPath: "/about/", index: "2" }
             ],
             // screenWidth: document.body.clientWidth,
             screenHeight: document.documentElement.clientHeight

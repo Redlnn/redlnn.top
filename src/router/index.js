@@ -8,11 +8,10 @@ const routes = [
         component: Home,
         meta: {
             title: "Red_lnn | 主页",
-            index: 0,
         },
     },
     {
-        path: "/about",
+        path: "/about/",
         name: "About",
         component: () => import("@/pages/About.vue"),
         meta: {
@@ -21,21 +20,19 @@ const routes = [
         },
     },
     {
-        path: "/mcmod",
+        path: "/mcmod/",
         name: "MinecraftMod",
         component: () => import("@/pages/MinecraftMod.vue"),
         meta: {
             title: "Minecraft 模组列表 | Red_lnn",
-            index: 1,
         },
     },
     {
-        path: "/404",
+        path: "/404/",
         name: "404",
         component: () => import("@/pages/error/404.vue"),
         meta: {
             title: "404 Not Found | Red_lnn",
-            index: 999,
         },
     },
     {
@@ -43,7 +40,6 @@ const routes = [
         redirect: "404",
         meta: {
             title: "404 Not Found | Red_lnn",
-            index: 999,
         },
     },
     {
@@ -52,12 +48,12 @@ const routes = [
         redirect: "404",
         meta: {
             title: "404 Not Found | Red_lnn",
-            index: 999,
         },
     },
 ];
 
 const router = createRouter({
+    mode: 'history',
     history: createWebHistory(process.env.BASE_URL),
     routes,
 });
