@@ -68,9 +68,16 @@
 // @ is an alias to /src
 import { Loading } from "@element-plus/icons";
 import { PictureRounded } from "@element-plus/icons";
+import { useMeta } from "vue-meta";
 
 export default {
     name: "Home",
+    setup() {
+        useMeta({
+            keywords: "Red_lnn,博客,blog",
+            description: "这里是 Red_lnn 的小空间，感谢你的来访"
+        });
+    },
     components: {
         Loading,
         PictureRounded

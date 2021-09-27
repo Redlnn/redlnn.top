@@ -9,10 +9,14 @@
     },
     "dependencies": {
         "@element-plus/icons": "^0.0.11",
-        "core-js": "^3.18.0",
-        "element-plus": "^1.1.0-beta.16",
+        "@vue/server-renderer": "^3.2.19",
+        "core-js": "^3.18.1",
+        "element-plus": "^1.1.0-beta.17",
+        "prerender-spa-plugin": "^3.4.0",
         "vue": "^3.0.0",
-        "vue-router": "^4.0.0-0"
+        "vue-meta": "3.0.0-alpha.7",
+        "vue-router": "^4.0.0-0",
+        "vue-template-compiler": "^2.6.14"
     },
     "devDependencies": {
         "@vue/cli-plugin-babel": "~4.5.13",
@@ -23,9 +27,12 @@
         "babel-eslint": "^10.1.0",
         "eslint": "^6.7.2",
         "eslint-plugin-vue": "^7.18.0",
+        "fibers": ">=3.1.0",
+        "node-sass": "^6.0.1",
         "sass": "^1.42.1",
-        "sass-loader": "^10.0.4",
-        "vue-cli-plugin-element-plus": "~0.0.13"
+        "sass-loader": "^10.2.0",
+        "vue-cli-plugin-element-plus": "~0.0.13",
+        "webpack": "^4.46.0"
     },
     "eslintConfig": {
         "root": true,

@@ -270,8 +270,16 @@
 </template>
 
 <script>
+import { useMeta } from "vue-meta";
+
 export default {
     name: "About",
+    setup() {
+        useMeta({
+            keywords: "Red_lnn,博客,blog",
+            description: "这里是 Red_lnn 的小空间，感谢你的来访"
+        });
+    },
     data() {
         return {
             closable: false

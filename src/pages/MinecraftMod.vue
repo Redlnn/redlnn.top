@@ -171,8 +171,16 @@
 </template>
 
 <script>
+import { useMeta } from "vue-meta";
+
 export default {
-    name: "App",
+    name: "MinecraftMod",
+    setup() {
+        useMeta({
+            keywords: "Red_lnn,我的世界,Minecraft,mod,模组",
+            description: "Red_lnn 的 Minecraft 模组列表 | 这里是 Red_lnn 的小空间，感谢你的来访"
+        });
+    },
     data() {
         return {
             tableData: [

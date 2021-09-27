@@ -1,4 +1,9 @@
 <template>
+    <metainfo>
+        <template v-slot:title="{ content }">{{
+            content ? `${content} | SITE_NAME` : `SITE_NAME`
+        }}</template>
+    </metainfo>
     <el-header id="nav">
         <el-menu
             class="noselect"
@@ -62,8 +67,13 @@
 </template>
 
 <script>
+import { useMeta } from "vue-meta";
+
 export default {
     name: "App",
+    setup() {
+        useMeta({});
+    },
     data() {
         return {
             navItems: [
@@ -78,6 +88,8 @@ export default {
         window.onresize = () => {
             this.screenHeight = document.documentElement.clientHeight;
         };
+        // prerender-spa-plugin预渲染. for renderAfterDocumentEvent
+        document.dispatchEvent(new Event("render-active"));
     },
     watch: {
         screenHeight(newValue) {
