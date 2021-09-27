@@ -1,51 +1,30 @@
 User-agent: Baiduspider
 Allow: /
-Disallow: /js/
-Disallow: /css/
-Disallow: /fonts/
-Disallow: /img/
+Disallow: /assets/
 
 User-agent: Bingbot
 Allow: /
-Disallow: /js/
-Disallow: /css/
-Disallow: /fonts/
-Disallow: /img/
+Disallow: /assets/
 
 User-agent: DuckDuckBot
 Allow: /
-Disallow: /js/
-Disallow: /css/
-Disallow: /fonts/
-Disallow: /img/
+Disallow: /assets/
 
 User-agent: Googlebot
 Allow: /
-Disallow: /js/
-Disallow: /css/
-Disallow: /fonts/
-Disallow: /img/
+Disallow: /assets/
 
 User-agent: googlebot-mobile
 Allow: /
-Disallow: /js/
-Disallow: /css/
-Disallow: /fonts/
-Disallow: /img/
+Disallow: /assets/
 
 User-agent: Yandex
 Allow: /
-Disallow: /js/
-Disallow: /css/
-Disallow: /fonts/
-Disallow: /img/
+Disallow: /assets/
 
 User-agent: 360Spider
 Allow: /
-Disallow: /js/
-Disallow: /css/
-Disallow: /fonts/
-Disallow: /img/
+Disallow: /assets/
 
 Crawl-delay: 120
 
