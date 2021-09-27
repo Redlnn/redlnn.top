@@ -8,7 +8,7 @@
             router
         >
             <el-menu-item
-                index=""
+                index="#999#"
                 disabled
                 class="nav-logo"
                 :route="this.$route.path"
@@ -27,7 +27,7 @@
                 :route="item.activeIndex"
                 >{{ item.name }}</el-menu-item
             >
-            <el-menu-item index="" key="https://blog.redlnn.top/"
+            <el-menu-item index="#" key="https://blog.redlnn.top/"
                 ><a href="https://blog.redlnn.top/" target="_self"
                     >Blog</a
                 ></el-menu-item
