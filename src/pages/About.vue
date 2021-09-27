@@ -273,7 +273,7 @@
 import { useMeta } from "vue-meta";
 
 const tags = "Red_lnn,博客,blog,个人主页";
-const description = "这里是 Red_lnn 的小空间，感谢你的来访"
+const description = "这里是 Red_lnn 的小空间，感谢你的来访";
 
 export default {
     name: "About",
@@ -281,15 +281,11 @@ export default {
         useMeta({
             description: description,
             meta: [
-                { name: "category", content: tags },
                 { name: "keywords", content: tags }
             ],
             og: {
-                description: description,
-            },
-            twitter: {
-                description: description,
-            },
+                description: description
+            }
         });
     },
     data() {

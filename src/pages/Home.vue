@@ -72,13 +72,9 @@ export default {
         useMeta({
             description: description,
             meta: [
-                { name: "category", content: tags },
                 { name: "keywords", content: tags }
             ],
             og: {
-                description: description
-            },
-            twitter: {
                 description: description
             }
         });

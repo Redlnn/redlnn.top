@@ -76,6 +76,12 @@ export default {
                 { name: "author", content: author },
                 { name: "publisher", content: author }
             ],
+            og: {
+                image: "https://www.redlnn.top/asseets/img/avatar.afb54457.webp"
+            },
+            twitter: {
+                image: "https://www.redlnn.top/asseets/img/avatar.afb54457.webp"
+            }
         });
     },
     data() {
