@@ -37,7 +37,7 @@ module.exports = {
     // 但是这会让你的应用额外增加 10kb 左右。
     runtimeCompiler: false,
     // 默认情况下 babel-loader 忽略其中的所有文件 node_modules
-    // transpileDependencies: [],
+    transpileDependencies: ["vue-meta"],
     // 生产环境 sourceMap
     productionSourceMap: false,
     integrity: true,

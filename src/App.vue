@@ -1,9 +1,5 @@
 <template>
-    <metainfo>
-        <template v-slot:title="{ content }">{{
-            content ? `${content} | SITE_NAME` : `SITE_NAME`
-        }}</template>
-    </metainfo>
+    <metainfo></metainfo>
     <el-header id="nav">
         <el-menu
             class="noselect"
@@ -69,10 +65,18 @@
 <script>
 import { useMeta } from "vue-meta";
 
+const author = "Red_lnn";
+
 export default {
     name: "App",
     setup() {
-        useMeta({});
+        // https://github.com/nuxt/vue-meta/issues/696#issuecomment-878377182
+        useMeta({
+            meta: [
+                { name: "author", content: author },
+                { name: "publisher", content: author }
+            ],
+        });
     },
     data() {
         return {

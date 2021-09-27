@@ -70,12 +70,25 @@ import { Loading } from "@element-plus/icons";
 import { PictureRounded } from "@element-plus/icons";
 import { useMeta } from "vue-meta";
 
+const tags = "Red_lnn,博客,blog,个人主页";
+const description = "这里是 Red_lnn 的小空间，感谢你的来访"
+
 export default {
     name: "Home",
     setup() {
+        // https://github.com/nuxt/vue-meta/issues/696#issuecomment-878377182
         useMeta({
-            keywords: "Red_lnn,博客,blog",
-            description: "这里是 Red_lnn 的小空间，感谢你的来访"
+            description: description,
+            meta: [
+                { name: "category", content: tags },
+                { name: "keywords", content: tags }
+            ],
+            og: {
+                description: description,
+            },
+            twitter: {
+                description: description,
+            },
         });
     },
     components: {
