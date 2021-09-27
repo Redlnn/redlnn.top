@@ -32,14 +32,14 @@ const routes = [
         name: "404",
         component: () => import("@/pages/error/404.vue"),
         meta: {
-            title: "404 Not Found | Red_lnn",
+            title: "404 Not Found! | Red_lnn",
         },
     },
     {
         path: "/404.html",
         redirect: "404",
         meta: {
-            title: "404 Not Found | Red_lnn",
+            title: "404 Not Found! | Red_lnn",
         },
     },
     {
@@ -47,7 +47,7 @@ const routes = [
         path: "/:catchAll(.*)",
         redirect: "404",
         meta: {
-            title: "404 Not Found | Red_lnn",
+            title: "404 Not Found! | Red_lnn",
         },
     },
 ];
