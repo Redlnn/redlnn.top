@@ -21,16 +21,9 @@
             </template>
         </el-image>
         <div>
-            <h1>Red_lnn</h1>
-            <p>是个社恐 | 游戏渣</p>
-            <p>
-                这里是个简简单单的主页，什么都没有<br />（<del>主要是这人蠢蠢的，连上面的设定都想不出来</del>）
-            </p>
-            <p
-                style="font-size:var(--el-font-size-base);color:var(--el-text-color-secondary)"
-            >
-                小水管服务器，各位大佬下手轻点可好
-            </p>
+            <h1 style="margin:0 0 10px 0;">Red_lnn</h1>
+            <p style="font-weight: bold;margin:5px 0;">社恐 | 游戏菜 | 代码渣 | 懒癌患者</p>
+            <p style="margin:30px 0 10px 0;">这里是个简简单单的主页，什么都没有<br /></p>
             <div>
                 <a href="https://github.com/Redlnn"
                     ><img
@@ -70,7 +63,7 @@ import { PictureRounded } from "@element-plus/icons";
 import { useMeta } from "vue-meta";
 
 const tags = "Red_lnn,博客,blog,个人主页";
-const description = "这里是 Red_lnn 的小空间，感谢你的来访"
+const description = "这里是 Red_lnn 的小空间，感谢你的来访";
 
 export default {
     name: "Home",
@@ -83,11 +76,11 @@ export default {
                 { name: "keywords", content: tags }
             ],
             og: {
-                description: description,
+                description: description
             },
             twitter: {
-                description: description,
-            },
+                description: description
+            }
         });
     },
     components: {
