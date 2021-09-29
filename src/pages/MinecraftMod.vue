@@ -101,61 +101,63 @@
                     <el-table-column prop="desc" label="简介" min-width="250"></el-table-column>
                     <el-table-column prop="download" label="相关地址" width="350">
                         <template #default="scope">
-                            <a
-                                v-bind:href="scope.row.official_url"
-                                v-if="scope.row.official_url"
-                                class="button official"
-                                style="font-weight: 600; letter-spacing: 0.1rem"
-                            >官方网站</a>
-                            <a
-                                v-bind:href="scope.row.modrinth_url"
-                                v-if="scope.row.modrinth_url"
-                                class="button modrinth"
-                            >
-                                <img
-                                    src="@/assets/img/modrinth.svg"
-                                    title="从 Modrinth 下载"
-                                    alt="从 Modrinth 下载"
-                                    style="height: 1.1rem"
-                                />
-                            </a>
-                            <a
-                                v-bind:href="scope.row.curseforge_url"
-                                v-if="scope.row.curseforge_url"
-                                class="button curseforge"
-                            >
-                                <img
-                                    src="@/assets/img/anvil.svg"
-                                    alt="curseforge logo"
-                                    style="width: 1.3rem; margin-right: 0.3rem"
-                                />
-                                <img
-                                    src="@/assets/img/cf-logo.svg"
-                                    title="从 CurseForge 下载"
-                                    alt="从 CurseForge 下载"
-                                    style="height: 0.6rem"
-                                />
-                            </a>
-                            <a
-                                v-bind:href="scope.row.github_url"
-                                v-if="scope.row.github_url"
-                                class="button github"
-                                style="font-weight: 600; letter-spacing: 0.03rem"
-                            >
-                                <img
-                                    src="@/assets/img/github1.svg"
-                                    title="访问 GitHub 仓库"
-                                    alt="访问 GitHub 仓库"
-                                    style="height: 1.1rem; margin-right: 0.3rem"
-                                />GitHub
-                            </a>
-                            <a v-if="scope.row.other_url">
-                                <br />
-                                {{ scope.row.other_url }}
-                            </a>
+                            <div class="tr_url">
+                                <a
+                                    v-bind:href="scope.row.official_url"
+                                    v-if="scope.row.official_url"
+                                    class="button official"
+                                    style="font-weight: 600; letter-spacing: 0.1rem"
+                                >官方网站</a>
+                                <a
+                                    v-bind:href="scope.row.modrinth_url"
+                                    v-if="scope.row.modrinth_url"
+                                    class="button modrinth"
+                                >
+                                    <img
+                                        src="@/assets/img/modrinth.svg"
+                                        title="从 Modrinth 下载"
+                                        alt="从 Modrinth 下载"
+                                        style="height: 1.1rem"
+                                    />
+                                </a>
+                                <a
+                                    v-bind:href="scope.row.curseforge_url"
+                                    v-if="scope.row.curseforge_url"
+                                    class="button curseforge"
+                                >
+                                    <img
+                                        src="@/assets/img/anvil.svg"
+                                        alt="curseforge logo"
+                                        style="width: 1.3rem; margin-right: 0.3rem"
+                                    />
+                                    <img
+                                        src="@/assets/img/cf-logo.svg"
+                                        title="从 CurseForge 下载"
+                                        alt="从 CurseForge 下载"
+                                        style="height: 0.6rem"
+                                    />
+                                </a>
+                                <a
+                                    v-bind:href="scope.row.github_url"
+                                    v-if="scope.row.github_url"
+                                    class="button github"
+                                    style="font-weight: 600; letter-spacing: 0.03rem"
+                                >
+                                    <img
+                                        src="@/assets/img/github1.svg"
+                                        title="访问 GitHub 仓库"
+                                        alt="访问 GitHub 仓库"
+                                        style="height: 1.1rem; margin-right: 0.3rem"
+                                    />GitHub
+                                </a>
+                                <a
+                                    v-if="scope.row.other_url"
+                                    style="margin: 0.2rem 0"
+                                >{{ scope.row.other_url }}</a>
+                            </div>
                         </template>
                     </el-table-column>
-                    <el-table-column prop="mcmod" label="mc百科" width="100">
+                    <el-table-column prop="mcmod" label="mc百科" width="130">
                         <template #default="scope">
                             <a
                                 v-bind:href="scope.row.mcmod_url"
@@ -265,7 +267,7 @@ export default {
 
 .el-table {
     border-radius: 6px;
-    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1)
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
 }
 
 .el-table .el-table__cell {
@@ -293,11 +295,23 @@ export default {
     text-align: left !important;
 }
 
+.tr_url {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: center;
+    vertical-align: middle;
+    text-align: left;
+}
+
 .button {
     position: relative;
     white-space: nowrap;
     height: 1.3rem;
     padding: 0.4rem 0.8rem;
+    margin: 0.2rem 0;
     color: #fff;
     background-color: var(--el-color-primary);
     font-size: 0.7rem;
@@ -312,19 +326,24 @@ export default {
     border-radius: 0.5rem;
 }
 
-.curseforge {
-    background-color: #333333;
-    margin: 0.3rem 0.2rem;
+.button.official,
+.button.modrinth,
+.button.curseforge,
+.button.github {
+    width: 8rem;
+    height: 1.5rem;
 }
 
 .modrinth {
     background-color: #5fa33b;
-    margin: 0.3rem 0.2rem;
+}
+
+.curseforge {
+    background-color: #333333;
 }
 
 .github {
     background-color: #24292f;
-    margin: 0.3rem 0.2rem;
 }
 
 .mcmod {
@@ -339,6 +358,7 @@ export default {
     text-align: left;
     background-color: #f4f4f4;
     border-radius: 5px;
+    line-height: 1.5rem;
 }
 
 .remark p,
