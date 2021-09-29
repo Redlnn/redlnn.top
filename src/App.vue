@@ -63,26 +63,13 @@
 </template>
 
 <script>
-import { useMeta } from "vue-meta";
-
-const author = "Red_lnn";
+// import { useMeta } from "vue-meta";
 
 export default {
     name: "App",
     setup() {
         // https://github.com/nuxt/vue-meta/issues/696#issuecomment-878377182
-        useMeta({
-            meta: [
-                { name: "author", content: author },
-                { name: "publisher", content: author }
-            ],
-            og: {
-                image: "https://www.redlnn.top/asseets/img/avatar.afb54457.webp"
-            },
-            twitter: {
-                image: "https://www.redlnn.top/asseets/img/avatar.afb54457.webp"
-            }
-        });
+        // useMeta({});
     },
     data() {
         return {
