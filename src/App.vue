@@ -155,6 +155,10 @@ footer {
     border-radius: 5px;
 }
 
+.el-popper .el-menu--horizontal {
+    border: none;
+}
+
 .noselect {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
