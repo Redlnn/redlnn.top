@@ -70,7 +70,7 @@ module.exports = {
                         inject: {
                             foo: "bar"
                         },
-                        headless: false,
+                        headless: true,
                         // 在 main.js 中 document.dispatchEvent(new Event('render-event'))，两者的事件名称要对应上
                         renderAfterDocumentEvent: "render-active",
                         // renderAfterElementExists: '.container',
@@ -122,7 +122,6 @@ module.exports = {
         host: "127.0.0.1",
         port: 8080,
         https: false,
-        hotOnly: false,
         proxy: null,
         before: () => {}
     },
