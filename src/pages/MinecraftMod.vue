@@ -1,19 +1,17 @@
 <template>
     <div>
+        <h1>Minecraft 模组列表</h1>
+        <el-divider content-position="center"
+            ><span style="color:var(--el-text-color-placeholder);"
+                >我 是 分 割 线</span
+            ></el-divider
+        >
         <el-row>
             <el-col :xs="0" :sm="2" :md="3" :lg="5" :xl="6"></el-col>
             <el-col :xs="24" :sm="20" :md="18" :lg="14" :xl="12">
                 <el-alert
-                    title="该列表仅包含 1.16 开始常用的模组，仅适用于 Fabric 端，如有修改或添加建议请联系 Red_lnn"
+                    title="该列表仅包含 1.16 起常用的 Fabric 端模组"
                     type="success"
-                    center
-                    show-icon
-                    :closable="closable"
-                    style="margin: 10px 0"
-                ></el-alert>
-                <el-alert
-                    title="Optifine替代品列表：https://gist.github.com/LambdAurora/1f6a4a99af374ce500f250c6b42e8754"
-                    type="info"
                     center
                     show-icon
                     :closable="closable"
@@ -35,23 +33,19 @@
                     :closable="closable"
                     style="margin: 10px 0"
                 ></el-alert>
+                <div class="remark">
+                    <p><strong>提示：</strong></p>
+                    <ul>
+                        <li>本页面中的模组数据可在 <a href="https://github.com/Redlnn/redlnn.top/tree/master/src/assets/mcmod.json">GitHub 仓库</a>中找到，如有修改或增删建议可以发 pr</li>
+                        <li>Optifine替代品列表：<a href="https://gist.github.com/LambdAurora/1f6a4a99af374ce500f250c6b42e8754">GitHub Gist</a></li>
+                    </ul>
+                </div>
             </el-col>
             <el-col :xs="0" :sm="2" :md="3" :lg="5" :xl="6"></el-col>
         </el-row>
-        <!-- <el-row>
-            <el-col :xs="0" :sm="2" :md="3" :lg="4" :xl="5"></el-col>
-            <el-col :xs="24" :sm="20" :md="18" :lg="16" :xl="14">
-                <el-divider content-position="center"
-                    ><span style="color:var(--el-text-color-placeholder);"
-                        >我 是 分 割 线</span
-                    ></el-divider
-                ></el-col
-            >
-            <el-col :xs="0" :sm="2" :md="3" :lg="4" :xl="5"></el-col>
-        </el-row>-->
         <el-row>
-            <el-col :xs="0" :sm="0" :md="0" :lg="0" :xl="2"></el-col>
-            <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="20">
+            <el-col :xs="0" :sm="0" :md="1" :lg="1" :xl="2"></el-col>
+            <el-col :xs="24" :sm="24" :md="22" :lg="22" :xl="20">
                 <el-table
                     stripe
                     :data="tableData"
@@ -184,7 +178,7 @@
                     </el-table-column>
                 </el-table>
             </el-col>
-            <el-col :xs="0" :sm="0" :md="0" :lg="0" :xl="2"></el-col>
+            <el-col :xs="0" :sm="0" :md="1" :lg="1" :xl="2"></el-col>
         </el-row>
     </div>
 </template>
@@ -339,5 +333,24 @@ export default {
 
 .mcmod {
     background-color: #3c454c;
+}
+
+.remark {
+    margin: 10px 0;
+    padding: 1rem;
+    color:var(--el-text-color-secondary);
+    font-size: .9rem;
+    text-align:left;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+.remark p,
+.remark li {
+    margin:.5rem;
+}
+
+.remark a {
+    color:var(--el-text-color-secondary);
 }
 </style>
