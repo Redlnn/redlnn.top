@@ -9,7 +9,7 @@
         "modrinth_url": "#",
         "curseforge_url": "#",
         "github_url": "#",
-        "other_url": "其他地址：#",
+        "other_url": "其他地址：https://www.example.com",
         "mcmod_url": "#"
     },
     {
@@ -17,8 +17,8 @@
         "nameCN": "高级聊天",
         "type": "修改界面",
         "applation": "客户端",
-        "desc": "对话框拥有更多功能，增加各类可配置项目，可以查询聊天记录。\n会使Chat Calc、Chat Emote、Chat Heads、Chat Up等所有聊天框相关Mod失效",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/advancedchat/files"
+        "desc": "对话框拥有更多功能，增加各类可配置项目，可以查询聊天记录。\n会使Chat Calc、Chat Emote、Chat Heads、Chat Up等与聊天框相关Mod失效",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/advancedchat"
     },
     {
         "name": "Advancement Info",
@@ -26,115 +26,131 @@
         "type": "修改界面",
         "applation": "客户端",
         "desc": "显示成就的具体描述，提示所缺少的条件",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/advancementinfo/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/advancementinfo",
+        "github_url": "https://github.com/gbl/AdvancementInfo"
     },
     {
         "name": "AFKPeace",
         "nameCN": "安心挂机",
         "type": "联机优化",
-        "applation": "客户端",
-        "desc": "让你安心挂机的Mod，提供了断线重连、受伤断连等功能，并都是可配置的",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/afkpeace/files"
+        "applation": "通用",
+        "desc": "提供了断线重连、受伤断连等功能",
+        "modrinth_url": "https://www.modrinth.com/mod/afkpeace",
+        "github_url": "https://github.com/AMereBagatelle/AFKPeace",
+        "mcmod_url": "https://www.mcmod.cn/class/4090.html"
     },
     {
         "name": "Amecs",
         "type": "增加功能",
         "applation": "客户端",
-        "desc": "添加更多按键绑定选择，原版一次直接绑定一个键，安装此mod后，你可以像这样绑定键：（contro+ALt+Shift+c）添加搜索条，可以搜索已绑定的按键，amecs允许一个键只绑定多种功能。与optifine有冲突",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/amecs/files"
+        "desc": "允许原版功能绑定组合键；可搜索已绑定的按键；允许一个键绑定多种功能。与 Optifine 有冲突",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/amecs",
+        "github_url": "https://github.com/Siphalor/amecs",
+        "mcmod_url": "https://www.mcmod.cn/class/2003.html"
     },
     {
         "name": "AntiGhost",
-        "nameCN": "反幽灵方块",
+        "nameCN": "方块同步修复/反幽灵方块",
         "type": "联机优化",
-        "applation": "通用",
-        "desc": "通过强制要求服务器重新发送周边的方块信息达到取消客户端的幽灵方块的效果，可能会加大服务器压力",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/antighost/files"
+        "applation": "客户端",
+        "desc": "用以解决因挖掘速度过快和服务器客户端药水效果结束后不同步导致的方块不同步问题\n可强制要求服务器重新发送周边的方块信息达到取消客户端的幽灵方块的效果\n默认快捷键为 G，也添加了一个命令 /ghost",
+        "modrinth_url": "https://modrinth.com/mod/antighost",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/antighost",
+        "github_url": "https://github.com/gbl/AntiGhost",
+        "mcmod_url": "https://www.mcmod.cn/class/3426.html"
     },
     {
         "name": "AppleSkin",
         "nameCN": "苹果皮",
         "type": "信息展示",
         "applation": "通用",
-        "desc": "饱和度显示",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/appleskin/files"
+        "desc": "在物品栏中显示每个食物可恢复的饱食度和饱和度；在饱食度条上显示剩余饱和度",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/appleskin",
+        "mcmod_url": "https://www.mcmod.cn/class/744.html"
     },
     {
-        "name": "Architectury",
+        "name": "Architectury API",
         "type": "前置API",
         "applation": "通用",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/architectury-fabric/files"
+        "desc": "对fabric API和forge API的抽象化调用",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/architectury-fabric",
+        "github_url": "https://github.com/architectury/architectury",
+        "mcmod_url": "https://www.mcmod.cn/class/3434.html"
     },
     {
         "name": "audiooutput",
         "nameCN": "音频输出设备选择",
         "type": "增加功能",
         "applation": "客户端",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/audio-output/files"
-    },
-    {
-        "name": "Auth Me",
-        "type": "联机优化",
-        "applation": "客户端",
-        "desc": "游戏内正版登录/切换正版账号，外置登录/离线用户勿装",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/auth-me/files",
-        "modrinth_url": "https://modrinth.com/mod/auth-me"
+        "desc": "在游戏音频选项中增加选择音频输入设备的功能，以解决插入耳机后没声音等bug，在 Minecraft 1.18 中已被 Mojang 实现",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/audio-output"
     },
     {
         "name": "AuthDomain",
         "type": "增加功能",
         "applation": "服务端",
-        "desc": "禁止玩家使用未经允许的域名进入服务器，或者是未使用允许域名的查询服务器状态请求",
+        "desc": "禁止玩家使用未经允许的域名进入服务器，或是使用未经允许的域名请求查询服务器状态",
         "github_url": "https://github.com/Forgot-Dream/Authdomain",
-        "modrinth_url": "https://www.bilibili.com/read/cv9786524"
+        "other_url": "介绍：https://www.bilibili.com/read/cv9786524"
     },
     {
         "name": "Auto Reconnect",
         "nameCN": "自动重连",
         "type": "联机优化",
         "applation": "客户端",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/autoreconnect/files"
+        "desc": "当在多人游戏中异常断开与服务器的连接后，将会自动重连，可使用 AFKPeace 代替",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/autoreconnect"
     },
     {
         "name": "Autofish",
         "nameCN": "自动钓鱼",
         "type": "辅助操作",
-        "applation": "客户端",
+        "applation": "通用",
         "desc": "在部分服务器可能会当作作弊处理",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/autofish/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/autofish",
+        "github_url": "https://github.com/MrTroot/autofish",
+        "mcmod_url": "https://www.mcmod.cn/class/262.html"
     },
     {
         "name": "BBOR\nBounding Box Outline Reloaded",
+        "nameCN": "自然生成建筑结构显示",
         "type": "信息展示",
         "applation": "通用",
         "desc": "查看结构、生物群系边界，服务器使用需配合服务器mod，建议使用MiniHUD代替",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/bounding-box-outline-reloaded/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/bounding-box-outline-reloaded",
+        "github_url": "https://github.com/irtimaled/BoundingBoxOutlineReloaded",
+        "mcmod_url": "https://www.mcmod.cn/class/1869.html"
     },
     {
         "name": "Beenfo",
         "nameCN": "蜂箱信息查看",
         "type": "信息展示",
         "applation": "通用",
-        "desc": "在背包鼠标悬浮菜单查看蜂箱信息",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/beenfo/files",
-        "modrinth_url": "https://modrinth.com/mod/beenfo"
+        "desc": "在背包鼠标悬浮菜单查看蜂箱信息\n当服务端安装了这个 Mod 后，玩家可以直接右键蜂箱打开 GUI 来查看当前蜂箱的状态\n这个 Mod 的 Fabric 版本同时也是一个 Spigot 插件",
+        "modrinth_url": "https://modrinth.com/mod/beenfo",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/beenfo",
+        "github_url": "https://github.com/gbl/Beenfo",
+        "mcmod_url": "https://www.mcmod.cn/class/3535.html"
     },
     {
         "name": "Better Beds",
         "nameCN": "更好的床",
         "type": "性能优化",
         "applation": "客户端",
-        "desc": "使床以普通方块而不是方块实体的方式渲染\n（可以提升渲染速度。并自带床模型及床连接的材质包。）",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/better-beds/files",
-        "modrinth_url": "https://modrinth.com/mod/better-beds"
+        "desc": "移除了床的方块实体渲染器，并用默认的 Minecraft 模型渲染器替换它以提高游戏性能\n（自带床模型及多张床连接的材质包。）",
+        "modrinth_url": "https://modrinth.com/mod/better-beds",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/better-beds",
+        "mcmod_url": "https://www.mcmod.cn/class/4356.html"
     },
     {
         "name": "Better Enchanted Books",
         "nameCN": "更好的附魔书",
         "type": "修改界面",
-        "applation": "客户端",
-        "desc": "可以给附魔书添加专属材质",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/better-enchanted-books/files"
+        "applation": "通用",
+        "desc": "1. 为每种附魔的附魔书指定自定义的颜色，这些颜色将显示在附魔书的彩带上\n2. 在工具提示中为附魔排序，你可以自定义顺序，也可以只按字母顺序排列\n3. 选择是否禁止附魔书的闪烁\n4. 在工具提示中显示每个附魔可以应用于哪些物品（可配置）",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/better-enchanted-books",
+        "github_url": "https://github.com/Bernasss12/BetterEnchantedBooks",
+        "mcmod_url": "https://www.mcmod.cn/class/4331.html"
     },
     {
         "name": "Better Local Server",
@@ -142,23 +158,27 @@
         "type": "联机优化",
         "applation": "客户端",
         "desc": "为“对局域网开放”添加更多可配置项目",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/better-local-server/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/better-local-server",
+        "github_url": "https://github.com/Rederpz/Better-Local-Server"
     },
     {
         "name": "Better Minecart Rotation",
         "nameCN": "更好的矿车视角",
         "type": "辅助操作",
         "applation": "客户端",
-        "desc": "让玩家的视角自动跟随矿车旋转",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/minecart-direction-follow/files"
+        "desc": "让玩家的视角自动跟随矿车旋转\n使用F7打开控制菜单以切换模式\n1. 平滑模式smooth mode：使旋转更为平滑\n2. 智能模式smart mode\n3.过山车模式roller-coaster mode：让你的视角一直保持在矿车前面",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/minecart-direction-follow",
+        "github_url": "https://github.com/KosmX/lock-minecart-view"
     },
     {
         "name": "Better Ping Display",
-        "nameCN": "更好的ping显示",
+        "nameCN": "更好的延迟显示",
         "type": "修改界面",
         "applation": "客户端",
-        "desc": "在tab显示所有玩家的ping值",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/better-ping-display-fabric/files"
+        "desc": "在 Tab 玩家列表中以数字形式显示每个玩家的 Ping",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/better-ping-display-fabric",
+        "github_url": "https://github.com/vladmarica/better-ping-display-fabric",
+        "mcmod_url": "https://www.mcmod.cn/class/2950.html"
     },
     {
         "name": "Better Sodium Video Settings Button",
@@ -166,24 +186,28 @@
         "type": "性能优化",
         "applation": "客户端",
         "desc": "保留原版的视频设置，让钠的配置界面显得不那么突兀",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/better-sodium-video-settings-button/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/better-sodium-video-settings-button",
+        "github_url": "https://github.com/LimeShulkerBox/better-sodium-video-settings"
     },
     {
         "name": "Better Third Person",
         "nameCN": "更好的第三人称",
         "type": "其他",
         "applation": "客户端",
-        "desc": "在第三人称中按方向键移动会带动人物身体转动，来达到更加舒适的第三人称视角\n与Perspective Mod Redux存在功能性兼容问题，会使视角转动看起来比较奇怪。\n与Camera Overhaul存在功能性兼容问题，会使第三人称中出现奇怪的抖动。",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/better-third-person/files"
+        "desc": "这个 mod 添加了一个新的第三人称观察模式。这个新的模式不会被玩家的朝向所影响，并且可以自由的旋转视角\n与Perspective Mod Redux存在功能性兼容问题，会使视角转动看起来比较奇怪。\n与Camera Overhaul存在功能性兼容问题，会使第三人称中出现奇怪的抖动。",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/better-third-person",
+        "mcmod_url": "https://www.mcmod.cn/class/3492.html"
     },
     {
         "name": "BetterF3",
         "nameCN": "更好的F3",
         "type": "修改界面",
         "applation": "客户端",
-        "desc": "F3界面分类、动画、上色",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/betterf3/files",
-        "modrinth_url": "https://modrinth.com/mod/betterf3"
+        "desc": "F3界面汉化、分类、动画、上色",
+        "modrinth_url": "https://modrinth.com/mod/betterf3",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/betterf3",
+        "github_url": "https://github.com/cominixo/BetterF3",
+        "mcmod_url": "https://www.mcmod.cn/class/3525.html"
     },
     {
         "name": "Borderless Mining",
@@ -191,14 +215,15 @@
         "type": "其他",
         "applation": "客户端",
         "desc": "可以将MC全屏更改成无边框全屏，避免切换窗口时游戏窗口最小化",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/borderless-mining/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/borderless-mining",
+        "github_url": "https://github.com/comp500/BorderlessMining"
     },
     {
         "name": "Break Process",
         "type": "信息展示",
         "applation": "客户端",
         "desc": "Hwyla/WTHIT 附属 - 显示破坏进度",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/break-progress/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/break-progress"
     },
     {
         "name": "Bright Ore",
@@ -206,7 +231,7 @@
         "type": "辅助操作",
         "applation": "客户端",
         "desc": "可能涉及作弊",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/bright-ore/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/bright-ore"
     },
     {
         "name": "Camera Overhaul",
@@ -214,21 +239,21 @@
         "type": "其他",
         "applation": "客户端",
         "desc": "添加非常明显的镜头摇晃效果，会使画面看起来很晕，建议可以调小效果，获得微小的视觉效果提升。\n与Better Third Person存在功能性兼容问题，会使第三人称中的某些视角下出现画面抖动。",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/cameraoverhaul/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/cameraoverhaul"
     },
     {
         "name": "cAn i MiNe thIS bLOCk?",
         "type": "信息展示",
         "applation": "客户端",
         "desc": "Hwyla/WTHIT 附属 - 显示可破坏情况",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/can-i-mine-this-block/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/can-i-mine-this-block"
     },
     {
         "name": "Carpet",
         "nameCN": "地毯",
         "type": "增加功能",
         "applation": "通用",
-        "github_url": "https://github.com/gnembon/fabric-carpet/releases"
+        "github_url": "https://github.com/gnembon/fabric-carpet"
     },
     {
         "name": "Carpet Extra",
@@ -236,7 +261,7 @@
         "type": "增加功能",
         "applation": "通用",
         "desc": "给地毯添加更多功能，需要地毯作为前置",
-        "github_url": "https://github.com/gnembon/carpet-extra/releases"
+        "github_url": "https://github.com/gnembon/carpet-extra"
     },
     {
         "name": "Carpet TIS Addition",
@@ -244,7 +269,7 @@
         "type": "增加功能",
         "applation": "通用",
         "desc": "给地毯添加更多功能，由TIS服务器开发，需要地毯作为前置",
-        "github_url": "https://github.com/TISUnion/Carpet-TIS-Addition/releases"
+        "github_url": "https://github.com/TISUnion/Carpet-TIS-Addition"
     },
     {
         "name": "Carpet TCTC Addition",
@@ -260,14 +285,14 @@
         "type": "修改界面",
         "applation": "客户端",
         "desc": "在聊天框中显示玩家头像",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/chat-heads/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/chat-heads"
     },
     {
         "name": "Chat Up!",
         "type": "修改界面",
         "applation": "客户端",
         "desc": "gnembon写的一个小Mod，把聊天框的位置稍微提高了10个像素，就不会挡住盔甲栏了。",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/chat-up/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/chat-up"
     },
     {
         "name": "Cherished Worlds",
@@ -275,7 +300,7 @@
         "type": "修改界面",
         "applation": "客户端",
         "desc": "为单人游戏存档添加收藏按钮并置顶",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/cherished-worlds-fabric/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/cherished-worlds-fabric"
     },
     {
         "name": "Chunk Borders",
@@ -283,26 +308,26 @@
         "type": "修改界面",
         "applation": "客户端",
         "desc": "显示区块边界，比原版的F3+G简洁一些。打开配置页面可能会导致游戏崩溃",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/chunkborders/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/chunkborders"
     },
     {
         "name": "ClickThrough",
         "type": "辅助操作",
         "applation": "客户端",
         "desc": "在右键贴在箱子（等容器）上的牌子（展示框）时，变为越过牌子右键箱子，要右键牌子请按住shift的同时右键，可能会被认为是作弊",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/clickthrough/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/clickthrough"
     },
     {
         "name": "Cloth API",
         "type": "前置API",
         "applation": "通用",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/cloth-api/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/cloth-api"
     },
     {
         "name": "Cloth Config API",
         "type": "前置API",
         "applation": "通用",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/cloth-config/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/cloth-config"
     },
     {
         "name": "Color Unchained",
@@ -310,7 +335,7 @@
         "type": "增加功能",
         "applation": "通用",
         "desc": "需要服务器和客户端同时安装才有用",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/color-unchained/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/color-unchained"
     },
     {
         "name": "Colormatic",
@@ -318,13 +343,13 @@
         "type": "增加功能",
         "applation": "客户端",
         "desc": "自定义客户端显示的各种颜色（不影响服务端）：不同生物群系下的天空、水、部分方块、水下视角、岩浆下视角、迷雾的颜色；不同维度的光照映射；聊天颜色；染料颜色",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/colormatic/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/colormatic"
     },
     {
         "name": "CompleteConfig",
         "type": "前置API",
         "applation": "通用",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/completeconfig/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/completeconfig"
     },
     {
         "name": "Controlling For Fabric",
@@ -332,14 +357,14 @@
         "type": "增加功能",
         "applation": "客户端",
         "desc": "为控制菜单添加搜索栏、查看冲突与未绑定快捷键等，与Amecs功能类似。",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/controlling-for-fabric/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/controlling-for-fabric"
     },
     {
         "name": "Cull Leaves",
         "type": "性能优化",
         "applation": "客户端",
         "desc": "使树叶的渲染方式与Optifine中设置为“快速”一样\n效果建议看网页内的预览图",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/cull-leaves/files",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/cull-leaves",
         "modrinth_url": "https://modrinth.com/mod/cull-leaves"
     },
     {
@@ -348,7 +373,7 @@
         "type": "性能优化",
         "applation": "客户端",
         "desc": "像Optifine一样自定义迷雾的距离与浓度",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/custom-fog/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/custom-fog"
     },
     {
         "name": "Custom skin loader",
@@ -356,14 +381,14 @@
         "type": "其他",
         "applation": "客户端",
         "desc": "显示第三方皮肤站的皮肤和披风（不支持opt披风）",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/customskinloader/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/customskinloader"
     },
     {
         "name": "Damage Tilt",
         "type": "修改界面",
         "applation": "客户端",
         "desc": "优化受伤动画，当玩家受到伤害时会抖动视角，模拟真实的受伤视角",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/damage-tilt/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/damage-tilt"
     },
     {
         "name": "Dark Loading Screen",
@@ -371,14 +396,14 @@
         "type": "修改界面",
         "applation": "客户端",
         "desc": "把启动加载界面背景的红色改为黑色，还可以更改Mojang logo的颜色",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/dark-loading-screen/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/dark-loading-screen"
     },
     {
         "name": "DashLoader",
         "type": "性能优化",
         "applation": "客户端",
         "desc": "启动加载提速，可能存在兼容性问题，服务端不兼容",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/dashloader/files",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/dashloader",
         "modrinth_url": "https://modrinth.com/mod/dashloader"
     },
     {
@@ -386,14 +411,14 @@
         "type": "信息展示",
         "applation": "客户端",
         "desc": "显示背包物品耐久，在物品栏中显示物品经过耐久附魔换算后的预期使用次数",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/durability101/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/durability101"
     },
     {
         "name": "Durability Viewer",
         "nameCN": "耐久显示",
         "type": "信息展示",
         "applation": "客户端",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/giselbaers-durability-viewer/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/giselbaers-durability-viewer"
     },
     {
         "name": "Dynamic FPS",
@@ -401,7 +426,7 @@
         "type": "性能优化",
         "applation": "客户端",
         "desc": "使mc在后台（失去焦点时）以较低的FPS渲染，可配置，类似Nvidia控制面板中的相关功能",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/dynamic-fps/files",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/dynamic-fps",
         "modrinth_url": "https://modrinth.com/mod/dynamic-fps"
     },
     {
@@ -410,14 +435,14 @@
         "type": "其他",
         "applation": "客户端",
         "desc": "优化声音混响，为游戏音效添加混响等，声音效果更加真实，用了就知道有多舒服",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/dynamic-sound-filters/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/dynamic-sound-filters"
     },
     {
         "name": "Easier Chests",
         "type": "辅助操作",
         "applation": "客户端",
         "desc": "物品栏快捷操作（如整理、移动整一排/列物品）",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/easierchests/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/easierchests"
     },
     {
         "name": "Easier Crafting",
@@ -425,7 +450,7 @@
         "type": "辅助操作",
         "applation": "客户端",
         "desc": "在右侧GUI显示当前能合成的物品并可快速合成，可能会被认为是作弊",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/easiercrafting/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/easiercrafting"
     },
     {
         "name": "Easier Villager Trading",
@@ -433,14 +458,14 @@
         "type": "辅助操作",
         "applation": "客户端",
         "desc": "去除了村民交易中移动物品这一步骤，点击交易列表即可交易。ItemScroller可能会使本mod失效。可能会被认为是作弊",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/easiervillagertrading/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/easiervillagertrading"
     },
     {
         "name": "Elytra Auto Flight",
         "type": "辅助操作",
         "applation": "客户端",
         "desc": "可以自动在鞘翅滑翔中调整至最佳视角，不使用火箭即可一直飞，而且海拔也会越来越高，并显示飞行曲线图。不过要注意它并不会判断飞行中的障碍物。可能会被认为是作弊",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/elytra-auto-flight/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/elytra-auto-flight"
     },
     {
         "name": "Enchantment Description",
@@ -448,7 +473,7 @@
         "type": "信息展示",
         "applation": "客户端",
         "desc": "为物品栏中附魔书的提示添加附魔的介绍",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions"
     },
     {
         "name": "Enhanced Attack Indicator",
@@ -456,7 +481,7 @@
         "type": "增加功能",
         "applation": "客户端",
         "desc": "让攻击指示器能指示更多内容，如食物进食、弓弩蓄力、末影珍珠cd等",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/enhanced-attack-indicator/files",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/enhanced-attack-indicator",
         "modrinth_url": "https://modrinth.com/mod/enhanced-attack-indicator"
     },
     {
@@ -465,7 +490,7 @@
         "type": "性能优化",
         "applation": "客户端",
         "desc": "使箱子、床等实体方块以普通方块而不是方块实体的方式渲染，相比其他同类mod，该mod可以保留箱子的打开动画，更好一点。\n与Sodium不兼容，在有Indium的情况下与Sodium兼容。\n可代替 Better Beds 和 Fast Chest",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/enhanced-block-entities/files",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/enhanced-block-entities",
         "modrinth_url": "https://modrinth.com/mod/ebe"
     },
     {
@@ -473,7 +498,7 @@
         "type": "性能优化",
         "applation": "客户端",
         "desc": "不渲染视角外的不可见实体和被方块挡住的无法寻路的实体\n由于使用了较为简单的视线路径算法，所以可能会出现视线角落处的实体也不渲染的情况。当玩家头部在方块内时，会看不到实体。\n与Entity Outliner兼容，当实体高亮时依然渲染",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/entityculling/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/entityculling"
     },
     {
         "name": "Entity Outliner",
@@ -481,7 +506,7 @@
         "type": "修改界面",
         "applation": "客户端",
         "desc": "高亮显示实体（给实体常驻不同颜色的发光效果）",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/entity-outliner/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/entity-outliner"
     },
     {
         "name": "Euclid",
@@ -489,7 +514,7 @@
         "type": "信息展示",
         "applation": "客户端",
         "desc": "创世神选择范围查看（貌似已停更）",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/euclid/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/euclid"
     },
     {
         "name": "Extra Player Renderer",
@@ -504,7 +529,7 @@
         "type": "前置API",
         "applation": "通用",
         "desc": "大部分MOD的前置API",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/fabric-api/files",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/fabric-api",
         "modrinth_url": "https://modrinth.com/mod/fabric-api"
     },
     {
@@ -513,14 +538,14 @@
         "type": "联机优化",
         "applation": "客户端",
         "desc": "显示第三方皮肤站与Optifine的披风",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/capes/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/capes"
     },
     {
         "name": "Fabric Language Kotlin",
         "type": "前置API",
         "applation": "通用",
         "desc": "为使用Kotlin语言编写的mod提升支持",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/fabric-language-kotlin/files",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/fabric-language-kotlin",
         "modrinth_url": "https://modrinth.com/mod/fabric-language-kotlin"
     },
     {
@@ -528,21 +553,21 @@
         "type": "联机优化",
         "applation": "服务端",
         "desc": "（已停更）使服务端支持BungeeCore和Velocity",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/fabricproxy/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/fabricproxy"
     },
     {
         "name": "FabricProxy-Lite",
         "type": "联机优化",
         "applation": "服务端",
         "desc": "使服务端支持Velocity",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/fabricproxy-lite/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/fabricproxy-lite"
     },
     {
         "name": "Fabrishot",
         "type": "增加功能",
         "applation": "客户端",
         "desc": "超分辨率截图，与Optifine的“截图分辨率”相似，按键为F9",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/fabrishot/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/fabrishot"
     },
     {
         "name": "Fabulously Optimized",
@@ -550,7 +575,7 @@
         "type": "性能优化",
         "applation": "通用",
         "desc": "大量优化和辅助mod的集合体，不要与其他性能优化mod一起安装\n不建议使用，建议单独安装其列表中的mod",
-        "curseforge_url": "https://www.curseforge.com/minecraft/modpacks/fabulously-optimized/files",
+        "curseforge_url": "https://www.curseforge.com/minecraft/modpacks/fabulously-optimized",
         "github_url": "https://github.com/Madis0/fabulously-optimized"
     },
     {
@@ -559,14 +584,14 @@
         "type": "修改界面",
         "applation": "客户端",
         "desc": "需Konkrete作为前置，让玩家可自定义修改游戏内所有GUI窗口的布局及添加删除新控件\nWiki：http://fm.keksuccino.de/books/fancymenu-v17x\n与Cherished Worlds存在兼容问题，无法使收藏的世界置顶。\n与Smooth Scrolling Everywhere存在兼容问题，会使平滑滚动失效，但是Fancy Menu已经内建了平滑滚动的功能选项。\n与Optifine存在兼容问题，会在每次重新启动游戏重置快捷键。",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/fancymenu-fabric/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/fancymenu-fabric"
     },
     {
         "name": "Fast Bench",
         "type": "性能优化",
         "applation": "客户端",
         "desc": "通过缓存合成表来降低工作台卡顿",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/fastbench-for-fabric/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/fastbench-for-fabric"
     },
     {
         "name": "Fast Chest",
@@ -581,7 +606,7 @@
         "type": "性能优化",
         "applation": "客户端",
         "desc": "通过缓存熔炉合成表来降低熔炉工作卡顿",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/fast-furnace-for-fabric/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/fast-furnace-for-fabric"
     },
     {
         "name": "FerriteCore",
@@ -589,7 +614,7 @@
         "type": "性能优化",
         "applation": "通用",
         "desc": "减少内存占用，与Hydrogen（氢）冲突",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/ferritecore-fabric/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/ferritecore-fabric"
     },
     {
         "name": "First Person Model ",
@@ -597,7 +622,7 @@
         "type": "修改界面",
         "applation": "客户端",
         "desc": "渲染在第一人称视角下的人物模型，并支持将玩家皮肤以3D体素形式渲染。并可以更改人物模型以及在屏幕上渲染额外的纸娃娃模型",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/first-person-model/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/first-person-model"
     },
     {
         "name": "Focal Engine",
@@ -619,14 +644,14 @@
         "type": "辅助操作",
         "applation": "客户端",
         "desc": "攻击实体时，使目标不为指针与实体之间的草",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/grass-pass/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/grass-pass"
     },
     {
         "name": "HealthCare",
         "nameCN": "血量显示",
         "type": "信息展示",
         "applation": "客户端",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/healthcare/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/healthcare"
     },
     {
         "name": "Held Item Info",
@@ -634,7 +659,7 @@
         "type": "信息展示",
         "applation": "客户端",
         "desc": "在快捷栏选中物品时显示一些信息，比如说附魔等",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/held-item-info/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/held-item-info"
     },
     {
         "name": "Hopper Optimization",
@@ -649,7 +674,7 @@
         "type": "修改界面",
         "applation": "客户端",
         "desc": "显示在屏幕顶部的玩家正指向的方块或实体的信息（貌似已停更）",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/hwyla/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/hwyla"
     },
     {
         "name": "Hydrogen",
@@ -657,7 +682,7 @@
         "type": "性能优化",
         "applation": "通用",
         "desc": "在锂的基础上增加一些更激进的优化，主要优化游戏内存占用，与Optifine冲突",
-        "github_url": "https://github.com/CaffeineMC/hydrogen-fabric/releases"
+        "github_url": "https://github.com/CaffeineMC/hydrogen-fabric"
     },
     {
         "name": "i18n Update",
@@ -665,7 +690,7 @@
         "type": "其他",
         "applation": "客户端",
         "desc": "一个为中国玩家提供本地化的模组，安装并更新一个用于翻译Mod文本的资源包",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/i18nupdatemod/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/i18nupdatemod"
     },
     {
         "name": "Indium",
@@ -673,7 +698,7 @@
         "type": "性能优化",
         "applation": "客户端",
         "desc": "为使用Sodium的客户端提供Fabric Rendering API支持以兼容其他mod",
-        "github_url": "https://github.com/comp500/Indium/releases"
+        "github_url": "https://github.com/comp500/Indium"
     },
     {
         "name": "IngameIME",
@@ -681,7 +706,7 @@
         "type": "增加功能",
         "applation": "客户端",
         "desc": "使输入法候选栏在窗口模式时显示在正确的位置，在全屏时能够显示出来（基于系统当前输入法，非单独的输入法）",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/ingameime/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/ingameime"
     },
     {
         "name": "Inv Move",
@@ -689,7 +714,7 @@
         "type": "增加功能",
         "applation": "客户端",
         "desc": "让玩家在打开物品栏的时候可以继续使用方向键操控移动",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/invmove-fabric/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/invmove-fabric"
     },
     {
         "name": "Inventory Profile",
@@ -697,14 +722,14 @@
         "type": "辅助操作",
         "applation": "通用",
         "desc": "（貌似已停更，使用Inventory Profiles Next代替）",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/inventory-profiles/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/inventory-profiles"
     },
     {
         "name": "Inventory Profiles Next",
         "nameCN": "背包与箱子整理",
         "type": "辅助操作",
         "applation": "通用",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next"
     },
     {
         "name": "InventoryHUD",
@@ -712,7 +737,7 @@
         "type": "修改界面",
         "applation": "客户端",
         "desc": "含耐久显示、药水效果显示、背包显示",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/inventory-hud-forge/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/inventory-hud-forge"
     },
     {
         "name": "Iris",
@@ -721,8 +746,8 @@
         "applation": "客户端",
         "desc": "1.16及以上的新的光影模组，暂时兼容性不太行，仅支持少部分光影，分两种版本，一种自带Sodium、一种要以Sodium作前置，与Optifine不兼容",
         "official_url": "https://irisshaders.net",
-        "github_url": "https://github.com/IrisShaders/Iris/releases",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/irisshaders/files"
+        "github_url": "https://github.com/IrisShaders/Iris",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/irisshaders"
     },
     {
         "name": "Item Model Fix",
@@ -730,7 +755,7 @@
         "type": "性能优化",
         "applation": "客户端",
         "desc": "修复3D物品（如剑、各种工具）的在模型边缘折叠材质的地方出现透明像素的问题",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/item-model-fix/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/item-model-fix"
     },
     {
         "name": "ItemScroller",
@@ -751,7 +776,7 @@
         "type": "联机优化",
         "applation": "通用",
         "desc": "网络优化并降低联机时的CPU占用与mspt\n请勿使用该mod小游戏服，有封号风险，也可能无法连接",
-        "modrinth_url": "https://modrinth.com/mod/krypton/versions"
+        "modrinth_url": "https://modrinth.com/mod/krypton"
     },
     {
         "name": "LambdaBetterGrass",
@@ -759,7 +784,7 @@
         "type": "增加功能",
         "applation": "客户端",
         "desc": "与Opt、Sodium不兼容，在有Indium的情况下与Sodium兼容",
-        "modrinth_url": "https://modrinth.com/mod/lambdabettergrass/versions"
+        "modrinth_url": "https://modrinth.com/mod/lambdabettergrass"
     },
     {
         "name": "LambdaControls",
@@ -767,7 +792,7 @@
         "type": "增加功能",
         "applation": "客户端",
         "desc": "使客户端支持使用手柄，不兼容较多Mod，如Optifine等",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/lambdacontrols/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/lambdacontrols"
     },
     {
         "name": "lambDynamicLights",
@@ -775,14 +800,14 @@
         "type": "增加功能",
         "applation": "客户端",
         "desc": "与opt不兼容",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/lambdynamiclights/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/lambdynamiclights"
     },
     {
         "name": "Lazy DFU",
         "type": "性能优化",
         "applation": "客户端",
         "desc": "缓式加载MC的DataFixerUpper，可能可以提升游戏的启动速度，与Dashloader冲突，会稍微增加加载某些地图的时间",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/lazydfu/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/lazydfu"
     },
     {
         "name": "Light Overlay",
@@ -790,7 +815,7 @@
         "type": "信息展示",
         "applation": "客户端",
         "desc": "需Architectury前置，建议使用masa的MiniHUD中的功能代替，默认按键为F7",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/light-overlay/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/light-overlay"
     },
     {
         "name": "Litematica",
@@ -806,9 +831,9 @@
         "type": "性能优化",
         "applation": "通用",
         "desc": "性能优化",
-        "github_url": "https://github.com/CaffeineMC/lithium-fabric/releases",
-        "modrinth_url": "https://modrinth.com/mod/lithium/versions",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/lithium/files"
+        "github_url": "https://github.com/CaffeineMC/lithium-fabric",
+        "modrinth_url": "https://modrinth.com/mod/lithium",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/lithium"
     },
     {
         "name": "malilib",
@@ -822,14 +847,14 @@
         "nameCN": "环境音效",
         "type": "增加功能",
         "applation": "客户端",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/mambience/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/mambience"
     },
     {
         "name": "masa gadget",
         "type": "辅助操作",
         "applation": "客户端",
         "desc": "优化masa系列mod，使其更易用",
-        "github_url": "https://github.com/plusls/MasaGadget/releases"
+        "github_url": "https://github.com/plusls/MasaGadget"
     },
     {
         "name": "minihud",
@@ -845,7 +870,7 @@
         "type": "修改界面",
         "applation": "客户端",
         "desc": "自定义简化菜单，比如说可以去掉基本用不到的Realms，可以为单人游戏添加打开游戏文件夹的按钮",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/minimal-menu/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/minimal-menu"
     },
     {
         "name": "ModMenu",
@@ -853,14 +878,14 @@
         "type": "增加功能",
         "applation": "客户端",
         "desc": "同时也作为一些mod的前置",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/modmenu/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/modmenu"
     },
     {
         "name": "More Tooltips",
         "type": "信息展示",
         "applation": "客户端",
         "desc": "在物品的鼠标悬浮界面中显示更多信息",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/more-tooltips/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/more-tooltips"
     },
     {
         "name": "Mouse Wheelie",
@@ -868,14 +893,14 @@
         "type": "增加功能",
         "applation": "客户端",
         "desc": "给鼠标滚轮增加更多功能，不建议与ItemScroller一起使用，可能会被认为是作弊",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/mouse-wheelie/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/mouse-wheelie"
     },
     {
         "name": "multiconnect",
         "type": "联机优化",
         "applation": "客户端",
         "desc": "用高版本客户端连接低版本世界，推荐使用ViaFabric",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/multiconnect/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/multiconnect"
     },
     {
         "name": "No Fade",
@@ -883,7 +908,7 @@
         "type": "修改界面",
         "applation": "客户端",
         "desc": "移除进入和退出Mojang进度条界面的渐隐，没有优化效果（如果渐隐会卡，那就有一点效果）",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/no-fade/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/no-fade"
     },
     {
         "name": "Not Enough Antimations",
@@ -891,7 +916,7 @@
         "type": "其他",
         "applation": "客户端",
         "desc": "为吃东西、划船等动作提供人物动画",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/not-enough-animations/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/not-enough-animations"
     },
     {
         "name": "Not Enough Crashes",
@@ -899,14 +924,14 @@
         "type": "其他",
         "applation": "客户端",
         "desc": "不太建议使用，可能会让某些mod出错",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/not-enough-crashes/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/not-enough-crashes"
     },
     {
         "name": "okZoomer",
         "nameCN": "视角放大",
         "type": "增加功能",
         "applation": "客户端",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/ok-zoomer/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/ok-zoomer"
     },
     {
         "name": "optiFabric",
@@ -914,7 +939,7 @@
         "type": "前置API",
         "applation": "客户端",
         "desc": "装了这个就必须装Optifine",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/optifabric/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/optifabric"
     },
     {
         "name": "Optifine",
@@ -929,7 +954,7 @@
         "type": "信息展示",
         "applation": "客户端",
         "desc": "原作者有两位，其中的一位负责人的旧Github仓库和CurseForge页面已停止更新，另一位在新的Github仓库更新，但需要自己编译",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/orderly/files",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/orderly",
         "github_url": "https://github.com/plusls/Orderly"
     },
     {
@@ -937,7 +962,7 @@
         "type": "信息展示",
         "applation": "客户端",
         "desc": "显示宠物的主人",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/pet-owner/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/pet-owner"
     },
     {
         "name": "Phosphorus",
@@ -945,8 +970,8 @@
         "type": "性能优化",
         "applation": "通用",
         "desc": "光照优化",
-        "github_url": "https://github.com/CaffeineMC/phosphor-fabric/releases",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/phosphor/files"
+        "github_url": "https://github.com/CaffeineMC/phosphor-fabric",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/phosphor"
     },
     {
         "name": "Pistorder",
@@ -968,7 +993,7 @@
         "type": "联机优化",
         "applation": "客户端",
         "desc": "与AuthMe的功能类似，可在游戏内重新登录而不需要重启游戏",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/reauth/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/reauth"
     },
     {
         "name": "REI\nRoughly Enough Items",
@@ -976,7 +1001,7 @@
         "type": "信息展示",
         "applation": "客户端",
         "desc": "在物品栏右侧显示所有方块及合成表",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items"
     },
     {
         "name": "Replay Mod",
@@ -990,14 +1015,14 @@
         "nameCN": "F2截图到剪贴板",
         "type": "增加功能",
         "applation": "客户端",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/screenshot-to-clipboard-fabric/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/screenshot-to-clipboard-fabric"
     },
     {
         "name": "ShulkerBoxTooltip",
         "nameCN": "潜影盒预览",
         "type": "信息展示",
         "applation": "通用",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/shulkerboxtooltip/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/shulkerboxtooltip"
     },
     {
         "name": "Slight' Gui Modifications",
@@ -1005,7 +1030,7 @@
         "type": "修改界面",
         "applation": "客户端",
         "desc": "需Architectury和cloth-api前置，为UI添加动画与更多操作",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/slight-gui-modifications/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/slight-gui-modifications"
     },
     {
         "name": "Smooth Boot",
@@ -1013,21 +1038,21 @@
         "type": "性能优化",
         "applation": "客户端",
         "desc": "在启动时减少CPU占用防止卡死电脑，会稍微延长启动时间，与Dashloader冲突",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/smooth-boot/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/smooth-boot"
     },
     {
         "name": "Smooth Scrolling Everywhere",
         "nameCN": "平滑滚动",
         "type": "修改界面",
         "applation": "客户端",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/smooth-scrolling-everywhere-fabric/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/smooth-scrolling-everywhere-fabric"
     },
     {
         "name": "Sneak Tweak",
         "type": "其他",
         "applation": "客户端",
         "desc": "优化潜行动画，让玩家下蹲时画面平缓一些",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/sneak-tweak/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/sneak-tweak"
     },
     {
         "name": "Sodium",
@@ -1035,9 +1060,9 @@
         "type": "性能优化",
         "applation": "客户端",
         "desc": "渲染优化，部分版本的Iris会内置",
-        "github_url": "https://github.com/CaffeineMC/sodium-fabric/releases",
-        "modrinth_url": "https://modrinth.com/mod/sodium/versions",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/sodium/files"
+        "github_url": "https://github.com/CaffeineMC/sodium-fabric",
+        "modrinth_url": "https://modrinth.com/mod/sodium",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/sodium"
     },
     {
         "name": "Sodium Extra",
@@ -1045,7 +1070,7 @@
         "type": "性能优化",
         "applation": "客户端",
         "desc": "为钠的设置界面加入更多选项，与内置Sodium的Iris兼容",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/sodium-extra/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/sodium-extra"
     },
     {
         "name": "Starlight",
@@ -1076,7 +1101,7 @@
         "type": "信息展示",
         "applation": "客户端",
         "desc": "在TNT头顶显示爆炸剩余时间",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/time-to-live/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/time-to-live"
     },
     {
         "name": "ToolTipFix",
@@ -1084,7 +1109,7 @@
         "type": "修改界面",
         "applation": "客户端",
         "desc": "防止因为文本过长导致物品栏鼠标悬浮的提示超出屏幕范围",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/tooltipfix/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/tooltipfix"
     },
     {
         "name": "ToroHealth",
@@ -1092,13 +1117,13 @@
         "type": "信息展示",
         "applation": "客户端",
         "desc": "还可以在攻击时显示伤害值",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/torohealth-damage-indicators/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/torohealth-damage-indicators"
     },
     {
         "name": "TRansliterationLib",
         "type": "前置API",
         "applation": "通用",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/transliterationlib/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/transliterationlib"
     },
     {
         "name": "Tweakeroo",
@@ -1113,28 +1138,28 @@
         "type": "联机优化",
         "applation": "通用",
         "desc": "1.9+客户端：允许连接到比客户端版本新的服务器\nmod文件也同时适用于插件端服务器/Sponge服务器",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/viabackwards/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/viabackwards"
     },
     {
         "name": "ViaFabric",
         "type": "联机优化",
         "applation": "通用",
         "desc": "客户端：允许连接到比客户端版本旧的服务器\n服务端：允许比服务器版本新的客户端连接到服务器",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/viafabric/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/viafabric"
     },
     {
         "name": "ViaRewind",
         "type": "联机优化",
         "applation": "通用",
         "desc": "1.7/1.8客户端：允许连接到比客户端版本新的服务器\nmod文件也同时适用于插件端服务器/Sponge服务器",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/viarewind/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/viarewind"
     },
     {
         "name": "VoxelMap",
         "nameCN": "体素地图",
         "type": "地图",
         "applation": "通用",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/voxelmap/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/voxelmap"
     },
     {
         "name": "WI Zoom",
@@ -1142,29 +1167,29 @@
         "type": "增加功能",
         "applation": "客户端",
         "desc": "Wurst提取的视角放大（望远镜）",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/wi-zoom/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/wi-zoom"
     },
     {
         "name": "World Edit",
         "nameCN": "创世神",
         "type": "增加功能",
         "applation": "通用",
-        "other_url": "https://enginehub.org/worldedit/#downloads",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/worldedit/files"
+        "official_url": "https://enginehub.org/worldedit/#downloads",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/worldedit"
     },
     {
         "name": "Worldedit CUI",
         "nameCN": "创世神CUI",
         "type": "信息展示",
         "applation": "客户端",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/worldeditcui-fabric/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/worldeditcui-fabric"
     },
     {
         "name": "WTHIT",
         "type": "信息展示",
         "applation": "客户端",
         "desc": "取代Hwyla，显示在屏幕顶部的玩家正指向的方块或实体的信息（What?The?Hell Is That?）",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/wthit/files"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/wthit"
     },
     {
         "name": "Xaero's Minimap",
@@ -1172,8 +1197,8 @@
         "type": "地图",
         "applation": "通用",
         "desc": "貌似比Voxel优化更好功能更多，但界面不太好看\n介绍、汉化资源包：https://www.bilibili.com/read/cv11613668",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap/files",
-        "other_url": "https://chocolateminecraft.com/minimapdownload.php"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap",
+        "official_url": "https://chocolateminecraft.com/minimapdownload.php"
     },
     {
         "name": "Xaero's World Map",
@@ -1181,7 +1206,7 @@
         "type": "地图",
         "applation": "通用",
         "desc": "貌似比Voxel优化更好功能更多，但界面不太好看\n介绍、汉化资源包：https://www.bilibili.com/read/cv11613668",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map/files",
-        "other_url": "https://chocolateminecraft.com/worldmap.php"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/xaeros-world-map",
+        "official_url": "https://chocolateminecraft.com/worldmap.php"
     }
 ]

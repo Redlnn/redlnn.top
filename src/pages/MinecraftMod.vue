@@ -15,14 +15,21 @@
                     style="margin: 10px 0"
                 ></el-alert>
                 <el-alert
-                    title="列表内部分模组存在互相冲突的情况，请勿盲目添加"
+                    title="该列表部分模组的简介摘录自 MC百科"
+                    type="success"
+                    show-icon
+                    :closable="closable"
+                    style="margin: 10px 0"
+                ></el-alert>
+                <el-alert
+                    title="列表内部分模组存在互相冲突的情况，请勿盲目添加。部分模组需要前置API，可以留意游戏启动失败时 Fabric Loader 提示的内容。"
                     type="warning"
                     show-icon
                     :closable="closable"
                     style="margin: 10px 0"
                 ></el-alert>
                 <el-alert
-                    title="本页面正在测试与完善，部分简介、分类、适用范围存在问题"
+                    title="本页面正在测试与完善，部分简介、分类、适用范围存在问题。上次更新：2021/9/29，更正到 “BetterF3”"
                     type="error"
                     show-icon
                     :closable="closable"
@@ -107,8 +114,8 @@
                             >
                                 <img
                                     src="@/assets/img/modrinth.svg"
-                                    title="从 modrinth 下载"
-                                    alt="从 modrinth 下载"
+                                    title="从 Modrinth 下载"
+                                    alt="从 Modrinth 下载"
                                     style="height: 1.1rem"
                                 />
                             </a>
@@ -137,8 +144,8 @@
                             >
                                 <img
                                     src="@/assets/img/github1.svg"
-                                    title="GitHub 仓库"
-                                    alt="GitHub 仓库"
+                                    title="访问 GitHub 仓库"
+                                    alt="访问 GitHub 仓库"
                                     style="height: 1.1rem; margin-right: 0.3rem"
                                 />GitHub
                             </a>
@@ -157,8 +164,8 @@
                             >
                                 <img
                                     src="@/assets/img/mcmod.webp"
-                                    title="mc百科"
-                                    alt="mc百科"
+                                    title="访问mc百科"
+                                    alt="访问mc百科"
                                     style="height: 1.1rem"
                                 />
                             </a>
