@@ -16,7 +16,7 @@
                         :closable="closable"
                     ></el-alert>
                     <h2>自我介绍</h2>
-                    <p>1.1. <del>僕は</del> 这里是<code>Red_lnn</code>，是<code>l</code>不是<code>i</code>。一般情况下叫<code>Red</code>就好了</p>
+                    <p>1.1. <del>僕は</del>这里是<code>Red_lnn</code>，是<code>l</code>不是<code>i</code>。一般情况下叫<code>Red</code>就好了</p>
                     <p>1.2. 快毕业的学生党，被生活摁在地上摩擦ing</p>
                     <p>1.3. <code>Red_lnn</code>是 Minecraft 正版用户名。什么？来一个正常一点的名字？不存在的，没有的，笑死，根本就想不出来</p>
                     <p>1.4. 是 <span title="你知道的太多了" class="curtain"><del>可爱的</del> </span>男孩纸</p>
@@ -106,8 +106,7 @@
                     <p>6.1. 不女装，坚决不女装！女装是不可能的！cos 也是不可能的！</p>
                     <p>6.2. 希望服务器平安无事（<del>虽然也没有多少重要数据就是，但搭环境真的好麻烦啊啊啊啊啊啊啊</del></p>
                     <h3>你知道吗？</h3>
-                    <p>6.3.1. 虽然有点内向，但是熟了的话，有时候会很话痨</p>
-                    <p>6.3.2. 母胎 solo 至今，老惨了</p>
+                    <p>6.3.1. 有点内向，但熟了的话，会很话痨</p>
                 </el-col>
                 <el-col :xs="0" :sm="2" :lg="4" :xl="6"></el-col>
             </el-row>
