@@ -28,16 +28,19 @@ yarn install
 ### 可用指令
 
 - 开启本地服务器（开发环境，热重载）
+
 ```bash
 yarn serve
 ```
 
 - 生成可发布到生产环境的文件
+
 ```bash
 yarn build
 ```
 
 - 检查代码错误以进行修复
+
 ```bash
 yarn lint
 ```

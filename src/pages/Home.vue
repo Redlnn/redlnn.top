@@ -1,10 +1,6 @@
 <template>
     <div>
-        <el-image
-            :src="require('@/assets/img/avatar.webp')"
-            class="logo noselect"
-            alt="Logo"
-        >
+        <el-image :src="require('@/assets/img/avatar.webp')" class="logo noselect" alt="Logo">
             <template #placeholder>
                 <div class="image-slot">
                     <el-icon :size="30" class="is-loading">
@@ -21,36 +17,30 @@
             </template>
         </el-image>
         <div>
-            <h1 style="margin:0 0 10px 0;">Red_lnn</h1>
-            <p style="font-weight: bold;margin:5px 0;">社恐 | 游戏菜 | 代码渣 | 懒癌患者</p>
-            <p style="margin:30px 0 10px 0;">这里是个简简单单的主页，什么都没有<br /></p>
-            <div>
-                <a href="https://github.com/Redlnn"
-                    ><img
-                        src="@/assets/img/github.svg"
-                        class="svg"
-                        title="Github"
-                        alt="Github"/></a
-                ><a href="https://space.bilibili.com/20858581"
-                    ><img
-                        src="@/assets/img/bilibili.svg"
-                        class="svg"
-                        title="哔哩哔哩"
-                        alt="哔哩哔哩"/></a
-                ><a href="https://music.163.com/#/user/home?id=333710186"
-                    ><img
+            <h1 style="margin:0 0 1rem 0;">Red_lnn</h1>
+            <p style="font-weight: bold;">社恐 | 游戏菜 | 代码渣 | 懒癌患者</p>
+            <p style="margin:2rem 0;">
+                这里是个简简单单的主页，什么都没有
+                <br />
+            </p>
+            <div style>
+                <a href="https://github.com/Redlnn">
+                    <img src="@/assets/img/github.svg" class="svg" title="Github" alt="Github" />
+                </a>
+                <a href="https://space.bilibili.com/20858581">
+                    <img src="@/assets/img/bilibili.svg" class="svg" title="哔哩哔哩" alt="哔哩哔哩" />
+                </a>
+                <a href="https://music.163.com/#/user/home?id=333710186">
+                    <img
                         src="@/assets/img/netease-cloud-music.svg"
                         class="svg"
                         title="网易云音乐"
-                        alt="网易云音乐"/></a
-                ><a href="/about"
-                    ><img
-                        src="@/assets/img/share.svg"
-                        class="svg"
-                        title="更多"
-                        alt="更多"
-                        style="height: 43px;"
-                /></a>
+                        alt="网易云音乐"
+                    />
+                </a>
+                <a href="/about">
+                    <img src="@/assets/img/share.svg" class="svg" title="更多" alt="更多" />
+                </a>
             </div>
         </div>
     </div>
@@ -71,9 +61,7 @@ export default {
         // https://github.com/nuxt/vue-meta/issues/696#issuecomment-878377182
         useMeta({
             description: description,
-            meta: [
-                { name: "keywords", content: tags }
-            ],
+            meta: [{ name: "keywords", content: tags }],
             og: {
                 description: description
             }
@@ -93,7 +81,7 @@ a {
 
 .logo {
     height: auto;
-    margin: 24px 0;
+    margin: 2rem 0;
     border-radius: var(--el-border-radius-circle);
 }
 
@@ -105,7 +93,7 @@ a {
 
 @media screen and (max-height: 1000px) and (min-width: 260px) {
     .logo {
-        width: 260px;
+        width: 280px;
     }
 }
 
@@ -116,11 +104,7 @@ a {
 }
 
 .svg {
-    height: 40px;
-    margin: 0 10px;
-    margin-top: 20px;
-    vertical-align: middle;
-    line-height: 40px;
-    font-size: 40px;
+    height: 2.5rem;
+    margin: 0 0.5rem;
 }
 </style>

@@ -1,23 +1,11 @@
 <template>
     <metainfo></metainfo>
     <el-header id="nav">
-        <el-menu
-            class="noselect"
-            :default-active="this.$route.path"
-            mode="horizontal"
-            router
-        >
-            <el-menu-item
-                index="#999#"
-                disabled
-                class="nav-logo"
-                :route="this.$route.path"
-            >
+        <el-menu class="noselect" :default-active="this.$route.path" mode="horizontal" router>
+            <el-menu-item index="#999#" disabled class="nav-logo" :route="this.$route.path">
                 <span>
-                    <img
-                        src="@/assets/img/avatar.webp"
-                        alt="logo"
-                    /><b>Red_lnn</b>
+                    <img src="@/assets/img/avatar.webp" alt="logo" />
+                    <b>Red_lnn</b>
                 </span>
             </el-menu-item>
             <el-menu-item
@@ -25,18 +13,13 @@
                 :key="key"
                 :index="item.indexPath"
                 :route="item.activeIndex"
-                >{{ item.name }}</el-menu-item
-            >
-            <el-menu-item index="#" key="https://blog.redlnn.top/"
-                ><a href="https://blog.redlnn.top/" target="_self"
-                    >Blog</a
-                ></el-menu-item
-            >
+            >{{ item.name }}</el-menu-item>
+            <el-menu-item index="#" key="https://blog.redlnn.top/">
+                <a href="https://blog.redlnn.top/" target="_self">Blog</a>
+            </el-menu-item>
             <el-sub-menu :index="this.$route.path">
                 <template #title>一些东西</template>
-                <el-menu-item index="/mcmod/"
-                    >Minecraft 常用模组列表</el-menu-item
-                >
+                <el-menu-item index="/mcmod/">Minecraft 常用模组列表</el-menu-item>
             </el-sub-menu>
         </el-menu>
     </el-header>
@@ -52,13 +35,11 @@
             </el-main>
             <el-footer>
                 <div class="footer noselect">
-                    © 2021 Red_lnn&nbsp;&nbsp;<a
-                        href="http://beian.miit.gov.cn/"
-                        >粤ICP备19155362号</a
-                    >
+                    © 2021 Red_lnn&nbsp;&nbsp;
+                    <a href="http://beian.miit.gov.cn/">粤ICP备19155362号</a>
                 </div>
-            </el-footer></el-scrollbar
-        >
+            </el-footer>
+        </el-scrollbar>
     </div>
 </template>
 

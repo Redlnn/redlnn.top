@@ -1,10 +1,6 @@
 <template>
     <div>
-        <el-image
-            :src="require('@/assets/img/arere.webp')"
-            class="logo noselect"
-            alt="啊咧咧.jpg"
-        >
+        <el-image :src="require('@/assets/img/arere.webp')" class="logo noselect" alt="啊咧咧.jpg">
             <template #placeholder>
                 <div class="image-slot">
                     <el-icon :size="30" class="is-loading">

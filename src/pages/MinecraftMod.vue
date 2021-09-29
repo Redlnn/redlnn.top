@@ -1,11 +1,9 @@
 <template>
     <div>
         <h1>Minecraft 模组列表</h1>
-        <el-divider content-position="center"
-            ><span style="color:var(--el-text-color-placeholder);"
-                >我 是 分 割 线</span
-            ></el-divider
-        >
+        <el-divider content-position="center">
+            <span style="color:var(--el-text-color-placeholder);">我 是 分 割 线</span>
+        </el-divider>
         <el-row>
             <el-col :xs="0" :sm="2" :md="3" :lg="5" :xl="6"></el-col>
             <el-col :xs="24" :sm="20" :md="18" :lg="14" :xl="12">
@@ -34,10 +32,22 @@
                     style="margin: 10px 0"
                 ></el-alert>
                 <div class="remark">
-                    <p><strong>提示：</strong></p>
+                    <p>
+                        <strong>提示：</strong>
+                    </p>
                     <ul>
-                        <li>本页面中的模组数据可在 <a href="https://github.com/Redlnn/redlnn.top/tree/master/src/assets/mcmod.json">GitHub 仓库</a>中找到，如有修改或增删建议可以发 pr</li>
-                        <li>Optifine替代品列表：<a href="https://gist.github.com/LambdAurora/1f6a4a99af374ce500f250c6b42e8754">GitHub Gist</a></li>
+                        <li>
+                            本页面中的模组数据可在
+                            <a
+                                href="https://github.com/Redlnn/redlnn.top/tree/master/src/assets/mcmod.json"
+                            >GitHub 仓库</a>中找到，如有修改或增删建议可以发 pr
+                        </li>
+                        <li>
+                            Optifine替代品列表：
+                            <a
+                                href="https://gist.github.com/LambdAurora/1f6a4a99af374ce500f250c6b42e8754"
+                            >GitHub Gist</a>
+                        </li>
                     </ul>
                 </div>
             </el-col>
@@ -52,18 +62,8 @@
                     :cell-class-name="desc"
                     :height="screenHeight - 91"
                 >
-                    <el-table-column
-                        prop="name"
-                        label="模组名称"
-                        min-width="100"
-                        sortable
-                    ></el-table-column>
-                    <el-table-column
-                        prop="nameCN"
-                        label="中文名称"
-                        width="100"
-                        sortable
-                    ></el-table-column>
+                    <el-table-column prop="name" label="模组名称" min-width="100" sortable></el-table-column>
+                    <el-table-column prop="nameCN" label="中文名称" width="100" sortable></el-table-column>
                     <el-table-column
                         prop="type"
                         label="分类"
@@ -94,24 +94,15 @@
                         ]"
                         :filter-method="filterHandler"
                     ></el-table-column>
-                    <el-table-column
-                        prop="desc"
-                        label="简介"
-                        min-width="250"
-                    ></el-table-column>
-                    <el-table-column
-                        prop="download"
-                        label="相关地址"
-                        width="350"
-                    >
+                    <el-table-column prop="desc" label="简介" min-width="250"></el-table-column>
+                    <el-table-column prop="download" label="相关地址" width="350">
                         <template #default="scope">
                             <a
                                 v-bind:href="scope.row.official_url"
                                 v-if="scope.row.official_url"
                                 class="button official"
                                 style="font-weight: 600; letter-spacing: 0.1rem"
-                                >官方网站</a
-                            >
+                            >官方网站</a>
                             <a
                                 v-bind:href="scope.row.modrinth_url"
                                 v-if="scope.row.modrinth_url"
@@ -338,19 +329,19 @@ export default {
 .remark {
     margin: 10px 0;
     padding: 1rem;
-    color:var(--el-text-color-secondary);
-    font-size: .9rem;
-    text-align:left;
+    color: var(--el-text-color-secondary);
+    font-size: 0.9rem;
+    text-align: left;
     background-color: #f4f4f4;
     border-radius: 5px;
 }
 
 .remark p,
 .remark li {
-    margin:.5rem;
+    margin: 0.5rem;
 }
 
 .remark a {
-    color:var(--el-text-color-secondary);
+    color: var(--el-text-color-secondary);
 }
 </style>
