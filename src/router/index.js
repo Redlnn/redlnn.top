@@ -64,10 +64,10 @@ router.beforeEach((to, from, next) => {
     var $iframe = document.createElement("iframe");
     $iframe.style.display = "none";
     $body[0].appendChild($iframe);
-    document.title = to.meta.title ? to.meta.title : defaultTitle;
     setTimeout(() => {
+        document.title = to.meta.title ? to.meta.title : defaultTitle;
         $body[0].removeChild($iframe);
-    }, 10);
+    }, 200);
     next();
 });
 
