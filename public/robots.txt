@@ -26,7 +26,5 @@ User-agent: 360Spider
 Allow: /
 Disallow: /assets/
 
-Crawl-delay: 120
-
 User-agent: *
 Disallow: /
