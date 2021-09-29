@@ -1,5 +1,8 @@
+const TerserPlugin = require("terser-webpack-plugin");
 const PrerenderSPAPlugin = require("prerender-spa-plugin");
+const CompressionWebpackPlugin = require("compression-webpack-plugin");
 const Renderer = PrerenderSPAPlugin.PuppeteerRenderer;
+const zlib = require("zlib");
 const path = require("path");
 
 // https://cli.vuejs.org/zh/config
@@ -46,14 +49,31 @@ module.exports = {
     // corsUseCredentials: false,
     // webpack 配置，键值对象时会合并配置，为方法时会改写配置
     // https://cli.vuejs.org/guide/webpack.html#simple-configuration
-    configureWebpack: () => {
+    configureWebpack: config => {
         if (process.env.NODE_ENV === "production") {
+            config.mode = "production";
+            config.performance = {
+                maxEntrypointSize: 10000000,
+                maxAssetSize: 30000000
+            };
+            config.optimization = {
+                minimize: true,
+                minimizer: [
+                    new TerserPlugin({
+                        // test: /\.(js|css|svg|html)$/,
+                        terserOptions: {
+                            compress: {
+                                keep_infinity: true,
+                                drop_console: true,
+                                drop_debugger: true
+                            }
+                        },
+                        cache: true,
+                        parallel: true
+                    })
+                ]
+            };
             return {
-                mode: "production",
-                performance: {
-                    maxEntrypointSize: 10000000,
-                    maxAssetSize: 30000000
-                },
                 plugins: [
                     new PrerenderSPAPlugin({
                         // 生成文件的路径，也可以与webpakc打包的一致
@@ -81,6 +101,25 @@ module.exports = {
                             // renderAfterElementExists: '.container',
                             renderAfterTime: 5000
                         })
+                    }),
+                    new CompressionWebpackPlugin({
+                        filename: "[path][base].gz[query]",
+                        algorithm: "gzip",
+                        test: /\.(js|css|svg|ttf|html)$/,
+                        threshold: 10240,
+                        minRatio: 0.8
+                    }),
+                    new CompressionWebpackPlugin({
+                        filename: "[path][base].br[query]",
+                        algorithm: "brotliCompress",
+                        test: /\.(js|css|svg|ttf|html)$/,
+                        compressionOptions: {
+                            params: {
+                                [zlib.constants.BROTLI_PARAM_QUALITY]: 11
+                            }
+                        },
+                        threshold: 10240,
+                        minRatio: 0.8
                     })
                 ]
             };
@@ -88,19 +127,22 @@ module.exports = {
     },
     // webpack 链接 API，用于生成和修改 webapck 配置
     // https://github.com/mozilla-neutrino/webpack-chain
-    // chainWebpack: (config) => {
-    //     // 因为是多页面，所以取消 chunks，每个页面只对应一个单独的 JS / CSS
-    //     config.optimization.splitChunks({
-    //         cacheGroups: {},
-    //     });
-    //     // 'src/lib' 目录下为外部库文件，不参与 eslint 检测
-    //     config.module
-    //         .rule("eslint")
-    //         .exclude.add(
-    //             "/Users/maybexia/Downloads/FE/community_built-in/src/lib"
-    //         )
-    //         .end();
-    // },
+    chainWebpack: config => {
+        if (process.env.NODE_ENV === "production") {
+            // 因为是多页面，所以取消 chunks，每个页面只对应一个单独的 JS / CSS
+            config.optimization.splitChunks({
+                chunks: "all",
+                // 依赖包超过300000bit将被单独打包
+                minSize: 20000,
+                cacheGroups: {}
+            });
+        }
+        // 'src/lib' 目录下为外部库文件，不参与 eslint 检测
+        // config.module
+        //     .rule("eslint")
+        //     .exclude.add("@/src/lib")
+        //     .end();
+    },
     // 配置高于chainWebpack中关于 css loader 的配置
     css: {
         // 默认情况下，只有 *.module.[ext] 结尾的文件才会被视作 CSS Modules 模块。
