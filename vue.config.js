@@ -47,38 +47,44 @@ module.exports = {
     // webpack 配置，键值对象时会合并配置，为方法时会改写配置
     // https://cli.vuejs.org/guide/webpack.html#simple-configuration
     configureWebpack: () => {
-        if (process.env.NODE_ENV !== "production") return;
-        return {
-            plugins: [
-                new PrerenderSPAPlugin({
-                    // 生成文件的路径，也可以与webpakc打包的一致
-                    // 这个目录只能有一级，如果目录层次大于一级，在生成的时候不会有任何错误提示，在预渲染的时候只会卡着不动
-                    staticDir: path.join(__dirname, "dist"),
-                    // outputDir: path.join(__dirname, '../prerendered'),
-                    indexPath: path.join(__dirname, "dist", "index.html"),
-                    // 对应自己的路由文件，比如index有参数，就需要写成 /index/param1
-                    routes: ["/", "/about", "/mcmod"],
-                    //压缩html
-                    minify: {
-                        collapseBooleanAttributes: true,
-                        collapseWhitespace: true,
-                        decodeEntities: true,
-                        keepClosingSlash: true,
-                        sortAttributes: true
-                    },
-                    renderer: new Renderer({
-                        inject: {
-                            foo: "bar"
+        if (process.env.NODE_ENV === "production") {
+            return {
+                mode: "production",
+                performance: {
+                    maxEntrypointSize: 10000000,
+                    maxAssetSize: 30000000
+                },
+                plugins: [
+                    new PrerenderSPAPlugin({
+                        // 生成文件的路径，也可以与webpakc打包的一致
+                        // 这个目录只能有一级，如果目录层次大于一级，在生成的时候不会有任何错误提示，在预渲染的时候只会卡着不动
+                        staticDir: path.join(__dirname, "dist"),
+                        // outputDir: path.join(__dirname, '../prerendered'),
+                        indexPath: path.join(__dirname, "dist", "index.html"),
+                        // 对应自己的路由文件，比如index有参数，就需要写成 /index/param1
+                        routes: ["/", "/about", "/mcmod"],
+                        //压缩html
+                        minify: {
+                            collapseBooleanAttributes: true,
+                            collapseWhitespace: true,
+                            decodeEntities: true,
+                            keepClosingSlash: true,
+                            sortAttributes: true
                         },
-                        headless: true,
-                        // 在 main.js 中 document.dispatchEvent(new Event('render-event'))，两者的事件名称要对应上
-                        renderAfterDocumentEvent: "render-active",
-                        // renderAfterElementExists: '.container',
-                        renderAfterTime: 5000
+                        renderer: new Renderer({
+                            inject: {
+                                foo: "bar"
+                            },
+                            headless: true,
+                            // 在 main.js 中 document.dispatchEvent(new Event('render-event'))，两者的事件名称要对应上
+                            renderAfterDocumentEvent: "render-active",
+                            // renderAfterElementExists: '.container',
+                            renderAfterTime: 5000
+                        })
                     })
-                })
-            ]
-        };
+                ]
+            };
+        }
     },
     // webpack 链接 API，用于生成和修改 webapck 配置
     // https://github.com/mozilla-neutrino/webpack-chain
