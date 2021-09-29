@@ -10,7 +10,6 @@
                 <el-alert
                     title="该列表仅包含 1.16 起常用的 Fabric 端模组"
                     type="success"
-                    center
                     show-icon
                     :closable="closable"
                     style="margin: 10px 0"
@@ -18,7 +17,6 @@
                 <el-alert
                     title="列表内部分模组存在互相冲突的情况，请勿盲目添加"
                     type="warning"
-                    center
                     show-icon
                     :closable="closable"
                     style="margin: 10px 0"
@@ -26,7 +24,6 @@
                 <el-alert
                     title="本页面正在测试与完善，部分简介、分类、适用范围存在问题"
                     type="error"
-                    center
                     show-icon
                     :closable="closable"
                     style="margin: 10px 0"
@@ -53,7 +50,7 @@
             </el-col>
             <el-col :xs="0" :sm="2" :md="3" :lg="5" :xl="6"></el-col>
         </el-row>
-        <el-row>
+        <el-row style="margin:18px 0">
             <el-col :xs="0" :sm="0" :md="1" :lg="1" :xl="2"></el-col>
             <el-col :xs="24" :sm="24" :md="22" :lg="22" :xl="20">
                 <el-table
@@ -260,7 +257,8 @@ export default {
 }
 
 .el-table {
-    border-radius: 8px;
+    border-radius: 6px;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1)
 }
 
 .el-table .el-table__cell {
