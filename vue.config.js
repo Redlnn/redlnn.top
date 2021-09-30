@@ -1,3 +1,5 @@
+const Components = require("unplugin-vue-components/webpack");
+const { ElementPlusResolver } = require("unplugin-vue-components/resolvers");
 const TerserPlugin = require("terser-webpack-plugin");
 const PrerenderSPAPlugin = require("prerender-spa-plugin");
 const CompressionWebpackPlugin = require("compression-webpack-plugin");
@@ -50,7 +52,18 @@ module.exports = {
     // webpack 配置，键值对象时会合并配置，为方法时会改写配置
     // https://cli.vuejs.org/guide/webpack.html#simple-configuration
     configureWebpack: config => {
-        if (process.env.NODE_ENV === "production") {
+        if (process.env.NODE_ENV !== "production") {
+            return {
+                plugins: [
+                    require("unplugin-vue-components/webpack")({
+                        /* options */
+                    }),
+                    Components({
+                        resolvers: [ElementPlusResolver()]
+                    })
+                ]
+            };
+        } else if (process.env.NODE_ENV === "production") {
             config.mode = "production";
             config.performance = {
                 maxEntrypointSize: 10000000,
@@ -75,6 +88,12 @@ module.exports = {
             };
             return {
                 plugins: [
+                    require("unplugin-vue-components/webpack")({
+                        /* options */
+                    }),
+                    Components({
+                        resolvers: [ElementPlusResolver()]
+                    }),
                     new PrerenderSPAPlugin({
                         // 生成文件的路径，也可以与webpakc打包的一致
                         // 这个目录只能有一级，如果目录层次大于一级，在生成的时候不会有任何错误提示，在预渲染的时候只会卡着不动

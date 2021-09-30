@@ -2,9 +2,6 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import router from "./router";
 import { createMetaManager, defaultConfig } from "vue-meta";
-import ElementPlus from "element-plus";
-import zhCN from "element-plus/lib/locale/lang/zh-cn";
-import "./element-variables.scss";
 
 const app = createApp(App);
 app.use(router);
@@ -14,6 +11,5 @@ app.use(
         meta: { tag: "meta", nameless: true }
     })
 ); // https://github.com/nuxt/vue-meta/issues/696#issuecomment-878377182
-app.use(ElementPlus, { locale: zhCN });
 
-app.mount("#app");
+router.isReady().then(() => app.mount("#app"));

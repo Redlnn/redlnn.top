@@ -1,56 +1,62 @@
 <template>
     <metainfo></metainfo>
-    <el-header id="nav">
-        <el-menu class="noselect" :default-active="this.$route.path" mode="horizontal" router>
-            <el-menu-item index="#999#" disabled class="nav-logo" :route="this.$route.path">
-                <span>
-                    <img src="@/assets/img/avatar.webp" alt="logo" />
-                    <b>Red_lnn</b>
-                </span>
-            </el-menu-item>
-            <el-menu-item
-                v-for="(item, key) in navItems"
-                :key="key"
-                :index="item.indexPath"
-                :route="item.activeIndex"
-            >{{ item.name }}</el-menu-item>
-            <el-menu-item index="#" key="https://blog.redlnn.top/">
-                <a href="https://blog.redlnn.top/" target="_self">Blog</a>
-            </el-menu-item>
-            <el-sub-menu :index="this.$route.path">
-                <template #title>一些东西</template>
-                <el-menu-item index="/mcmod/">Minecraft 常用模组列表</el-menu-item>
-            </el-sub-menu>
-        </el-menu>
-    </el-header>
-    <div :style="{ height: screenHeight - 61 + 'px' }" style="overflow:hidden;">
-        <el-scrollbar>
-            <el-backtop target=".el-scrollbar__wrap"></el-backtop>
-            <el-main>
-                <router-view v-slot="{ Component }">
-                    <transition name="slide-fade" mode="out-in">
-                        <component :is="Component" />
-                    </transition>
-                </router-view>
-            </el-main>
-            <el-footer>
-                <div class="footer noselect">
-                    © 2021 Red_lnn&nbsp;&nbsp;
-                    <a href="http://beian.miit.gov.cn/">粤ICP备19155362号</a>
-                </div>
-            </el-footer>
-        </el-scrollbar>
-    </div>
+    <el-config-provider :locale="locale">
+        <el-header id="nav">
+            <el-menu class="noselect" :default-active="this.$route.path" mode="horizontal" router>
+                <el-menu-item index="#999#" disabled class="nav-logo" :route="this.$route.path">
+                    <span>
+                        <img src="@/assets/img/avatar.webp" alt="logo" />
+                        <b>Red_lnn</b>
+                    </span>
+                </el-menu-item>
+                <el-menu-item
+                    v-for="(item, key) in navItems"
+                    :key="key"
+                    :index="item.indexPath"
+                    :route="item.activeIndex"
+                >{{ item.name }}</el-menu-item>
+                <el-menu-item index="#" key="https://blog.redlnn.top/">
+                    <a href="https://blog.redlnn.top/" target="_self">Blog</a>
+                </el-menu-item>
+                <el-sub-menu :index="this.$route.path">
+                    <template #title>一些东西</template>
+                    <el-menu-item index="/mcmod/">Minecraft 常用模组列表</el-menu-item>
+                </el-sub-menu>
+            </el-menu>
+        </el-header>
+        <div :style="{ height: screenHeight - 61 + 'px' }" style="overflow:hidden;">
+            <el-scrollbar>
+                <el-backtop target=".el-scrollbar__wrap"></el-backtop>
+                <el-main>
+                    <router-view v-slot="{ Component }">
+                        <transition name="slide-fade" mode="out-in">
+                            <component :is="Component" />
+                        </transition>
+                    </router-view>
+                </el-main>
+                <el-footer>
+                    <div class="footer noselect">
+                        © 2021 Red_lnn&nbsp;&nbsp;
+                        <a href="http://beian.miit.gov.cn/">粤ICP备19155362号</a>
+                    </div>
+                </el-footer>
+            </el-scrollbar>
+        </div>
+    </el-config-provider>
 </template>
 
 <script>
-// import { useMeta } from "vue-meta";
+import zhCn from "element-plus/lib/locale/lang/zh-cn";
 
 export default {
     name: "App",
+    components: {},
     setup() {
         // https://github.com/nuxt/vue-meta/issues/696#issuecomment-878377182
         // useMeta({});
+        return {
+            locale: zhCn
+        };
     },
     data() {
         return {
