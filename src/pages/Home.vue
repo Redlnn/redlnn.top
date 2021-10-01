@@ -20,8 +20,7 @@
             <h1 style="margin:0 0 1rem 0;">Red_lnn</h1>
             <p style="font-weight: bold;">社恐 | 游戏菜 | 代码渣 | 懒癌患者</p>
             <p style="margin:2rem 0;">
-                这里是个简简单单的主页，什么都没有
-                <br />
+                喜欢偶尔学学代码，啥都不会，也没有精通
             </p>
             <div style>
                 <a href="https://github.com/Redlnn">

@@ -36,8 +36,8 @@
                 </el-main>
                 <el-footer>
                     <div class="footer noselect">
-                        © 2021 Red_lnn&nbsp;&nbsp;
-                        <a href="http://beian.miit.gov.cn/">粤ICP备19155362号</a>
+                        © Red_lnn&nbsp;&nbsp;|&nbsp;
+                        <a href="http://beian.miit.gov.cn/">粤 ICP 备 19155362 号</a>
                     </div>
                 </el-footer>
             </el-scrollbar>
@@ -144,6 +144,10 @@ footer {
 .footer > a {
     color: var(--el-text-color-secondary);
     text-decoration: none;
+}
+
+.footer > a:hover {
+    text-decoration: underline;
 }
 
 .el-popper {
