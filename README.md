@@ -20,7 +20,7 @@ git clone git@github.com:Redlnn/redlnn.top.git
 
 > 进入本仓库根目录后再执行命令  
   执行前，请确保已配置好 `Node.js` 及 `npm`，并全局安装了 `yarn`  
-  环境：`Node.js@^14.18.0` & `yarn^@1.22.15`
+  环境：`Node.js@^14.18.0` & `yarn@^1.22.15`
 
 ```bash
 yarn install
