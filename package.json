@@ -10,7 +10,7 @@
     "dependencies": {
         "@element-plus/icons": "^0.0.11",
         "@vue/server-renderer": "^3.2.19",
-        "core-js": "^3.18.1",
+        "core-js": "^3.18.2",
         "element-plus": "^1.1.0-beta.19",
         "vue": "^3.0.0",
         "vue-meta": "^3.0.0-alpha.9",
@@ -26,7 +26,7 @@
         "babel-plugin-component": "^1.1.1",
         "compression-webpack-plugin": "^6.1.1",
         "eslint": "^6.8.0",
-        "eslint-plugin-vue": "^7.18.0",
+        "eslint-plugin-vue": "^7.19.1",
         "prerender-spa-plugin": "^3.4.0",
         "sass": "^1.42.1",
         "sass-loader": "^10.2.0",
