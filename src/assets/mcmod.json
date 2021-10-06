@@ -234,6 +234,14 @@
         "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/bright-ore"
     },
     {
+        "name": "C²ME-Engine",
+        "type": "性能优化",
+        "applation": "通用",
+        "desc": "又名：C^2ME-Engine/C2ME-Engine/Barium（钡）\n提高 Minecraft 区块的生成、I/O和加载优化",
+        "github_url": "https://github.com/ishlandbukkit/C2ME-fabric",
+        "mcmod_url": "https://www.mcmod.cn/class/3511.html"
+    },
+    {
         "name": "Camera Overhaul",
         "nameCN": "镜头改造",
         "type": "其他",
@@ -1090,11 +1098,13 @@
         "official_url": "https://masa.dy.fi/mcmods/client_mods/?mcver=All"
     },
     {
-        "name": "tic-tacs",
+        "name": "Tic-TACS",
+        "nameCN": "井字棋",
         "type": "性能优化",
         "applation": "通用",
-        "desc": "区块加载优化，需自己编译",
-        "github_url": "https://github.com/Gegy/tic-tacs"
+        "desc": "区块加载优化",
+        "github_url": "https://github.com/Gegy/tic-tacs",
+        "mcmod_url": "https://www.mcmod.cn/class/3408.html"
     },
     {
         "name": "Time To Live",
