@@ -29,7 +29,7 @@
                     style="margin: 10px 0"
                 ></el-alert>
                 <el-alert
-                    title="本页面正在测试与完善，部分简介、分类、适用范围存在问题。上次更新：2021/9/29，更正到 “BetterF3”"
+                    title="本页面正在测试与完善，部分简介、分类、适用范围存在问题。上次更新：2021/10/8，更正到 “EasierChests”"
                     type="error"
                     show-icon
                     :closable="closable"
@@ -64,7 +64,7 @@
                     stripe
                     :data="tableData"
                     :cell-class-name="desc"
-                    :height="screenHeight - 91"
+                    :height="screenHeight - 101"
                 >
                     <el-table-column prop="name" label="模组名称" min-width="100" sortable></el-table-column>
                     <el-table-column prop="nameCN" label="中文名称" width="100" sortable></el-table-column>

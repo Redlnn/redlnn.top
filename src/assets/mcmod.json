@@ -214,9 +214,17 @@
         "nameCN": "无边框窗口",
         "type": "其他",
         "applation": "客户端",
-        "desc": "可以将MC全屏更改成无边框全屏，避免切换窗口时游戏窗口最小化",
+        "desc": "[1.12.x/1.15.x/1.16.x] 可以将MC全屏更改成无边框全屏，避免切换窗口时游戏窗口最小化",
         "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/borderless-mining",
         "github_url": "https://github.com/comp500/BorderlessMining"
+    },
+    {
+        "name": "Borderless Mining Reworked",
+        "nameCN": "无边框窗口",
+        "type": "其他",
+        "applation": "客户端",
+        "desc": "[1.17.x] 可以将MC全屏更改成无边框全屏，避免切换窗口时游戏窗口最小化",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/borderless-mining-reworked"
     },
     {
         "name": "Break Process",
@@ -227,11 +235,13 @@
     },
     {
         "name": "Bright Ore",
-        "nameCN": "矿物高亮",
+        "nameCN": "矿石高亮",
         "type": "辅助操作",
         "applation": "客户端",
-        "desc": "可能涉及作弊",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/bright-ore"
+        "desc": "视野范围内的矿物均会被高亮，可能涉及作弊",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/bright-ore",
+        "github_url": "https://github.com/Featurehouse/bright-ore",
+        "other_url": "MCBBS: https://www.mcbbs.net/thread-1201226-1-1.html"
     },
     {
         "name": "C²ME-Engine",
@@ -246,8 +256,9 @@
         "nameCN": "镜头改造",
         "type": "其他",
         "applation": "客户端",
-        "desc": "添加非常明显的镜头摇晃效果，会使画面看起来很晕，建议可以调小效果，获得微小的视觉效果提升。\n与Better Third Person存在功能性兼容问题，会使第三人称中的某些视角下出现画面抖动。",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/cameraoverhaul"
+        "desc": "添加玩家转头时的相机倾斜效果、前后移动及跳跃时的抖动效果\n可能会使画面看起来很晕，可调小效果强度，获得微小的视觉提升。\n与Better Third Person存在功能性兼容问题，会使第三人称中的某些视角下出现画面抖动。",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/cameraoverhaul",
+        "github_url": "https://github.com/Mirsario/Minecraft-CameraOverhaul"
     },
     {
         "name": "cAn i MiNe thIS bLOCk?",
@@ -261,7 +272,8 @@
         "nameCN": "地毯",
         "type": "增加功能",
         "applation": "通用",
-        "github_url": "https://github.com/gnembon/fabric-carpet"
+        "github_url": "https://github.com/gnembon/fabric-carpet",
+        "mcmod_url": "https://www.mcmod.cn/class/2361.html"
     },
     {
         "name": "Carpet Extra",
@@ -269,7 +281,8 @@
         "type": "增加功能",
         "applation": "通用",
         "desc": "给地毯添加更多功能，需要地毯作为前置",
-        "github_url": "https://github.com/gnembon/carpet-extra"
+        "github_url": "https://github.com/gnembon/carpet-extra",
+        "mcmod_url": "https://www.mcmod.cn/class/3325.html"
     },
     {
         "name": "Carpet TIS Addition",
@@ -293,22 +306,27 @@
         "type": "修改界面",
         "applation": "客户端",
         "desc": "在聊天框中显示玩家头像",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/chat-heads"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/chat-heads",
+        "github_url": "https://github.com/dzwdz/chat_heads",
+        "mcmod_url": "https://www.mcmod.cn/class/4523.html"
     },
     {
         "name": "Chat Up!",
         "type": "修改界面",
         "applation": "客户端",
         "desc": "gnembon写的一个小Mod，把聊天框的位置稍微提高了10个像素，就不会挡住盔甲栏了。",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/chat-up"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/chat-up",
+        "github_url": "https://github.com/gnembon/chat-up"
     },
     {
         "name": "Cherished Worlds",
-        "nameCN": "值得珍惜的存档",
+        "nameCN": "存档置顶",
         "type": "修改界面",
         "applation": "客户端",
-        "desc": "为单人游戏存档添加收藏按钮并置顶",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/cherished-worlds-fabric"
+        "desc": "为单人游戏存档添加收藏按钮并置顶，被收藏的存档除非取消被收藏否则无法在游戏内直接删除",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/cherished-worlds-fabric",
+        "github_url": "https://github.com/TheIllusiveC4/CherishedWorlds",
+        "mcmod_url": "https://www.mcmod.cn/class/4228.html"
     },
     {
         "name": "Chunk Borders",
@@ -322,28 +340,36 @@
         "name": "ClickThrough",
         "type": "辅助操作",
         "applation": "客户端",
-        "desc": "在右键贴在箱子（等容器）上的牌子（展示框）时，变为越过牌子右键箱子，要右键牌子请按住shift的同时右键，可能会被认为是作弊",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/clickthrough"
+        "desc": "在右键贴在箱子（等容器）上的牌子（展示框）时，变为越过牌子与箱子交互，要右键牌子请按住shift的同时右键，可能会被认为是作弊\n可设置牌子上存在特定字符时不生效（跟牌子交互）",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/clickthrough",
+        "github_url": "https://github.com/gbl/ClickThrough",
+        "mcmod_url": "https://www.mcmod.cn/class/3540.html"
     },
     {
         "name": "Cloth API",
         "type": "前置API",
         "applation": "通用",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/cloth-api"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/cloth-api",
+        "github_url": "https://github.com/shedaniel/Cloth",
+        "mcmod_url": "https://www.mcmod.cn/class/3785.html"
     },
     {
         "name": "Cloth Config API",
         "type": "前置API",
         "applation": "通用",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/cloth-config"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/cloth-config",
+        "github_url": "https://github.com/shedaniel/ClothConfig",
+        "mcmod_url": "https://www.mcmod.cn/class/2346.html"
     },
     {
         "name": "Color Unchained",
         "nameCN": "彩色字体",
         "type": "增加功能",
         "applation": "通用",
-        "desc": "需要服务器和客户端同时安装才有用",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/color-unchained"
+        "desc": "该模组可以让你在任何文字区域输入样式代码（§）。\n需要服务器和客户端同时安装才有用，在没有装这个MOD的服务器上使用，则会因为非法字符被踢出服务器！",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/color-unchained",
+        "github_url": "https://github.com/Draylar/color-unchained",
+        "mcmod_url": "https://www.mcmod.cn/class/2938.html"
     },
     {
         "name": "Colormatic",
@@ -357,23 +383,29 @@
         "name": "CompleteConfig",
         "type": "前置API",
         "applation": "通用",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/completeconfig"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/completeconfig",
+        "github_url": "https://gitlab.com/Lortseam/completeconfig"
     },
     {
         "name": "Controlling For Fabric",
         "nameCN": "键位冲突显示",
         "type": "增加功能",
         "applation": "客户端",
-        "desc": "为控制菜单添加搜索栏、查看冲突与未绑定快捷键等，与Amecs功能类似。",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/controlling-for-fabric"
+        "desc": "在mc的ESC菜单中的控制里，可以过滤出冲突的按键，与Amecs功能类似。",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/controlling-for-fabric",
+        "github_url": "https://github.com/jaredlll08/Controlling-for-Fabric",
+        "mcmod_url": "https://www.mcmod.cn/class/3146.html"
     },
     {
         "name": "Cull Leaves",
+        "nameCN": "树叶渲染优化",
         "type": "性能优化",
         "applation": "客户端",
         "desc": "使树叶的渲染方式与Optifine中设置为“快速”一样\n效果建议看网页内的预览图",
+        "modrinth_url": "https://modrinth.com/mod/cull-leaves",
         "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/cull-leaves",
-        "modrinth_url": "https://modrinth.com/mod/cull-leaves"
+        "github_url": "https://github.com/TeamMidnightDust/CullLeaves",
+        "mcmod_url": "https://www.mcmod.cn/class/4414.html"
     },
     {
         "name": "Custom Fog",
@@ -381,15 +413,19 @@
         "type": "性能优化",
         "applation": "客户端",
         "desc": "像Optifine一样自定义迷雾的距离与浓度",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/custom-fog"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/custom-fog",
+        "github_url": "https://github.com/DarkEnchanter1/custom-fog"
     },
     {
-        "name": "Custom skin loader",
+        "name": "[CSL] Custom skin loader",
         "nameCN": "万用皮肤补丁",
         "type": "其他",
         "applation": "客户端",
-        "desc": "显示第三方皮肤站的皮肤和披风（不支持opt披风）",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/customskinloader"
+        "desc": "显示官方与第三方皮肤站的皮肤和披风（不支持opt披风），需通过配置文件进行配置",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/customskinloader",
+        "github_url": "https://github.com/xfl03/MCCustomSkinLoader",
+        "other_url": "MCBBS: https://www.mcbbs.net/thread-269807-1-1.html",
+        "mcmod_url": "https://www.mcmod.cn/class/883.html"
     },
     {
         "name": "Damage Tilt",
@@ -404,53 +440,95 @@
         "type": "修改界面",
         "applation": "客户端",
         "desc": "把启动加载界面背景的红色改为黑色，还可以更改Mojang logo的颜色",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/dark-loading-screen"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/dark-loading-screen",
+        "github_url": "https://github.com/A5b84/dark-loading-screen",
+        "other_url": "资源包版本：https://www.curseforge.com/minecraft/texture-packs/dark-loading-screen",
+        "mcmod_url": "https://www.mcmod.cn/class/4550.html"
     },
     {
         "name": "DashLoader",
+        "nameCN": "疾速加载",
         "type": "性能优化",
         "applation": "客户端",
-        "desc": "启动加载提速，可能存在兼容性问题，服务端不兼容",
+        "desc": "在首次启动游戏时缓存所有内容并在下一次启动时以极快的速度调用这些缓存，从而使游戏加载速度快到离谱。\n与一些模组存在兼容性问题（尤其是修改启动过程的模组），服务端不兼容",
+        "modrinth_url": "https://modrinth.com/mod/dashloader",
         "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/dashloader",
-        "modrinth_url": "https://modrinth.com/mod/dashloader"
+        "github_url": "https://github.com/alphaqu/DashLoader",
+        "mcmod_url": "https://www.mcmod.cn/class/3841.html"
+    },
+    {
+        "name": "DimensionalThreading",
+        "nameCN": "世界多线程化",
+        "type": "性能优化",
+        "applation": "通用",
+        "desc": "该模组优化了多个世界的处理逻辑，通过将计算放置到独立的线程来提高游戏相关性能\n使用方法请参阅 Github 或 mc百科",
+        "github_url": "https://github.com/WearBlackAllDay/DimensionalThreading",
+        "mcmod_url": "https://www.mcmod.cn/class/3698.html"
+    },
+    {
+        "name": "[DRP] Draggable Resource Packs",
+        "nameCN": "可拖动资源包",
+        "type": "增加功能",
+        "applation": "客户端",
+        "desc": "该模组允许用户通过拖拽的方式对资源包、服务器等列表进行重新排序，以简化原版通过按钮来移动项目的繁复操作。",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/draggable-resource-packs",
+        "github_url": "https://github.com/MrMelon54/draggable-resource-packs-fabric",
+        "mcmod_url": "https://www.mcmod.cn/class/4654.html"
     },
     {
         "name": "Durability 101",
         "type": "信息展示",
         "applation": "客户端",
         "desc": "显示背包物品耐久，在物品栏中显示物品经过耐久附魔换算后的预期使用次数",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/durability101"
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/durability101",
+        "github_url": "https://github.com/ShayBox/Durability101"
     },
     {
-        "name": "Durability Viewer",
-        "nameCN": "耐久显示",
+        "name": "Giselbaer's Durability Viewer",
+        "nameCN": "耐久信息显示",
         "type": "信息展示",
         "applation": "客户端",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/giselbaers-durability-viewer"
+        "modrinth_url": "https://modrinth.com/mod/durabilityviewer",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/giselbaers-durability-viewer",
+        "github_url": "https://github.com/gbl/DurabilityViewer",
+        "mcmod_url": "https://www.mcmod.cn/class/2653.html"
     },
     {
         "name": "Dynamic FPS",
         "nameCN": "动态FPS",
         "type": "性能优化",
         "applation": "客户端",
-        "desc": "使mc在后台（失去焦点时）以较低的FPS渲染，可配置，类似Nvidia控制面板中的相关功能",
+        "desc": "使mc在后台（失去焦点时）以较低的FPS渲染，可配置，类似Nvidia控制面板中的相关功能\n本模组还修复了原版游戏的一个会使游戏在后台占用更多性能的bug，同时使得游戏在重载资源包时不渲染任何东西",
+        "modrinth_url": "https://modrinth.com/mod/dynamic-fps",
         "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/dynamic-fps",
-        "modrinth_url": "https://modrinth.com/mod/dynamic-fps"
+        "github_url": "https://github.com/juliand665/Dynamic-FPS",
+        "mcmod_url": "https://www.mcmod.cn/class/3074.html"
     },
     {
         "name": "Dynamic Sound Filters",
-        "nameCN": "动态音频过滤器",
+        "nameCN": "动态音效过滤",
         "type": "其他",
         "applation": "客户端",
-        "desc": "优化声音混响，为游戏音效添加混响等，声音效果更加真实，用了就知道有多舒服",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/dynamic-sound-filters"
+        "desc": "[1.14.x-1.16.x] 优化声音混响，为游戏音效添加混响等，使声音效果更加真实，如：在水下时以及声源位于墙后时，声音会有衰减；在洞穴中，声音会有回响；音符盒的声音也具有了方向性。",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/dynamic-sound-filters",
+        "other_url": "源代码：https://bitbucket.org/andre111/dynamicsoundfilters",
+        "mcmod_url": "https://www.mcmod.cn/class/3541.html"
     },
     {
-        "name": "Easier Chests",
+        "name": "MC-dynSFX",
+        "nameCN": "动态音效过滤",
+        "type": "其他",
+        "applation": "客户端",
+        "desc": "Dynamic Sound Filters 的修改版，支持1.17\n[1.17.x] 化声音混响，为游戏音效添加混响等，使声音效果更加真实，如：在水下时以及声源位于墙后时，声音会有衰减；在洞穴中，声音会有回响；音符盒的声音也具有了方向性。",
+        "other_url": "GitLab源代码：https://gitlab.com/mikenrafter1/mc-dyn-sfx\nGitLab Releases下载：https://gitlab.com/mikenrafter1/mc-dyn-sfx/-/releases"
+    },
+    {
+        "name": "EasierChests",
         "type": "辅助操作",
         "applation": "客户端",
-        "desc": "物品栏快捷操作（如整理、移动整一排/列物品）",
-        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/easierchests"
+        "desc": "物品栏快捷操作（如整理或移动整一排/列物品，或交换两个容器的物品）",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/easierchests",
+        "github_url": "https://github.com/gbl/EasierChests"
     },
     {
         "name": "Easier Crafting",
@@ -989,11 +1067,12 @@
         "github_url": "https://github.com/Fallen-Breath/pistorder"
     },
     {
-        "name": "Plusls Carpet Addition",
+        "name": "[PCA] Plusls Carpet Addition",
         "type": "增加功能",
         "applation": "通用",
         "desc": "Plusls个人对carpet的扩展。可以配合Masa Gadget使用，需要地毯作为前置",
-        "github_url": "https://github.com/plusls/plusls-carpet-addition"
+        "github_url": "https://github.com/plusls/plusls-carpet-addition",
+        "mcmod_url": "https://www.mcmod.cn/class/4197.html"
     },
     {
         "name": "ReAuth",
@@ -1031,6 +1110,15 @@
         "type": "信息展示",
         "applation": "通用",
         "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/shulkerboxtooltip"
+    },
+    {
+        "name": "Skin Layers 3D",
+        "nameCN": "3D皮肤层",
+        "type": "其他",
+        "applation": "客户端",
+        "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/skin-layers-3d",
+        "github_url": "https://github.com/tr7zw/3d-Skin-Layers",
+        "mcmod_url": "https://www.mcmod.cn/class/4618.html"
     },
     {
         "name": "Slight' Gui Modifications",
