@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    // "target": "es6",
+    // "module": "es6",
+    // "moduleResolution": "node",
+    // "strict": true,
+    // "jsx": "preserve",
+    // "sourceMap": false, // 生成目标文件的sourceMap文件
+    // "resolveJsonModule": true,
+    // "esModuleInterop": true,
+    // "lib": [],
+    "removeComments": true, // 删除注释
+    "baseUrl": "./",
+    "paths": {
+      "/@/*": ["src/*"]
+    }
+  },
+  "include": ["src/**/*.js", "src/**/*.vue", "vue.config.js"],
+  "exclude": ["node_modules", "dist", "**/assets"]
+}

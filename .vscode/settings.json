@@ -1,0 +1,46 @@
+{
+  "editor.tabSize": 2,
+  "eslint.format.enable": true,
+  "eslint.packageManager": "yarn",
+  "[vue]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "vetur.format.defaultFormatter.html": "prettyhtml",
+  "vetur.format.defaultFormatter.js": "prettier-eslint",
+  "vetur.format.defaultFormatter.ts": "prettier-tslint",
+  "vetur.format.options.tabSize": 2,
+  "vetur.format.defaultFormatterOptions": {
+    "prettyhtml": {
+      "wrap_line_length": 80, //长度130
+      "wrap_attributes": "auto",
+      "end_with_newline": true
+    }
+  }
+}
