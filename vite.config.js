@@ -1,13 +1,13 @@
 import { defineConfig } from 'vite'
 // import path from 'path';
 import { resolve } from 'path'
-import vue from '@vitejs/plugin-vue'
+import vuePlugin from '@vitejs/plugin-vue'
 import viteCompression from 'vite-plugin-compression'
 import { minifyHtml } from 'vite-plugin-html'
-import components from 'unplugin-vue-components/vite'
-import { ElementPlusResolver as elementPlusResolver } from 'unplugin-vue-components/resolvers'
+// import components from 'unplugin-vue-components/vite'
+// import { ElementPlusResolver as elementPlusResolver } from 'unplugin-vue-components/resolvers'
 import ViteRadar from 'vite-plugin-radar'
-import externalGlobals from 'rollup-plugin-external-globals'
+import importToCDN, { autoComplete } from 'vite-plugin-cdn-import'
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command }) => {
@@ -15,8 +15,8 @@ export default defineConfig(({ command }) => {
     return {
       resolve: {
         alias: [
-          // /@/xxxx => src/xxxx
           {
+            // /@/xxxx => src/xxxx
             find: /\/@\//,
             replacement: resolve(process.cwd(), './src/') + '/',
           },
@@ -32,23 +32,23 @@ export default defineConfig(({ command }) => {
       },
       build: {
         sourcemap: false,
-        rollupOptions: {
-          external: ['vue', 'element-plus', 'vue-meta', 'vue-router'],
-          plugins: [
-            externalGlobals({
-              vue: 'Vue',
-              'element-plus': 'ElementPlus',
-              'vue-meta': 'vue-meta',
-              'vue-router': 'vue-router',
-            }),
-          ],
-        },
       },
       plugins: [
-        vue(),
-        components({
-          /* options */
-          resolvers: [elementPlusResolver()],
+        vuePlugin(),
+        // components({
+        //   /* options */
+        //   resolvers: [elementPlusResolver()],
+        // }),
+        importToCDN({
+          modules: [
+            autoComplete('vue'),
+            {
+              name: 'element-plus',
+              var: 'ElementPlus',
+              path: `//cdn.jsdelivr.net/npm/element-plus@1.1.0-beta.19/dist/index.full.min.js`,
+              css: `//cdn.jsdelivr.net/npm/element-plus@1.1.0-beta.19/dist/index.min.css`,
+            },
+          ],
         }),
       ],
     }
@@ -71,15 +71,6 @@ export default defineConfig(({ command }) => {
         brotliSize: true,
         chunkSizeWarningLimit: 2000,
         rollupOptions: {
-          external: ['vue', 'element-plus', 'vue-meta', 'vue-router'],
-          plugins: [
-            externalGlobals({
-              vue: 'Vue',
-              'element-plus': 'ElementPlus',
-              'vue-meta': 'vue-meta',
-              'vue-router': 'vue-router',
-            }),
-          ],
           output: {
             entryFileNames: 'assets/js/[name]-[hash].js',
             chunkFileNames: 'assets/js/[name]-[hash].js',
@@ -100,9 +91,21 @@ export default defineConfig(({ command }) => {
         },
       },
       plugins: [
-        vue(),
-        components({
-          resolvers: [elementPlusResolver()],
+        vuePlugin(),
+        // components({
+        //   /* options */
+        //   resolvers: [elementPlusResolver()],
+        // }),
+        importToCDN({
+          modules: [
+            autoComplete('vue'),
+            {
+              name: 'element-plus',
+              var: 'ElementPlus',
+              path: `//cdn.jsdelivr.net/npm/element-plus@1.1.0-beta.19/dist/index.full.min.js`,
+              css: `//cdn.jsdelivr.net/npm/element-plus@1.1.0-beta.19/dist/index.min.css`,
+            },
+          ],
         }),
         // eslint-disable-next-line new-cap
         ViteRadar({

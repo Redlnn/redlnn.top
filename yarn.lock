@@ -1737,6 +1737,13 @@ v8-compile-cache@^2.0.3:
   resolved "https://registry.npmmirror.com/v8-compile-cache/download/v8-compile-cache-2.3.0.tgz#2de19618c66dc247dcfb6f99338035d8245a2cee"
   integrity sha1-LeGWGMZtwkfc+2+ZM4A12CRaLO4=
 
+vite-plugin-cdn-import@^0.3.5:
+  version "0.3.5"
+  resolved "https://registry.npmmirror.com/vite-plugin-cdn-import/download/vite-plugin-cdn-import-0.3.5.tgz#b9cfbb076fd2bc1e8ae666e65450a864972dee81"
+  integrity sha1-uc+7B2/SvB6K5mbmVFCoZJct7oE=
+  dependencies:
+    rollup-plugin-external-globals "^0.6.1"
+
 vite-plugin-compression@^0.3.5:
   version "0.3.5"
   resolved "https://registry.npmmirror.com/vite-plugin-compression/download/vite-plugin-compression-0.3.5.tgz#1e5338eb43e60128de6d6f22b2aabf0e3dc0c17f"
