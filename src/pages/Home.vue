@@ -1,6 +1,24 @@
+<script setup>
+import { useMeta } from 'vue-meta'
+
+const tags = 'Red_lnn,博客,blog,个人主页'
+const description = '这里是 Red_lnn 的小空间，感谢你的来访'
+
+useMeta({
+  description: description,
+  meta: [{ name: 'keywords', content: tags }],
+  og: {
+    description: description,
+  },
+  twitter: {
+    description: description,
+  },
+})
+</script>
+
 <template>
-  <div>
-    <el-image :src="require('@/assets/img/avatar.webp')" class="logo noselect" alt="Logo">
+  <div style="text-align: center">
+    <el-image :src="'../assets/img/avatar.webp'" class="logo noselect" alt="Logo">
       <template #placeholder>
         <div class="image-slot">
           <el-icon :size="30" class="is-loading">
@@ -22,16 +40,16 @@
       <p style="margin: 2rem 0">喜欢偶尔学学代码，啥都不会，也没有精通</p>
       <div style>
         <a href="https://github.com/Redlnn">
-          <img src="@/assets/img/github.svg" class="svg" title="Github" alt="Github" />
+          <img :src="'../assets/img/github.svg'" class="svg" title="Github" alt="Github" />
         </a>
         <a href="https://space.bilibili.com/20858581">
-          <img src="@/assets/img/bilibili.svg" class="svg" title="哔哩哔哩" alt="哔哩哔哩" />
+          <img :src="'../assets/img/bilibili.svg'" class="svg" title="哔哩哔哩" alt="哔哩哔哩" />
         </a>
         <a href="https://music.163.com/#/user/home?id=333710186">
-          <img src="@/assets/img/netease-cloud-music.svg" class="svg" title="网易云音乐" alt="网易云音乐" />
+          <img :src="'../assets/img/netease-cloud-music.svg'" class="svg" title="网易云音乐" alt="网易云音乐" />
         </a>
         <a href="/about">
-          <img src="@/assets/img/share.svg" class="svg" title="更多" alt="更多" />
+          <img :src="'../assets/img/share.svg'" class="svg" title="更多" alt="更多" />
         </a>
       </div>
     </div>
@@ -42,23 +60,8 @@
 // @ is an alias to /src
 import { Loading } from '@element-plus/icons'
 import { PictureRounded } from '@element-plus/icons'
-import { useMeta } from 'vue-meta'
-
-const tags = 'Red_lnn,博客,blog,个人主页'
-const description = '这里是 Red_lnn 的小空间，感谢你的来访'
 
 export default {
-  name: 'Home',
-  setup() {
-    // https://github.com/nuxt/vue-meta/issues/696#issuecomment-878377182
-    useMeta({
-      description: description,
-      meta: [{ name: 'keywords', content: tags }],
-      og: {
-        description: description,
-      },
-    })
-  },
   components: {
     Loading,
     PictureRounded,
@@ -66,7 +69,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 a {
   color: var(--el-color-primary);
 }

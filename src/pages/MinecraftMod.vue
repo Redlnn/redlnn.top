@@ -1,6 +1,24 @@
+<script setup>
+import { useMeta } from 'vue-meta'
+
+const tags = 'Red_lnn,我的世界,Minecraft,mod,模组'
+const description = 'Red_lnn 的 Minecraft 模组列表 | 这里是 Red_lnn 的小空间，感谢你的来访'
+
+useMeta({
+  description: description,
+  meta: [{ name: 'keywords', content: tags }],
+  og: {
+    description: description,
+  },
+  twitter: {
+    description: description,
+  },
+})
+</script>
+
 <template>
   <div>
-    <h1>Minecraft 模组列表</h1>
+    <h1 style="text-align: center">Minecraft 模组列表</h1>
     <el-divider content-position="center">
       <span style="color: var(--el-text-color-placeholder)">我 是 分 割 线</span>
     </el-divider>
@@ -103,16 +121,20 @@
                 >
                 <a v-bind:href="scope.row.modrinth_url" v-if="scope.row.modrinth_url" class="button modrinth">
                   <img
-                    src="@/assets/img/modrinth.svg"
+                    :src="'../assets/img/modrinth.svg'"
                     title="从 Modrinth 下载"
                     alt="从 Modrinth 下载"
                     style="height: 1.1rem"
                   />
                 </a>
                 <a v-bind:href="scope.row.curseforge_url" v-if="scope.row.curseforge_url" class="button curseforge">
-                  <img src="@/assets/img/anvil.svg" alt="curseforge logo" style="width: 1.3rem; margin-right: 0.3rem" />
                   <img
-                    src="@/assets/img/cf-logo.svg"
+                    :src="'../assets/img/anvil.svg'"
+                    alt="curseforge logo"
+                    style="width: 1.3rem; margin-right: 0.3rem"
+                  />
+                  <img
+                    :src="'../assets/img/cf-logo.svg'"
                     title="从 CurseForge 下载"
                     alt="从 CurseForge 下载"
                     style="height: 0.6rem"
@@ -125,7 +147,7 @@
                   style="font-weight: 600; letter-spacing: 0.03rem"
                 >
                   <img
-                    src="@/assets/img/github1.svg"
+                    :src="'../assets/img/github1.svg'"
                     title="访问 GitHub 仓库"
                     alt="访问 GitHub 仓库"
                     style="height: 1.1rem; margin-right: 0.3rem"
@@ -138,7 +160,7 @@
           <el-table-column prop="mcmod" label="mc百科" width="130">
             <template #default="scope">
               <a v-bind:href="scope.row.mcmod_url" v-if="scope.row.mcmod_url" class="button mcmod">
-                <img src="@/assets/img/mcmod.webp" title="访问mc百科" alt="访问mc百科" style="height: 1.1rem" />
+                <img :src="'../assets/img/mcmod.webp'" title="访问mc百科" alt="访问mc百科" style="height: 1.1rem" />
               </a>
             </template>
           </el-table-column>
@@ -150,23 +172,9 @@
 </template>
 
 <script>
-import { useMeta } from 'vue-meta'
-import mcmodData from '@/assets/mcmod.json'
-
-const tags = 'Red_lnn,我的世界,Minecraft,mod,模组'
-const description = 'Red_lnn 的 Minecraft 模组列表 | 这里是 Red_lnn 的小空间，感谢你的来访'
+import mcmodData from '../assets/mcmod.json'
 
 export default {
-  name: 'MinecraftMod',
-  setup() {
-    useMeta({
-      description: description,
-      meta: [{ name: 'keywords', content: tags }],
-      og: {
-        description: description,
-      },
-    })
-  },
   data() {
     return {
       tableData: mcmodData,
@@ -211,10 +219,10 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style>
 .el-table__body-wrapper::-webkit-scrollbar {
-  width: 8px; // 横向滚动条
-  height: 8px; // 纵向滚动条
+  width: 8px;
+  height: 8px;
 }
 
 .el-table__body-wrapper::-webkit-scrollbar-thumb {
@@ -238,7 +246,8 @@ export default {
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
 }
 
-.el-table .el-table__cell {
+.el-table .el-table__cell,
+.el-table .cell {
   text-align: center;
 }
 
@@ -258,7 +267,9 @@ export default {
 .el-table td.el-table__cell div {
   white-space: pre-wrap;
 }
+</style>
 
+<style scoped>
 .desc {
   text-align: left !important;
 }

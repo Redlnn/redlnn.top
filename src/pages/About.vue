@@ -1,3 +1,21 @@
+<script setup>
+import { useMeta } from 'vue-meta'
+
+const tags = 'Red_lnn,博客,blog,个人主页'
+const description = '这里是 Red_lnn 的小空间，感谢你的来访'
+
+useMeta({
+  description: description,
+  meta: [{ name: 'keywords', content: tags }],
+  og: {
+    description: description,
+  },
+  twitter: {
+    description: description,
+  },
+})
+</script>
+
 <template>
   <div>
     <div class="background"></div>
@@ -126,22 +144,7 @@
 </template>
 
 <script>
-import { useMeta } from 'vue-meta'
-
-const tags = 'Red_lnn,博客,blog,个人主页'
-const description = '这里是 Red_lnn 的小空间，感谢你的来访'
-
 export default {
-  name: 'About',
-  setup() {
-    useMeta({
-      description: description,
-      meta: [{ name: 'keywords', content: tags }],
-      og: {
-        description: description,
-      },
-    })
-  },
   data() {
     return {
       closable: false,
@@ -150,7 +153,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 a {
   color: var(--el-color-primary);
   text-decoration: none;

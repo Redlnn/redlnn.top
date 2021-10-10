@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '@/pages/Home.vue'
+import Home from '../pages/Home.vue'
 
 const routes = [
   {
@@ -13,7 +13,7 @@ const routes = [
   {
     path: '/about/',
     name: 'About',
-    component: () => import('@/pages/About.vue'),
+    component: () => import('../pages/About.vue'),
     meta: {
       title: '关于我 | Red_lnn',
     },
@@ -21,7 +21,7 @@ const routes = [
   {
     path: '/mcmod/',
     name: 'MinecraftMod',
-    component: () => import('@/pages/MinecraftMod.vue'),
+    component: () => import('../pages/MinecraftMod.vue'),
     meta: {
       title: 'Minecraft 模组列表 | Red_lnn',
     },
@@ -29,7 +29,7 @@ const routes = [
   {
     path: '/404/',
     name: '404',
-    component: () => import('@/pages/error/404.vue'),
+    component: () => import('../pages/error/404.vue'),
     meta: {
       title: '404 Not Found! | Red_lnn',
     },
@@ -53,15 +53,15 @@ const routes = [
 
 const router = createRouter({
   mode: 'history',
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes,
 })
 
 const defaultTitle = 'Red_lnn'
 router.beforeEach((to, from, next) => {
   document.title = to.meta.title ? to.meta.title : defaultTitle
-  var $body = document.getElementsByTagName('body')
-  var $iframe = document.createElement('iframe')
+  const $body = document.getElementsByTagName('body')
+  const $iframe = document.createElement('iframe')
   $iframe.style.display = 'none'
   $body[0].appendChild($iframe)
   setTimeout(() => {

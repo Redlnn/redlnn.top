@@ -20,6 +20,9 @@
   "[json]": {
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
+  "[jsonc]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
   "[html]": {
     "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
   },
@@ -38,7 +41,7 @@
   "vetur.format.options.tabSize": 2,
   "vetur.format.defaultFormatterOptions": {
     "prettyhtml": {
-      "wrap_line_length": 80, //长度130
+      "wrap_line_length": 120,
       "wrap_attributes": "auto",
       "end_with_newline": true
     }

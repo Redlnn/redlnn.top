@@ -1,7 +1,3 @@
 {
-  "recommendations": [
-    "johnsoncodehk.volar",
-    "rvest.vs-code-prettier-eslint",
-    "octref.vetur"
-  ]
+  "recommendations": ["johnsoncodehk.volar", "rvest.vs-code-prettier-eslint"]
 }

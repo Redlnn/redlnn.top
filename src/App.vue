@@ -1,60 +1,72 @@
+<script setup>
+// This starter template is using Vue 3 <script setup> SFCs
+// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
+import zhCn from 'element-plus/lib/locale/lang/zh-cn'
+import { useMeta } from 'vue-meta'
+
+const tags = 'Red_lnn,博客,blog,个人主页'
+const description = '这里是 Red_lnn 的小空间，感谢你的来访'
+
+useMeta({
+  description: description,
+  meta: [{ name: 'keywords', content: tags }],
+  og: {
+    description: description,
+  },
+  twitter: {
+    description: description,
+  },
+})
+</script>
+
 <template>
-  <metainfo></metainfo>
-  <el-config-provider :locale="locale">
-    <el-header id="nav">
-      <el-menu class="noselect" :default-active="this.$route.path" mode="horizontal" router>
-        <el-menu-item index="#999#" disabled class="nav-logo" :route="this.$route.path">
-          <span>
-            <img src="@/assets/img/avatar.webp" alt="logo" />
-            <b>Red_lnn</b>
-          </span>
-        </el-menu-item>
-        <el-menu-item v-for="(item, key) in navItems" :key="key" :index="item.indexPath" :route="item.activeIndex">{{
-          item.name
-        }}</el-menu-item>
-        <el-menu-item index="#" key="https://blog.redlnn.top/">
-          <a href="https://blog.redlnn.top/" target="_self">Blog</a>
-        </el-menu-item>
-        <el-sub-menu :index="this.$route.path">
-          <template #title>一些东西</template>
-          <el-menu-item index="/mcmod/">Minecraft 常用模组列表</el-menu-item>
-        </el-sub-menu>
-      </el-menu>
-    </el-header>
-    <div :style="{ height: screenHeight - 61 + 'px' }" style="overflow: hidden">
-      <el-scrollbar>
-        <el-backtop target=".el-scrollbar__wrap"></el-backtop>
-        <el-main>
-          <router-view v-slot="{ Component }">
-            <transition name="slide-fade" mode="out-in">
-              <component :is="Component" />
-            </transition>
-          </router-view>
-        </el-main>
-        <el-footer>
-          <div class="footer noselect">
-            © Red_lnn&nbsp;&nbsp;|&nbsp;
-            <a href="http://beian.miit.gov.cn/">粤 ICP 备 19155362 号</a>
-          </div>
-        </el-footer>
-      </el-scrollbar>
-    </div>
-  </el-config-provider>
+  <div>
+    <metainfo></metainfo>
+    <el-config-provider :locale="zhCn">
+      <el-header id="nav">
+        <el-menu class="noselect" :default-active="$route.path" mode="horizontal" router>
+          <el-menu-item index="#999#" disabled class="nav-logo" :route="$route.path">
+            <span>
+              <img :src="'../assets/img/avatar.webp'" alt="logo" />
+              <b>Red_lnn</b>
+            </span>
+          </el-menu-item>
+          <el-menu-item v-for="(item, key) in navItems" :key="key" :index="item.indexPath" :route="item.activeIndex">
+            {{ item.name }}
+          </el-menu-item>
+          <el-menu-item index="#" key="https://blog.redlnn.top/">
+            <a href="https://blog.redlnn.top/" target="_self">Blog</a>
+          </el-menu-item>
+          <el-sub-menu :index="$route.path">
+            <template #title>一些东西</template>
+            <el-menu-item index="/mcmod/">Minecraft 常用模组列表</el-menu-item>
+          </el-sub-menu>
+        </el-menu>
+      </el-header>
+      <div :style="{ height: screenHeight - 61 + 'px' }" style="overflow: hidden">
+        <el-scrollbar>
+          <el-backtop target=".el-scrollbar__wrap"></el-backtop>
+          <el-main>
+            <router-view v-slot="{ Component }">
+              <transition name="slide-fade" mode="out-in">
+                <component :is="Component" />
+              </transition>
+            </router-view>
+          </el-main>
+          <el-footer>
+            <div class="footer noselect">
+              © Red_lnn&nbsp;&nbsp;|&nbsp;
+              <a href="http://beian.miit.gov.cn/">粤 ICP 备 19155362 号</a>
+            </div>
+          </el-footer>
+        </el-scrollbar>
+      </div>
+    </el-config-provider>
+  </div>
 </template>
 
 <script>
-import zhCn from 'element-plus/lib/locale/lang/zh-cn'
-
 export default {
-  name: 'App',
-  components: {},
-  setup() {
-    // https://github.com/nuxt/vue-meta/issues/696#issuecomment-878377182
-    // useMeta({});
-    return {
-      locale: zhCn,
-    }
-  },
   data() {
     return {
       navItems: [
@@ -67,10 +79,9 @@ export default {
   },
   mounted() {
     window.onresize = () => {
+      // this.screenWidth = document.body.clientWidth;
       this.screenHeight = document.documentElement.clientHeight
     }
-    // prerender-spa-plugin预渲染. for renderAfterDocumentEvent
-    document.dispatchEvent(new Event('render-active'))
   },
   watch: {
     screenHeight(newValue) {
@@ -90,16 +101,15 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style>
 body,
 html,
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'San Francisco', 'Helvetica Neue', 'Segoe UI Variable', 'Segoe UI', Helvetica, Arial, 'PingFang SC',
-    'Hiragino Sans GB', 'Microsoft YaHei UI', sans-serif;
+  font-family: 'San Francisco', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei UI', sans-serif;
   color: var(--el-text-color-primary);
-  text-align: center;
 }
 
 #nav {
