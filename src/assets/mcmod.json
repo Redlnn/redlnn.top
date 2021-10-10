@@ -450,7 +450,7 @@
     "nameCN": "疾速加载",
     "type": "性能优化",
     "applation": "客户端",
-    "desc": "在首次启动游戏时缓存所有内容并在下一次启动时以极快的速度调用这些缓存，从而使游戏加载速度快到离谱。\n与一些模组存在兼容性问题（尤其是修改启动过程的模组），服务端不兼容",
+    "desc": "在首次启动游戏时缓存所有内容并在下一次启动时以极快的速度调用这些缓存，从而使游戏加载速度快到离谱。\n优化较为激进，与一些模组存在兼容性问题（尤其是修改启动过程的模组），服务端不兼容",
     "modrinth_url": "https://modrinth.com/mod/dashloader",
     "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/dashloader",
     "github_url": "https://github.com/alphaqu/DashLoader",
@@ -892,7 +892,7 @@
     "name": "Lazy DFU",
     "type": "性能优化",
     "applation": "客户端",
-    "desc": "缓式加载MC的DataFixerUpper，可能可以提升游戏的启动速度，与Dashloader冲突，会稍微增加加载某些地图的时间",
+    "desc": "缓式加载MC的DataFixerUpper，可能可以提升游戏的启动速度，会稍微增加加载某些地图的时间",
     "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/lazydfu"
   },
   {
@@ -1133,7 +1133,7 @@
     "nameCN": "平滑启动",
     "type": "性能优化",
     "applation": "客户端",
-    "desc": "在启动时减少CPU占用防止卡死电脑，会稍微延长启动时间，与Dashloader冲突",
+    "desc": "在启动时减少CPU占用防止卡死电脑，会稍微延长启动时间",
     "curseforge_url": "https://www.curseforge.com/minecraft/mc-mods/smooth-boot"
   },
   {
