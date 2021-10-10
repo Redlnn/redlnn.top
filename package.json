@@ -1,55 +1,67 @@
 {
-    "name": "redlnn.top",
-    "version": "0.1.0",
-    "private": true,
-    "scripts": {
-        "serve": "vue-cli-service serve",
-        "build": "vue-cli-service build",
-        "lint": "vue-cli-service lint"
+  "name": "redlnn.top",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@element-plus/icons": "^0.0.11",
+    "core-js": "^3.18.2",
+    "element-plus": "^1.1.0-beta.19",
+    "vue": "^3.0.0",
+    "vue-meta": "^3.0.0-alpha.9",
+    "vue-router": "^4.0.0-0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.13",
+    "@vue/cli-plugin-eslint": "~4.5.13",
+    "@vue/cli-plugin-router": "~4.5.13",
+    "@vue/cli-service": "~4.5.13",
+    "@vue/compiler-sfc": "^3.2.20",
+    "@vue/server-renderer": "^3.2.20",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-component": "^1.1.1",
+    "compression-webpack-plugin": "^6.1.1",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^7.19.1",
+    "prerender-spa-plugin": "^3.4.0",
+    "prettier": "^2.4.1",
+    "prettier-eslint": "^13.0.0",
+    "sass": "^1.42.1",
+    "sass-loader": "^10.2.0",
+    "unplugin-vue-components": "^0.15.6",
+    "vue-cli-plugin-element-plus": "~0.0.13"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "es2021": true,
+      "node": true
     },
-    "dependencies": {
-        "@element-plus/icons": "^0.0.11",
-        "@vue/server-renderer": "^3.2.19",
-        "core-js": "^3.18.2",
-        "element-plus": "^1.1.0-beta.19",
-        "vue": "^3.0.0",
-        "vue-meta": "^3.0.0-alpha.9",
-        "vue-router": "^4.0.0-0"
+    "extends": [
+      "eslint:recommended",
+      "plugin:vue/vue3-essential"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 12,
+      "sourceType": "module"
     },
-    "devDependencies": {
-        "@vue/cli-plugin-babel": "~4.5.13",
-        "@vue/cli-plugin-eslint": "~4.5.13",
-        "@vue/cli-plugin-router": "~4.5.13",
-        "@vue/cli-service": "~4.5.13",
-        "@vue/compiler-sfc": "^3.2.19",
-        "babel-eslint": "^10.1.0",
-        "babel-plugin-component": "^1.1.1",
-        "compression-webpack-plugin": "^6.1.1",
-        "eslint": "^6.8.0",
-        "eslint-plugin-vue": "^7.19.1",
-        "prerender-spa-plugin": "^3.4.0",
-        "sass": "^1.42.1",
-        "sass-loader": "^10.2.0",
-        "unplugin-vue-components": "^0.15.6",
-        "vue-cli-plugin-element-plus": "~0.0.13"
-    },
-    "eslintConfig": {
-        "root": true,
-        "env": {
-            "node": true
-        },
-        "extends": [
-            "plugin:vue/vue3-essential",
-            "eslint:recommended"
-        ],
-        "parserOptions": {
-            "parser": "babel-eslint"
-        },
-        "rules": {}
-    },
-    "browserslist": [
-        "> 1%",
-        "last 2 versions",
-        "not dead"
-    ]
+    "plugins": [
+      "vue"
+    ],
+    "rules": {
+      "max-len": [
+        "warn",
+        120
+      ]
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
 }
