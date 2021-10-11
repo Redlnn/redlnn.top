@@ -597,10 +597,10 @@ ejs@^3.1.6:
   dependencies:
     jake "^10.6.1"
 
-element-plus@^1.1.0-beta.19:
-  version "1.1.0-beta.19"
-  resolved "https://registry.npmmirror.com/element-plus/download/element-plus-1.1.0-beta.19.tgz#234f3bc3f1d822a7102045e7ee1239b675f27acc"
-  integrity sha1-I087w/HYIqcQIEXn7hI5tnXyesw=
+element-plus@^1.1.0-beta.20:
+  version "1.1.0-beta.20"
+  resolved "https://registry.yarnpkg.com/element-plus/-/element-plus-1.1.0-beta.20.tgz#59523c99a88ca4881d899ba8bb81c4a9273ed822"
+  integrity sha512-5rBrLzfKGz4urSxqKi1tihylyotSswMCKdXpCAJAfRggMjtS1NfqVtrCYEPdjphmP2JHsj8TisDvbRTScRKF0Q==
   dependencies:
     "@popperjs/core" "^2.10.1"
     "@vueuse/core" "~6.1.0"
