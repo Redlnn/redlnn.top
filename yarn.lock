@@ -597,10 +597,10 @@ ejs@^3.1.6:
   dependencies:
     jake "^10.6.1"
 
-element-plus@^1.1.0-beta.19:
-  version "1.1.0-beta.19"
-  resolved "https://registry.npmmirror.com/element-plus/download/element-plus-1.1.0-beta.19.tgz#234f3bc3f1d822a7102045e7ee1239b675f27acc"
-  integrity sha1-I087w/HYIqcQIEXn7hI5tnXyesw=
+element-plus@^1.1.0-beta.20:
+  version "1.1.0-beta.20"
+  resolved "https://registry.npmmirror.com/element-plus/download/element-plus-1.1.0-beta.20.tgz#59523c99a88ca4881d899ba8bb81c4a9273ed822"
+  integrity sha1-WVI8maiMpIgdiZuou4HEqSc+2CI=
   dependencies:
     "@popperjs/core" "^2.10.1"
     "@vueuse/core" "~6.1.0"
@@ -737,7 +737,7 @@ escape-string-regexp@^4.0.0:
 
 eslint-plugin-vue@^7.19.1:
   version "7.19.1"
-  resolved "https://registry.npmmirror.com/eslint-plugin-vue/download/eslint-plugin-vue-7.19.1.tgz?cache=0&sync_timestamp=1633510320318&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Feslint-plugin-vue%2Fdownload%2Feslint-plugin-vue-7.19.1.tgz#435fb2ce712842a9530b28eacb883680e8eaa4f3"
+  resolved "https://registry.npmmirror.com/eslint-plugin-vue/download/eslint-plugin-vue-7.19.1.tgz#435fb2ce712842a9530b28eacb883680e8eaa4f3"
   integrity sha1-Q1+yznEoQqlTCyjqy4g2gOjqpPM=
   dependencies:
     eslint-utils "^2.1.0"
@@ -1275,9 +1275,9 @@ minimatch@^3.0.4:
     brace-expansion "^1.1.7"
 
 mlly@^0.2.2:
-  version "0.2.5"
-  resolved "https://registry.npmmirror.com/mlly/download/mlly-0.2.5.tgz#cd7096d0efcfae311091ec1cb855b9e585ce26d3"
-  integrity sha1-zXCW0O/PrjEQkewcuFW55YXOJtM=
+  version "0.2.6"
+  resolved "https://registry.npmmirror.com/mlly/download/mlly-0.2.6.tgz#6becb976c726ad9b4432662b7f8eb3e8d74b449c"
+  integrity sha1-a+y5dscmrZtEMmYrf46z6NdLRJw=
   dependencies:
     import-meta-resolve "^1.1.1"
 
@@ -1415,7 +1415,7 @@ prettier-eslint@^13.0.0:
 
 prettier@^2.0.0, prettier@^2.4.1:
   version "2.4.1"
-  resolved "https://registry.npmmirror.com/prettier/download/prettier-2.4.1.tgz?cache=0&sync_timestamp=1632753638845&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fprettier%2Fdownload%2Fprettier-2.4.1.tgz#671e11c89c14a4cfc876ce564106c4a6726c9f5c"
+  resolved "https://registry.npmmirror.com/prettier/download/prettier-2.4.1.tgz#671e11c89c14a4cfc876ce564106c4a6726c9f5c"
   integrity sha1-Zx4RyJwUpM/Ids5WQQbEpnJsn1w=
 
 pretty-format@^23.0.1:
@@ -1689,12 +1689,12 @@ type-check@^0.4.0, type-check@~0.4.0:
 
 type-fest@^0.20.2:
   version "0.20.2"
-  resolved "https://registry.npmmirror.com/type-fest/download/type-fest-0.20.2.tgz#1bf207f4b28f91583666cb5fbd327887301cd5f4"
+  resolved "https://registry.npmmirror.com/type-fest/download/type-fest-0.20.2.tgz?cache=0&sync_timestamp=1634020556528&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Ftype-fest%2Fdownload%2Ftype-fest-0.20.2.tgz#1bf207f4b28f91583666cb5fbd327887301cd5f4"
   integrity sha1-G/IH9LKPkVg2ZstfvTJ4hzAc1fQ=
 
 typescript@^3.9.3:
   version "3.9.10"
-  resolved "https://registry.npmmirror.com/typescript/download/typescript-3.9.10.tgz?cache=0&sync_timestamp=1633850151120&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Ftypescript%2Fdownload%2Ftypescript-3.9.10.tgz#70f3910ac7a51ed6bef79da7800690b19bf778b8"
+  resolved "https://registry.npmmirror.com/typescript/download/typescript-3.9.10.tgz#70f3910ac7a51ed6bef79da7800690b19bf778b8"
   integrity sha1-cPORCselHta+952ngAaQsZv3eLg=
 
 universalify@^2.0.0:
@@ -1770,10 +1770,10 @@ vite-plugin-radar@^0.2.0:
   resolved "https://registry.npmmirror.com/vite-plugin-radar/download/vite-plugin-radar-0.2.0.tgz#52f90c2a040a7ffda971936fb83ca4ca06b06be8"
   integrity sha1-UvkMKgQKf/2pcZNvuDykygawa+g=
 
-vite@^2.6.5:
-  version "2.6.5"
-  resolved "https://registry.npmmirror.com/vite/download/vite-2.6.5.tgz#c4d25972e2f7371e682da86828722ddf5126f3d1"
-  integrity sha1-xNJZcuL3Nx5oLahoKHIt31Em89E=
+vite@^2.6.7:
+  version "2.6.7"
+  resolved "https://registry.npmmirror.com/vite/download/vite-2.6.7.tgz#e15c1d8327950720b5d7c4ec3fb36a5a58ccf7cb"
+  integrity sha1-4VwdgyeVByC118TsP7NqWljM98s=
   dependencies:
     esbuild "^0.13.2"
     postcss "^8.3.8"
@@ -1826,7 +1826,7 @@ vue-router@^4.0.11:
 
 vue@^3.2.16:
   version "3.2.20"
-  resolved "https://registry.npmmirror.com/vue/download/vue-3.2.20.tgz?cache=0&sync_timestamp=1633713660167&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fvue%2Fdownload%2Fvue-3.2.20.tgz#940f8aa8bf3e3be78243ca582bad41fcd45ae3e6"
+  resolved "https://registry.npmmirror.com/vue/download/vue-3.2.20.tgz#940f8aa8bf3e3be78243ca582bad41fcd45ae3e6"
   integrity sha1-lA+KqL8+O+eCQ8pYK61B/NRa4+Y=
   dependencies:
     "@vue/compiler-dom" "3.2.20"
