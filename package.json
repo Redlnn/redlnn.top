@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@element-plus/icons": "^0.0.11",
-    "element-plus": "^1.1.0-beta.20",
+    "element-plus": "^1.1.0-beta.21",
     "vue": "^3.2.16",
     "vue-meta": "^3.0.0-alpha.9",
     "vue-router": "^4.0.11"
