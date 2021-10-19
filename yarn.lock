@@ -1702,10 +1702,10 @@ universalify@^2.0.0:
   resolved "https://registry.npmmirror.com/universalify/download/universalify-2.0.0.tgz#75a4984efedc4b08975c5aeb73f530d02df25717"
   integrity sha1-daSYTv7cSwiXXFrrc/Uw0C3yVxc=
 
-unplugin-vue-components@^0.15.6:
-  version "0.15.6"
-  resolved "https://registry.npmmirror.com/unplugin-vue-components/download/unplugin-vue-components-0.15.6.tgz#cd4e06e507c9dd7b6469e345b6812b3843e86d63"
-  integrity sha1-zU4G5QfJ3XtkaeNFtoErOEPobWM=
+unplugin-vue-components@^0.16.0:
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/unplugin-vue-components/-/unplugin-vue-components-0.16.0.tgz#15a5d5d03ad658ae0202523811ec76150776569d"
+  integrity sha512-BM/5p6/btLgDjUxf290cKbzbaGow95NFibhp+TSQhL0wyb1Q6sP0nmlqOvGnpLANFq0+urXxXDloMLlTJH6Fww==
   dependencies:
     "@antfu/utils" "^0.3.0"
     "@rollup/pluginutils" "^4.1.1"
