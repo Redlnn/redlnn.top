@@ -10,19 +10,19 @@
   },
   "dependencies": {
     "@element-plus/icons": "^0.0.11",
-    "element-plus": "^1.1.0-beta.20",
+    "element-plus": "^1.1.0-beta.24",
     "vue": "^3.2.16",
     "vue-meta": "^3.0.0-alpha.9",
-    "vue-router": "^4.0.11"
+    "vue-router": "^4.0.12"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.3",
-    "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^7.19.1",
+    "eslint": "^8.0.0",
+    "eslint-plugin-vue": "^7.20.0",
     "prettier": "^2.4.1",
     "prettier-eslint": "^13.0.0",
-    "unplugin-vue-components": "^0.15.6",
-    "vite": "^2.6.7",
+    "unplugin-vue-components": "^0.16.0",
+    "vite": "^2.6.10",
     "vite-plugin-cdn-import": "^0.3.5",
     "vite-plugin-compression": "^0.3.5",
     "vite-plugin-html": "^2.1.1",
