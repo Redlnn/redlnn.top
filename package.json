@@ -11,13 +11,13 @@
   "dependencies": {
     "@element-plus/icons": "^0.0.11",
     "element-plus": "^1.1.0-beta.24",
-    "vue": "^3.2.16",
+    "vue": "^3.2.20",
     "vue-meta": "^3.0.0-alpha.9",
     "vue-router": "^4.0.12"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.3",
-    "eslint": "^8.0.0",
+    "eslint": "^8.0.1",
     "eslint-plugin-vue": "^7.20.0",
     "prettier": "^2.4.1",
     "prettier-eslint": "^13.0.0",
@@ -27,7 +27,7 @@
     "vite-plugin-compression": "^0.3.5",
     "vite-plugin-html": "^2.1.1",
     "vite-plugin-radar": "^0.2.0",
-    "vue-eslint-parser": "^7.11.0"
+    "vue-eslint-parser": "^8.0.0"
   },
   "eslintConfig": {
     "root": true,
