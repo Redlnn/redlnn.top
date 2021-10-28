@@ -5,8 +5,8 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "lint": "eslint --color src/**",
-    "lint:fix": "eslint --color --fix src/**"
+    "lint": "eslint --color",
+    "lint:fix": "eslint --color --fix"
   },
   "dependencies": {
     "@element-plus/icons": "^0.0.11",
