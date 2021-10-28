@@ -38,5 +38,5 @@ jobs:
             cd redlnn.top
             tar -xzvf /tmp/release.tgr.gz
             rm -f /tmp/release.tgr.gz
-            mv html html.bak
+            ./backup.sh html
             mv dist html
