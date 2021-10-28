@@ -28,7 +28,10 @@ import { useMeta } from 'vue-meta'
 const description = '404 Not Found!'
 
 export default {
-  name: 'Home',
+  components: {
+    Loading,
+    PictureRounded,
+  },
   setup() {
     // https://github.com/nuxt/vue-meta/issues/696#issuecomment-878377182
     useMeta({
@@ -40,10 +43,6 @@ export default {
         description: description,
       },
     })
-  },
-  components: {
-    Loading,
-    PictureRounded,
   },
 }
 </script>

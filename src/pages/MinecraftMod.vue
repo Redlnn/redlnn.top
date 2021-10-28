@@ -60,8 +60,8 @@ useMeta({
           <ul>
             <li>
               本页面中的模组数据可在
-              <a href="https://github.com/Redlnn/redlnn.top/tree/master/src/assets/mcmod.json">GitHub 仓库</a
-              >中找到，如有修改或增删建议可以发 pr
+              <a href="https://github.com/Redlnn/redlnn.top/tree/master/src/assets/mcmod.json">GitHub 仓库</a>
+              中找到，如有修改或增删建议可以发 pr
             </li>
             <li>
               Optifine替代品列表：
@@ -113,13 +113,14 @@ useMeta({
             <template #default="scope">
               <div class="tr_url">
                 <a
-                  v-bind:href="scope.row.official_url"
                   v-if="scope.row.official_url"
+                  :href="scope.row.official_url"
                   class="button official"
                   style="font-weight: 600; letter-spacing: 0.1rem"
-                  >官方网站</a
                 >
-                <a v-bind:href="scope.row.modrinth_url" v-if="scope.row.modrinth_url" class="button modrinth">
+                  官方网站
+                </a>
+                <a v-if="scope.row.modrinth_url" :href="scope.row.modrinth_url" class="button modrinth">
                   <img
                     :src="'../assets/img/modrinth.svg'"
                     title="从 Modrinth 下载"
@@ -127,7 +128,7 @@ useMeta({
                     style="height: 1.1rem"
                   />
                 </a>
-                <a v-bind:href="scope.row.curseforge_url" v-if="scope.row.curseforge_url" class="button curseforge">
+                <a v-if="scope.row.curseforge_url" :href="scope.row.curseforge_url" class="button curseforge">
                   <img
                     :src="'../assets/img/anvil.svg'"
                     alt="curseforge logo"
@@ -141,8 +142,8 @@ useMeta({
                   />
                 </a>
                 <a
-                  v-bind:href="scope.row.github_url"
                   v-if="scope.row.github_url"
+                  :href="scope.row.github_url"
                   class="button github"
                   style="font-weight: 600; letter-spacing: 0.03rem"
                 >
@@ -151,7 +152,8 @@ useMeta({
                     title="访问 GitHub 仓库"
                     alt="访问 GitHub 仓库"
                     style="height: 1.1rem; margin-right: 0.3rem"
-                  />GitHub
+                  />
+                  GitHub
                 </a>
                 <a v-if="scope.row.other_url" style="margin: 0.2rem 0">{{ scope.row.other_url }}</a>
               </div>
@@ -159,7 +161,7 @@ useMeta({
           </el-table-column>
           <el-table-column prop="mcmod" label="mc百科" width="130">
             <template #default="scope">
-              <a v-bind:href="scope.row.mcmod_url" v-if="scope.row.mcmod_url" class="button mcmod">
+              <a v-if="scope.row.mcmod_url" :href="scope.row.mcmod_url" class="button mcmod">
                 <img :src="'../assets/img/mcmod.webp'" title="访问mc百科" alt="访问mc百科" style="height: 1.1rem" />
               </a>
             </template>
@@ -182,26 +184,6 @@ export default {
       screenHeight: document.documentElement.clientHeight,
     }
   },
-  methods: {
-    desc({ columnIndex }) {
-      if (columnIndex == 4) {
-        return 'desc'
-      }
-    },
-    filterHandler(value, row, column) {
-      const property = column['property']
-      return row[property] === value
-    },
-  },
-  mounted() {
-    window.addEventListener(
-      'resize',
-      () => {
-        this.screenHeight = document.documentElement.clientHeight
-      },
-      false
-    )
-  },
   watch: {
     screenHeight(newValue) {
       // 为了避免频繁触发resize函数导致页面卡顿，使用定时器
@@ -214,6 +196,26 @@ export default {
           this.timer = false
         }, 500)
       }
+    },
+  },
+  mounted() {
+    window.addEventListener(
+      'resize',
+      () => {
+        this.screenHeight = document.documentElement.clientHeight
+      },
+      false
+    )
+  },
+  methods: {
+    desc({ columnIndex }) {
+      if (columnIndex == 4) {
+        return 'desc'
+      }
+    },
+    filterHandler(value, row, column) {
+      const property = column['property']
+      return row[property] === value
     },
   },
 }

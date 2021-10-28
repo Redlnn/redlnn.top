@@ -34,7 +34,7 @@ useMeta({
           <el-menu-item v-for="(item, key) in navItems" :key="key" :index="item.indexPath" :route="item.activeIndex">
             {{ item.name }}
           </el-menu-item>
-          <el-menu-item index="#" key="https://blog.redlnn.top/">
+          <el-menu-item key="https://blog.redlnn.top/" index="#">
             <a href="https://blog.redlnn.top/" target="_self">Blog</a>
           </el-menu-item>
           <el-sub-menu :index="$route.path">
@@ -77,12 +77,7 @@ export default {
       screenHeight: document.documentElement.clientHeight,
     }
   },
-  mounted() {
-    window.onresize = () => {
-      // this.screenWidth = document.body.clientWidth;
-      this.screenHeight = document.documentElement.clientHeight
-    }
-  },
+  computed: {},
   watch: {
     screenHeight(newValue) {
       // 为了避免频繁触发resize函数导致页面卡顿，使用定时器
@@ -97,7 +92,12 @@ export default {
       }
     },
   },
-  computed: {},
+  mounted() {
+    window.onresize = () => {
+      // this.screenWidth = document.body.clientWidth;
+      this.screenHeight = document.documentElement.clientHeight
+    }
+  },
 }
 </script>
 

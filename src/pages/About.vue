@@ -14,6 +14,7 @@ useMeta({
     description: description,
   },
 })
+/* eslint-disable */
 </script>
 
 <template>
@@ -23,8 +24,7 @@ useMeta({
       <el-row>
         <el-col :xs="0" :sm="2" :lg="4" :xl="6"></el-col>
         <el-col :xs="24" :sm="20" :lg="16" :xl="12">
-          <h1><del>食用手册</del>
-          </h1>
+          <h1><del>食用手册</del></h1>
           <el-alert
             title="前排提示"
             type="info"
@@ -57,8 +57,7 @@ useMeta({
               <a href="https://www.bilibili.com/bangumi/play/ss445">《翠星之加尔刚蒂亚》</a>（大概没多少人知道？）
             </li>
             <li>
-              还有传统老番
-              <a href="https://www.bilibili.com/bangumi/play/ss33378">《名侦探柯南》</a>（青山老贼是真的不打算完结啊！）
+              还有传统老番<a href="https://www.bilibili.com/bangumi/play/ss33378">《名侦探柯南》</a>（青山老贼是真的不打算完结啊！）
             </li>
           </ul>
           <p>2.2.3. 除了上面提到那些，正经番剧也就看过这三部，真的看得很少：</p>
@@ -99,24 +98,19 @@ useMeta({
           <h2>哪里能找到</h2>
           <ul class="list" style="padding-left:20px;">
             <li>
-              Github：
-              <a href="https://github.com/Redlnn">Redlnn</a>
+              Github：<a href="https://github.com/Redlnn">@Redlnn</a>
             </li>
             <li>
-              Bilibili：
-              <a href="https://space.bilibili.com/20858581">Red_lnn</a>
+              Bilibili：<a href="https://space.bilibili.com/20858581">Red_lnn</a>
             </li>
             <li>
-              网易云音乐：
-              <a href="https://music.163.com/#/user/home?id=333710186">Red_lnn</a>
+              网易云音乐：<a href="https://music.163.com/#/user/home?id=333710186">Red_lnn</a>
             </li>
             <li>
-              Twitter：
-              <a href="https://twitter.com/Red_lnn">@Red_lnn</a>
+              Twitter：<a href="https://twitter.com/Red_lnn">@Red_lnn</a>
             </li>
             <li>
-              酷安(CoolApk)：
-              <a href="http://www.coolapk.com/u/642684">Red_lnn</a>
+              酷安(CoolApk)：<a href="http://www.coolapk.com/u/642684">Red_lnn</a>
             </li>
             <li>剩下一些平台都是小透明就不列了吧 …</li>
           </ul>
@@ -129,7 +123,7 @@ useMeta({
         <el-col :xs="0" :sm="2" :lg="4" :xl="6"></el-col>
       </el-row>
     </div>
-    <div style="padding-bottom:20px">
+    <div style="padding-bottom:20px;text-align:center">
       <p style="font-size:var(--el-font-size-base);line-height:2rem;margin:5px 0">
         本文采用
         <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">
@@ -144,6 +138,7 @@ useMeta({
 </template>
 
 <script>
+/* eslint-enable */
 export default {
   data() {
     return {
