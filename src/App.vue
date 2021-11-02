@@ -126,6 +126,10 @@ html,
   color: inherit;
 }
 
+.el-menu-item * {
+  vertical-align: middle;
+}
+
 .nav-logo {
   color: var(--el-menu-item-font-color) !important;
   font-size: var(--el-font-size-medium) !important;

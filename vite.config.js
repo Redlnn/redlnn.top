@@ -45,8 +45,8 @@ export default defineConfig(({ command }) => {
             {
               name: 'element-plus',
               var: 'ElementPlus',
-              path: `//cdn.jsdelivr.net/npm/element-plus@1.1.0-beta.20/dist/index.full.min.js`,
-              css: `//cdn.jsdelivr.net/npm/element-plus@1.1.0-beta.20/dist/index.min.css`,
+              path: `//cdn.jsdelivr.net/npm/element-plus@1.2.0-beta.1/dist/index.full.min.js`,
+              css: `//cdn.jsdelivr.net/npm/element-plus@1.2.0-beta.1/dist/index.min.css`,
             },
           ],
         }),
