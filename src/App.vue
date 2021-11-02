@@ -161,7 +161,7 @@ footer {
 }
 
 .el-menu--popup {
-  min-width: 150px !important;
+  /* min-width: 150px !important; */
   padding: 10px 0 !important;
   border-radius: 10px !important;
 }
@@ -173,6 +173,11 @@ footer {
 
 .el-popper .el-menu--horizontal {
   border: none;
+}
+
+.el-sub-menu__icon-arrow {
+  right: 10px;
+  font-size: var(--font-size);
 }
 
 .noselect {
