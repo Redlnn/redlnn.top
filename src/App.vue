@@ -39,6 +39,7 @@ useMeta({
           </el-menu-item>
           <el-sub-menu :index="$route.path">
             <template #title>一些东西</template>
+            <el-menu-item index="/works/">一些个人小作品</el-menu-item>
             <el-menu-item index="/mcmod/">Minecraft 常用模组列表</el-menu-item>
           </el-sub-menu>
         </el-menu>
@@ -56,7 +57,7 @@ useMeta({
           <el-footer>
             <div class="footer noselect">
               © Red_lnn&nbsp;&nbsp;|&nbsp;
-              <a href="http://beian.miit.gov.cn/">粤 ICP 备 19155362 号</a>
+              <a href="http://beian.miit.gov.cn/" target="_blank">粤 ICP 备 19155362 号</a>
             </div>
           </el-footer>
         </el-scrollbar>

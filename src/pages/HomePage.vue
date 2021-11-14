@@ -17,7 +17,7 @@ useMeta({
 </script>
 
 <template>
-  <div style="text-align: center">
+  <div style="text-align: center; min-height: 80vh">
     <el-image :src="'../assets/img/avatar.webp'" class="logo noselect" alt="Logo">
       <template #placeholder>
         <div class="image-slot">

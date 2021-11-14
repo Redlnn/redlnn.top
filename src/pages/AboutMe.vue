@@ -51,29 +51,29 @@ useMeta({
           <p>2.2.2. 比较喜欢的番的话，有这些吧：</p>
           <ul class="list">
             <li>
-              <a href="https://www.bilibili.com/bangumi/play/ss3756">《小樱》</a>（百变小樱？百变小樱魔术卡？魔卡少女樱？），透明牌篇正在看，打算一两个月一集这样子，我就看一下我看完的时候能不能出下一季
+              <a href="https://www.bilibili.com/bangumi/play/ss3756" target="_blank">《小樱》</a>（百变小樱？百变小樱魔术卡？魔卡少女樱？），透明牌篇正在看，打算一两个月一集这样子，我就看一下我看完的时候能不能出下一季
             </li>
             <li>
-              <a href="https://www.bilibili.com/bangumi/play/ss445">《翠星之加尔刚蒂亚》</a>（大概没多少人知道？）
+              <a href="https://www.bilibili.com/bangumi/play/ss445" target="_blank">《翠星之加尔刚蒂亚》</a>（大概没多少人知道？）
             </li>
             <li>
-              还有传统老番<a href="https://www.bilibili.com/bangumi/play/ss33378">《名侦探柯南》</a>（青山老贼是真的不打算完结啊！）
+              还有传统老番<a href="https://www.bilibili.com/bangumi/play/ss33378" target="_blank">《名侦探柯南》</a>（青山老贼是真的不打算完结啊！）
             </li>
           </ul>
           <p>2.2.3. 除了上面提到那些，正经番剧也就看过这三部，真的看得很少：</p>
           <ul class="list">
             <li>
-              <a href="https://www.bilibili.com/bangumi/play/ss24588">《工作细胞》</a>，第一第二季都看了，说实话，挺好看，但是喜欢不起来hhh
+              <a href="https://www.bilibili.com/bangumi/play/ss24588" target="_blank">《工作细胞》</a>，第一第二季都看了，说实话，挺好看，但是喜欢不起来hhh
             </li>
             <li>
               《Lain》（又名《铃音》，应该也没多少人知道，介绍看这里 👉
-              <a href="https://zh.wikipedia.org/wiki/%E7%8E%B2%E9%9F%B3">Wikipedia</a> |
-              <a href="https://baike.baidu.com/item/%E7%8E%B2%E9%9F%B3/751714">百度百科1</a> |
-              <a href="https://baike.baidu.com/item/Lain/4867944">百度百科2</a> |
-              <a href="https://zh.moegirl.org.cn/%E9%93%83%E9%9F%B3">萌娘百科</a>），当初不是很看得懂，也没有深究，但不得不说，这部番挺压抑的
+              <a href="https://zh.wikipedia.org/wiki/%E7%8E%B2%E9%9F%B3" target="_blank">Wikipedia</a> |
+              <a href="https://baike.baidu.com/item/%E7%8E%B2%E9%9F%B3/751714" target="_blank">百度百科1</a> |
+              <a href="https://baike.baidu.com/item/Lain/4867944" target="_blank">百度百科2</a> |
+              <a href="https://zh.moegirl.org.cn/%E9%93%83%E9%9F%B3" target="_blank">萌娘百科</a>），当初不是很看得懂，也没有深究，但不得不说，这部番挺压抑的
             </li>
             <li>
-              <a href="https://www.bilibili.com/bangumi/play/ss3496/?spm_id_from=333.999.0.0">《机动战士高达独角兽(UC) RE:0096》</a>，我能说剧情已经忘了吗？
+              <a href="https://www.bilibili.com/bangumi/play/ss3496/?spm_id_from=333.999.0.0" target="_blank">《机动战士高达独角兽(UC) RE:0096》</a>，我能说剧情已经忘了吗？
             </li>
           </ul>
           <h3>书、音乐或电影</h3>
@@ -98,19 +98,19 @@ useMeta({
           <h2>哪里能找到</h2>
           <ul class="list" style="padding-left:20px;">
             <li>
-              Github：<a href="https://github.com/Redlnn">@Redlnn</a>
+              Github：<a href="https://github.com/Redlnn" target="_blank">@Redlnn</a>
             </li>
             <li>
-              Bilibili：<a href="https://space.bilibili.com/20858581">Red_lnn</a>
+              Bilibili：<a href="https://space.bilibili.com/20858581" target="_blank">Red_lnn</a>
             </li>
             <li>
-              网易云音乐：<a href="https://music.163.com/#/user/home?id=333710186">Red_lnn</a>
+              网易云音乐：<a href="https://music.163.com/#/user/home?id=333710186" target="_blank">Red_lnn</a>
             </li>
             <li>
-              Twitter：<a href="https://twitter.com/Red_lnn">@Red_lnn</a>
+              Twitter：<a href="https://twitter.com/Red_lnn" target="_blank">@Red_lnn</a>
             </li>
             <li>
-              酷安(CoolApk)：<a href="http://www.coolapk.com/u/642684">Red_lnn</a>
+              酷安(CoolApk)：<a href="http://www.coolapk.com/u/642684" target="_blank">Red_lnn</a>
             </li>
             <li>剩下一些平台都是小透明就不列了吧 …</li>
           </ul>
@@ -126,11 +126,11 @@ useMeta({
     <div style="padding-bottom:20px;text-align:center">
       <p style="font-size:var(--el-font-size-base);line-height:2rem;margin:5px 0">
         本文采用
-        <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">
+        <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">
           知识共享署名-非商业性使用-相同方式共享 4.0 (CC BY-NC-SA 4.0) 国际许可协议
         </a>，转载请注明出处！
       </p>
-      <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">
+      <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">
         <img alt="知识共享许可协议" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" />
       </a>
     </div>
@@ -167,7 +167,7 @@ a:hover {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-image: url('https://sdn.geekzu.org/avatar/ca8a920ae3afca0139b116c033b00138?s=800');
+  background-image: url('/@/assets/img/lofter_1ed5be22.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -180,7 +180,7 @@ a:hover {
 }
 
 .container {
-  text-align: left;
+  min-height: 80vh;
 }
 
 .container p {

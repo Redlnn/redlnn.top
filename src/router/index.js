@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../pages/Home.vue'
+import Home from '../pages/HomePage.vue'
 
 const routes = [
   {
@@ -13,7 +13,7 @@ const routes = [
   {
     path: '/about/',
     name: 'About',
-    component: () => import('../pages/About.vue'),
+    component: () => import('../pages/AboutMe.vue'),
     meta: {
       title: '关于我 | Red_lnn',
     },
@@ -27,16 +27,17 @@ const routes = [
     },
   },
   {
-    path: '/404/',
-    name: '404',
-    component: () => import('../pages/error/404.vue'),
+    path: '/works/',
+    name: '一些个人小作品',
+    component: () => import('../pages/MyWorks.vue'),
     meta: {
-      title: '404 Not Found! | Red_lnn',
+      title: '一些个人小作品 | Red_lnn',
     },
   },
   {
-    path: '/404.html',
-    redirect: '404',
+    path: '/404/',
+    name: '404',
+    component: () => import('../pages/error/404.vue'),
     meta: {
       title: '404 Not Found! | Red_lnn',
     },
