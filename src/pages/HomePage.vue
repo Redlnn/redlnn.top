@@ -58,8 +58,8 @@ useMeta({
 
 <script>
 // @ is an alias to /src
-import { Loading } from '@element-plus/icons'
-import { PictureRounded } from '@element-plus/icons'
+import { Loading } from '@element-plus/icons-vue'
+import { PictureRounded } from '@element-plus/icons-vue'
 
 export default {
   components: {

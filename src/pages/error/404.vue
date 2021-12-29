@@ -21,8 +21,8 @@
 </template>
 
 <script>
-import { Loading } from '@element-plus/icons'
-import { PictureRounded } from '@element-plus/icons'
+import { Loading } from '@element-plus/icons-vue'
+import { PictureRounded } from '@element-plus/icons-vue'
 import { useMeta } from 'vue-meta'
 
 const description = '404 Not Found!'
