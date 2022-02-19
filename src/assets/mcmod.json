@@ -300,6 +300,14 @@
     "desc": "给地毯添加更多功能，需要地毯作为前置",
     "github_url": "https://github.com/The-Cat-Town-Craft/Carpet-TCTC-Addition"
   },
+    {
+    "name": "plusls carpet addition",
+    "nameCN": "PCA",
+    "type": "增加功能",
+    "applation": "通用",
+    "desc": "给地毯添加更多功能，需要地毯作为前置",
+    "github_url": "https://github.com/plusls/plusls-carpet-addition"
+  },
   {
     "name": "Chat Heads",
     "nameCN": "聊天头像",
