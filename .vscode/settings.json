@@ -3,20 +3,20 @@
   "eslint.format.enable": true,
   "eslint.packageManager": "pnpm",
   "[vue]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascriptreact]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  // "[typescript]": {
-  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
-  // },
-  // "[typescriptreact]": {
-  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
-  // },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -34,16 +34,5 @@
   },
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  // "vetur.format.defaultFormatter.html": "prettyhtml",
-  // "vetur.format.defaultFormatter.js": "prettier-eslint",
-  // "vetur.format.defaultFormatter.ts": "prettier-tslint",
-  // "vetur.format.options.tabSize": 2,
-  // "vetur.format.defaultFormatterOptions": {
-  //   "prettyhtml": {
-  //     "wrap_line_length": 120,
-  //     "wrap_attributes": "auto",
-  //     "end_with_newline": true
-  //   }
-  // },
+  }
 }

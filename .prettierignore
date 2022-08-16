@@ -1,0 +1,4 @@
+*pnpm-lock.yaml
+src/assets/*
+public/*
+dist/*

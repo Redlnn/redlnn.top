@@ -1,32 +1,44 @@
-name: "build and deploy"
+name: 'build and deploy'
 on:
   push:
-    branches: [ vite ]
+    branches: [vite]
 jobs:
   build-and-deploy:
     if: github.actor != 'depbot'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@main
-      - uses: pnpm/action-setup@v2
+      - uses: actions/checkout@v3
         with:
-          version: 6
-      - uses: actions/setup-node@v2
+          fetch-depth: 0
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
         with:
-          node-version: "16"
-          cache: "pnpm"
-      - run: pnpm config set registry https://registry.npmmirror.com/
-      - run: pnpm install
-      - run: pnpm run build
-      - run: tar -zcvf release.tgr.gz ./dist/
+          version: 7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '>=18'
+          cache: 'pnpm'
+
+      - name: Build
+        run: |
+          pnpm config set registry https://registry.npmmirror.com/
+          pnpm install
+          pnpm minfont
+          pnpm build
+          tar -zcvf release.tgr.gz ./dist/
+
       - name: Copy file via ssh key
         uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
-          source: "release.tgr.gz"
-          target: "/tmp"
+          source: 'release.tgr.gz'
+          target: '/tmp'
+
       - name: Deploy
         uses: appleboy/ssh-action@master
         with:
