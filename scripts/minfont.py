@@ -39,13 +39,14 @@ from fontTools import subset
 from fontTools.ttLib import TTFont
 
 origin_path = join('src')
-ignore_dirs = ['dist', 'public', '.DS_Store', 'assets']
+ignore_dirs = ['dist', 'public', '.DS_Store']
 out_path = join('public', 'fonts')
 fonts = [
     join('fonts', 'HarmonyOS_Sans_SC_Bold.ttf'),
     join('fonts', 'HarmonyOS_Sans_SC_Regular.ttf'),
 ]
 
+ext = ['.md', '.vue', '.js', '.ts', '.css', '.scss']
 content = ''
 
 
@@ -56,6 +57,8 @@ def read(path):
             dirs[:] = []  # 忽略当前目录下的子目录
             continue
         for f in files:
+            if f.split('.')[-1] not in ext:
+                continue
             print(f'正在读取 {join(root, f)}')
             with open(join(root, f), 'r', encoding='utf8') as file:
                 while True:

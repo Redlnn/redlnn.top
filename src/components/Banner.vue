@@ -3,8 +3,6 @@ import { ref, onMounted, watch } from 'vue'
 import { useWindowScroll, useWindowSize } from '@vueuse/core'
 import { AngleDown } from '@vicons/fa'
 
-import defaultBannerImg from '@/assets/imgs/banner.webp'
-
 const props = defineProps({
   height: {
     type: String,
@@ -12,7 +10,7 @@ const props = defineProps({
   },
   bgImg: {
     type: String,
-    default: defaultBannerImg,
+    default: '/assets/imgs/banner.webp',
   },
   text: String,
   subtitle: String,

@@ -34,15 +34,16 @@ const fs = require('fs') // 不可转为 import
 const Fontmin = require('fontmin') // 不可转为 import
 
 const originPath = 'src/'
-const ignoreDirs = ['dist', 'public', '.DS_Store', 'assets']
+const ignoreDirs = ['dist', 'public', '.DS_Store']
 const outPath = 'public/fonts/'
 const fonts = ['fonts/HarmonyOS_Sans_SC_Bold.ttf', 'fonts/HarmonyOS_Sans_SC_Regular.ttf']
 
+const ext = ['.md', '.vue', '.js', '.ts', '.css', '.scss']
 let content = ''
 
 function readFile(file) {
   const stat = fs.statSync(`${originPath}${file}`)
-  if (stat.isFile()) {
+  if (stat.isFile() && ext.includes(file.substring(file.lastIndexOf('.'), file.length).toLowerCase())) {
     console.log(`正在读取 ${originPath}${file}`)
     const md = fs.readFileSync(`${originPath}${file}`)
     content += md.toString()
