@@ -11,6 +11,13 @@ jobs:
         with:
           fetch-depth: 0
 
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - run: |
+          python3 -m pip install brotli fonttools
+          python3 scripts/minfont.py
+
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
         with:
@@ -24,9 +31,7 @@ jobs:
 
       - name: Build
         run: |
-          pnpm config set registry https://registry.npmmirror.com/
           pnpm install
-          pnpm minfont
           pnpm build
           tar -zcvf release.tgr.gz ./dist/
 

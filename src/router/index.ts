@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '@/views/Home.vue'
-import About from '@/views/About.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -16,9 +15,17 @@ const router = createRouter({
     {
       path: '/about',
       name: 'about',
-      component: About,
+      component: () => import('@/views/About.vue'),
       meta: {
         title: '关于我 | Red_lnn',
+      },
+    },
+    {
+      path: '/links',
+      name: 'links',
+      component: () => import('@/views/Links.vue'),
+      meta: {
+        title: '友情链接 | Red_lnn',
       },
     },
     {

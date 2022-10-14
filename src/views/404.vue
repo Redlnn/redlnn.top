@@ -1,7 +1,7 @@
-<script setup>
+<script setup lang="ts">
 import Banner from '@/components/Banner.vue'
 </script>
 
 <template>
-  <Banner height="100vh" text="404 Not Found!" />
+  <banner height="100vh" text="404 Not Found!" />
 </template>

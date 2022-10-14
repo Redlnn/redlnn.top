@@ -1,10 +1,10 @@
-<script setup>
+<script setup lang="ts">
 import Banner from '@/components/Banner.vue'
 </script>
 
 <template>
   <main>
-    <Banner height="50vh" text="About Me" />
+    <banner height="50vh" text="About Me" />
     <div class="board">
       <div class="container">
         <p class="avatar">

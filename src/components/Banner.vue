@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { ref, onMounted, watch } from 'vue'
 import { useWindowScroll, useWindowSize } from '@vueuse/core'
 import { AngleDown } from '@vicons/fa'
@@ -22,10 +22,11 @@ const banner = ref()
 const scrollDownBar = ref()
 const subtitle = ref()
 const titleText = ref('')
-let timer = 0
+
+let timer: any
 
 function type() {
-  if (titleText.value.length < props.text.length) {
+  if (props.text && titleText.value.length < props.text.length) {
     titleText.value += props.text[titleText.value.length]
     timer = setTimeout(type, 50)
     return

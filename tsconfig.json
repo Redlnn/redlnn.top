@@ -1,31 +1,22 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "strict": true,
-    "allowJs": false,
-    // "checkJs": true,  // allowJs must be true for this to work
-    "jsx": "preserve",
-    "moduleResolution": "node",
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true,
+    "target": "ESNext",
     "useDefineForClassFields": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "jsx": "preserve",
     "sourceMap": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"],
+    "skipLibCheck": true,
     "baseUrl": ".",
-    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
-  "include": [
-    "*.js",
-    "*.cjs",
-    "*.ts",
-    "src/**/*.js",
-    "src/**/*.cjs",
-    "src/**/*.jsx",
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue"
-  ],
-  "exclude": ["node_modules", "public", "dist", ".vscode", ".git", ".github"]
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "./vite.config.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }

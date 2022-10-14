@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { onMounted, ref } from 'vue'
 
 import Banner from '@/components/Banner.vue'
@@ -15,7 +15,7 @@ onMounted(() => {
 
 <template>
   <main>
-    <Banner height="100vh" text="Red_lnn" :subtitle="subtitle" />
+    <banner height="100vh" text="Red_lnn" :subtitle="subtitle" />
     <div class="poetry">
       <div>
         <p style="white-space: pre-wrap">
