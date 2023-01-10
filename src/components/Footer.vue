@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <p style="">粤<span class="space">ICP</span>备<span class="space">19155362</span>号</p>
+    <a href="https://beian.miit.gov.cn/" target="_blank"><p style="">粤<span class="space">ICP</span>备<span class="space">19155362</span>号</p></a>
     <p>Copyright © 2022 Red_lnn All Rights Reserved.</p>
   </footer>
 </template>
@@ -12,6 +12,15 @@
   font-size: 0.8rem;
   text-align: center;
   line-height: 1.5em;
+}
+
+.footer a{
+  color: #999;
+  text-decoration: none;
+
+  &:hover {
+    color: #666;
+  }
 }
 
 .space {
