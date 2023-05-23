@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <a href="https://beian.miit.gov.cn/" target="_blank"><p style="">粤<span class="space">ICP</span>备<span class="space">19155362</span>号</p></a>
+    <a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备19155362号-1</a>
     <p>Copyright © 2022 Red_lnn All Rights Reserved.</p>
   </footer>
 </template>
