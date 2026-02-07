@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
   <head>
-    <link rel="shortcut icon" href="https://github.com/redlnn.png" />
+    <link rel="shortcut icon" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Red lnn" />
     <title>Red lnn</title>
@@ -19,44 +19,48 @@
         background-color: #f5f5f5;
         text-shadow: 1px 2px 10px color-mix(in srgb, currentColor, transparent 80%);
         color: #222;
-        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        transition:
+          background-color 0.3s ease-in-out,
+          color 0.3s ease-in-out;
         font-weight: 450;
       }
       main {
-        height: calc(100% - 100px);
+        height: calc(100% - 60px);
         min-height: 450px;
-        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+
+        svg,
+        a {
+          width: 1em;
+          height: 1em;
+        }
+
+        a {
+          color: #222;
+        }
       }
       .links {
         height: 60px;
         font-size: 14px;
         text-align: center;
         opacity: 0.8;
-      }
-      footer {
-        height: 40px;
-        text-align: center;
-        font-size: 12px;
-      }
-      .links .link {
-        font-size: 13px;
-      }
-      footer a {
-        color: #00000050;
-        transition: color 0.3s ease-in-out;
-      }
-      main > * {
-        margin: auto;
-        text-align: center;
-      }
-      .center {
-        position: absolute;
-        top: calc(50% + 10px);
-        left: 50%;
-        transform: translate(-50%, -50%);
+
+        .link {
+          font-size: 13px;
+        }
       }
       .avatar {
-        background-image: url('https://github.com/redlnn.png');
+        background-image: url('/avatar.jpg');
         width: 200px;
         height: 200px;
         border-radius: 50%;
@@ -96,9 +100,6 @@
           background-color: #222;
           color: #ddd;
         }
-        footer a {
-          color: #dddddd50;
-        }
         .avatar::before {
           background-color: #00000050;
         }
@@ -107,27 +108,42 @@
   </head>
   <body>
     <main>
-      <div class="center">
-        <div class="avatar"></div>
-        <div class="title"><abbr title="为什么是 L 不是 i？可莉不知道哦~">Red lnn</abbr></div>
-        <div class="subtitle">🤗 你好，世界！</div>
-        <p>
-          <a href="https://github.com/redlnn" target="_blank">Github</a> |
-          <a href="https://space.bilibili.com/20858581" target="_blank">BiliBili</a> |
-          <a href="https://x.com/Red_lnn" target="_blank">X</a> |
-          <a href="mailto:redlnn@redlnn.top" target="_blank">Email</a>
-        </p>
-      </div>
+      <div class="avatar"></div>
+      <div class="title"><abbr title="为什么是 L 不是 i？可莉不知道哦~">Red lnn</abbr></div>
+      <div class="subtitle">🤗 你好，世界！</div>
+      <p class="social-links">
+        <a href="https://github.com/redlnn" target="_blank">
+          <svg>
+            <use href="/github.svg"></use>
+          </svg>
+        </a>
+        <a href="https://space.bilibili.com/20858581" target="_blank">
+          <svg>
+            <use href="/bilibili.svg"></use>
+          </svg>
+        </a>
+        <a href="https://x.com/Red_lnn" target="_blank">
+          <svg>
+            <use href="/twitter.svg"></use>
+          </svg>
+        </a>
+        <a href="mailto:redlnn@redlnn.top" target="_blank">
+          <svg>
+            <use href="/mail.svg"></use>
+          </svg>
+        </a>
+      </p>
+      <div style="margin-top: 20px">个人项目</div>
+      <p>
+        <a href="https://github.com/redlnn/lemon-new-tab" target="_blank">柠檬起始页</a>
+      </p>
     </main>
-    <section class="links">
+    <footer class="links">
       <div style="margin-bottom: 5px">友情链接</div>
       <div class="link">
         <a href="https://blog.sagiri.tech/" target="_blank">ZAPHAKIEL</a> |
         <a href="https://blog.blueg.top/" target="_blank">BlueGlassBlock</a>
       </div>
-    </section>
-    <footer>
-      <a href="http://beian.miit.gov.cn/" target="_blank">粤ICP备xxxxxxxx号-1</a>
     </footer>
   </body>
 </html>
